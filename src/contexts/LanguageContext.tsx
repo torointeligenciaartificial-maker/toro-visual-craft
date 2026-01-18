@@ -21,83 +21,100 @@ const translations: Translations = {
   
   // Hero
   'hero.subtitle': { es: 'Estudio Creativo Premium', en: 'Premium Creative Studio' },
-  'hero.title1': { es: 'Campañas', en: 'Visual' },
-  'hero.title2': { es: 'Visuales', en: 'Campaigns' },
-  'hero.title3': { es: 'Premium', en: 'Premium' },
+  'hero.title1': { es: 'Creamos campañas', en: 'We create premium' },
+  'hero.title2': { es: 'visuales premium', en: 'visual campaigns' },
+  'hero.title3': { es: 'que convierten productos en marcas.', en: 'that turn products into brands.' },
   'hero.description': { 
-    es: 'Creamos campañas visuales completas que transforman marcas de productos en experiencias memorables. Especialistas en bebidas y cosméticos.',
-    en: 'We create complete visual campaigns that transform product brands into memorable experiences. Specialists in beverages and cosmetics.'
+    es: 'Campañas completas visuales de alto impacto para bebidas y cosméticos. Concepto, estética y ejecución con nivel publicitario.',
+    en: 'High-impact complete visual campaigns for beverages and cosmetics. Concept, aesthetics and execution with advertising-level quality.'
   },
-  'hero.cta': { es: 'Contratar Campaña', en: 'Hire a Campaign' },
-  'hero.cta.secondary': { es: 'Ver Trabajos', en: 'View Work' },
+  'hero.cta': { es: 'Contratar campaña premium', en: 'Hire premium campaign' },
+  'hero.cta.secondary': { es: 'Ver campañas', en: 'View campaigns' },
 
-  // Services
-  'services.subtitle': { es: 'Qué Ofrecemos', en: 'What We Offer' },
-  'services.title': { es: 'Campañas Visuales Completas', en: 'Complete Visual Campaigns' },
+  // Services (Positioning Block)
+  'services.subtitle': { es: 'Qué Hacemos', en: 'What We Do' },
+  'services.title': { es: 'Qué hacemos en TORO IA', en: 'What we do at TORO IA' },
   'services.description': { 
-    es: 'No hacemos trabajos parciales. Desarrollamos campañas completas de principio a fin, con la calidad que tu marca merece.',
-    en: 'We don\'t do partial work. We develop complete campaigns from start to finish, with the quality your brand deserves.'
+    es: 'No hacemos piezas sueltas. Creamos campañas completas visuales premium.',
+    en: 'We don\'t do loose pieces. We create complete premium visual campaigns.'
   },
-  'services.concept.title': { es: 'Concepto Creativo', en: 'Creative Concept' },
-  'services.concept.desc': { es: 'Desarrollo de la idea visual que define toda la campaña', en: 'Development of the visual idea that defines the entire campaign' },
-  'services.production.title': { es: 'Producción Visual', en: 'Visual Production' },
-  'services.production.desc': { es: 'Fotografía, renders 3D e ilustraciones de alto impacto', en: 'High-impact photography, 3D renders and illustrations' },
-  'services.postproduction.title': { es: 'Postproducción', en: 'Post-production' },
-  'services.postproduction.desc': { es: 'Retoque, composición y efectos cinematográficos', en: 'Retouching, composition and cinematic effects' },
-  'services.delivery.title': { es: 'Entrega Final', en: 'Final Delivery' },
-  'services.delivery.desc': { es: 'Assets optimizados para todos los formatos y plataformas', en: 'Optimized assets for all formats and platforms' },
+  'services.concept.title': { es: 'Campañas visuales para bebidas', en: 'Visual campaigns for beverages' },
+  'services.concept.desc': { es: 'Visuales publicitarios que transmiten frescura, energía y carácter de marca.', en: 'Advertising visuals that convey freshness, energy and brand character.' },
+  'services.production.title': { es: 'Campañas visuales para cosméticos', en: 'Visual campaigns for cosmetics' },
+  'services.production.desc': { es: 'Estética cuidada, iluminación precisa y sensación de lujo real.', en: 'Careful aesthetics, precise lighting and a real sense of luxury.' },
+  'services.postproduction.title': { es: 'Dirección creativa completa', en: 'Complete creative direction' },
+  'services.postproduction.desc': { es: 'Concepto, narrativa visual y coherencia de marca en toda la campaña.', en: 'Concept, visual narrative and brand coherence throughout the campaign.' },
+  'services.delivery.title': { es: 'Producción visual premium', en: 'Premium visual production' },
+  'services.delivery.desc': { es: 'Renders, escenas y composiciones con acabados de nivel publicitario.', en: 'Renders, scenes and compositions with advertising-level finishes.' },
 
   // Portfolio
-  'portfolio.subtitle': { es: 'Nuestras Campañas', en: 'Our Campaigns' },
-  'portfolio.title': { es: 'Trabajos Destacados', en: 'Featured Work' },
+  'portfolio.subtitle': { es: 'Campañas', en: 'Campaigns' },
+  'portfolio.title': { es: 'Campañas visuales premium', en: 'Premium visual campaigns' },
+  'portfolio.description': {
+    es: 'Cada campaña es un sistema visual completo, diseñado para destacar, diferenciar y vender.',
+    en: 'Each campaign is a complete visual system, designed to stand out, differentiate and sell.'
+  },
   'portfolio.beverages': { es: 'Bebidas', en: 'Beverages' },
   'portfolio.cosmetics': { es: 'Cosméticos', en: 'Cosmetics' },
   'portfolio.all': { es: 'Todos', en: 'All' },
-  'portfolio.view': { es: 'Ver Campaña', en: 'View Campaign' },
+  'portfolio.view': { es: 'Ver campañas', en: 'View campaigns' },
 
   // Process
   'process.subtitle': { es: 'Cómo Trabajamos', en: 'How We Work' },
-  'process.title': { es: 'Nuestro Proceso', en: 'Our Process' },
-  'process.step1.title': { es: 'Briefing', en: 'Briefing' },
-  'process.step1.desc': { es: 'Entendemos tu marca, objetivos y visión', en: 'We understand your brand, goals and vision' },
-  'process.step2.title': { es: 'Concepto', en: 'Concept' },
-  'process.step2.desc': { es: 'Desarrollamos la dirección creativa', en: 'We develop the creative direction' },
-  'process.step3.title': { es: 'Producción', en: 'Production' },
-  'process.step3.desc': { es: 'Creamos todos los assets visuales', en: 'We create all visual assets' },
-  'process.step4.title': { es: 'Entrega', en: 'Delivery' },
-  'process.step4.desc': { es: 'Archivos finales listos para usar', en: 'Final files ready to use' },
+  'process.title': { es: 'Un proceso claro. Un resultado premium.', en: 'A clear process. A premium result.' },
+  'process.step1.title': { es: 'Briefing estratégico', en: 'Strategic briefing' },
+  'process.step1.desc': { es: 'Entendemos tu producto, tu marca y tu objetivo.', en: 'We understand your product, your brand and your goal.' },
+  'process.step2.title': { es: 'Concepto creativo', en: 'Creative concept' },
+  'process.step2.desc': { es: 'Definimos la idea visual que guiará toda la campaña.', en: 'We define the visual idea that will guide the entire campaign.' },
+  'process.step3.title': { es: 'Desarrollo visual', en: 'Visual development' },
+  'process.step3.desc': { es: 'Creamos los assets visuales con calidad premium.', en: 'We create visual assets with premium quality.' },
+  'process.step4.title': { es: 'Entrega final', en: 'Final delivery' },
+  'process.step4.desc': { es: 'Una campaña completa lista para comunicar, vender y posicionar.', en: 'A complete campaign ready to communicate, sell and position.' },
 
-  // About
-  'about.subtitle': { es: 'Sobre Nosotros', en: 'About Us' },
-  'about.title': { es: 'TORO IA', en: 'TORO IA' },
+  // About (Positioning Block)
+  'about.subtitle': { es: 'Posicionamiento', en: 'Positioning' },
+  'about.title': { es: 'No hacemos piezas sueltas. Creamos campañas completas visuales premium.', en: 'We don\'t do loose pieces. We create complete premium visual campaigns.' },
   'about.description': { 
-    es: 'Somos un estudio creativo especializado exclusivamente en campañas visuales premium para marcas de productos. Nuestra misión es elevar tu marca al siguiente nivel con imágenes que capturan la esencia de tus productos.',
-    en: 'We are a creative studio exclusively specialized in premium visual campaigns for product brands. Our mission is to elevate your brand to the next level with images that capture the essence of your products.'
+    es: 'TORO IA es un estudio creativo especializado exclusivamente en campañas visuales completas para marcas de productos.\n\nTrabajamos con una visión integral: desde el concepto creativo hasta el resultado final, cuidando cada detalle visual para posicionar tu producto al más alto nivel.',
+    en: 'TORO IA is a creative studio exclusively specialized in complete visual campaigns for product brands.\n\nWe work with an integral vision: from the creative concept to the final result, taking care of every visual detail to position your product at the highest level.'
   },
-  'about.stat1.number': { es: '50+', en: '50+' },
-  'about.stat1.label': { es: 'Campañas Completadas', en: 'Completed Campaigns' },
-  'about.stat2.number': { es: '30+', en: '30+' },
-  'about.stat2.label': { es: 'Marcas Satisfechas', en: 'Satisfied Brands' },
-  'about.stat3.number': { es: '5', en: '5' },
-  'about.stat3.label': { es: 'Años de Experiencia', en: 'Years of Experience' },
+  'about.highlight': {
+    es: 'Si buscas renders aislados, diseños rápidos o trabajos parciales, este no es tu lugar.\n\nSi buscas una campaña visual premium, hablamos el mismo idioma.',
+    en: 'If you\'re looking for isolated renders, quick designs or partial work, this is not your place.\n\nIf you\'re looking for a premium visual campaign, we speak the same language.'
+  },
+
+  // Differential Block
+  'differential.subtitle': { es: 'Por Qué Elegirnos', en: 'Why Choose Us' },
+  'differential.title': { es: 'Por qué marcas premium eligen TORO IA', en: 'Why premium brands choose TORO IA' },
+  'differential.bullet1': { es: 'Enfoque exclusivo en campañas completas', en: 'Exclusive focus on complete campaigns' },
+  'differential.bullet2': { es: 'Estética publicitaria de alto nivel', en: 'High-level advertising aesthetics' },
+  'differential.bullet3': { es: 'Coherencia visual en toda la campaña', en: 'Visual coherence throughout the campaign' },
+  'differential.bullet4': { es: 'Atención extrema al detalle', en: 'Extreme attention to detail' },
+  'differential.bullet5': { es: 'Posicionamiento de marca, no solo imágenes', en: 'Brand positioning, not just images' },
+
+  // CTA Final
+  'cta.title': { es: '¿Listo para elevar tu producto al siguiente nivel?', en: 'Ready to take your product to the next level?' },
+  'cta.description': { es: 'Si tu marca necesita algo más que imágenes bonitas, si buscas una campaña visual premium real, hablemos.', en: 'If your brand needs more than just pretty images, if you\'re looking for a real premium visual campaign, let\'s talk.' },
+  'cta.primary': { es: 'Contratar campaña premium', en: 'Hire premium campaign' },
+  'cta.secondary': { es: 'Contactar por WhatsApp', en: 'Contact via WhatsApp' },
 
   // Contact
   'contact.subtitle': { es: 'Contacto', en: 'Contact' },
-  'contact.title': { es: 'Iniciemos Tu Campaña', en: 'Let\'s Start Your Campaign' },
+  'contact.title': { es: '¿Listo para elevar tu producto al siguiente nivel?', en: 'Ready to take your product to the next level?' },
   'contact.description': { 
-    es: 'Cuéntanos sobre tu marca y juntos crearemos una campaña visual que impacte.',
-    en: 'Tell us about your brand and together we\'ll create a visual campaign that impacts.'
+    es: 'Si tu marca necesita algo más que imágenes bonitas, si buscas una campaña visual premium real, hablemos.',
+    en: 'If your brand needs more than just pretty images, if you\'re looking for a real premium visual campaign, let\'s talk.'
   },
   'contact.name': { es: 'Nombre', en: 'Name' },
   'contact.email': { es: 'Email', en: 'Email' },
   'contact.brand': { es: 'Marca / Empresa', en: 'Brand / Company' },
   'contact.message': { es: 'Cuéntanos sobre tu proyecto', en: 'Tell us about your project' },
-  'contact.submit': { es: 'Enviar Mensaje', en: 'Send Message' },
-  'contact.whatsapp': { es: 'O contáctanos por WhatsApp', en: 'Or contact us via WhatsApp' },
+  'contact.submit': { es: 'Contratar campaña premium', en: 'Hire premium campaign' },
+  'contact.whatsapp': { es: 'Contactar por WhatsApp', en: 'Contact via WhatsApp' },
 
   // Footer
   'footer.rights': { es: 'Todos los derechos reservados', en: 'All rights reserved' },
-  'footer.tagline': { es: 'Campañas Visuales Premium', en: 'Premium Visual Campaigns' },
+  'footer.tagline': { es: 'Campañas completas visuales premium para marcas de productos. Bebidas · Cosméticos · Posicionamiento de alto nivel', en: 'Complete premium visual campaigns for product brands. Beverages · Cosmetics · High-level positioning' },
 };
 
 interface LanguageContextType {
