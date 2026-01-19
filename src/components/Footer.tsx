@@ -5,10 +5,13 @@ const Footer: React.FC = () => {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -19,7 +22,7 @@ const Footer: React.FC = () => {
           {/* Logo & Tagline */}
           <div className="text-center md:text-left">
             <button
-              onClick={() => scrollToSection('#hero')}
+              onClick={() => scrollToSection('hero')}
               className="font-display text-2xl font-bold text-gradient-gold mb-2 block"
             >
               TORO IA

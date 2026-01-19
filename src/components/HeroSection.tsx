@@ -7,10 +7,17 @@ import heroImage from '@/assets/hero-cosmetics.jpg';
 const HeroSection: React.FC = () => {
   const { t } = useLanguage();
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -82,7 +89,7 @@ const HeroSection: React.FC = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <button
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => scrollToSection('contact')}
               className="btn-premium rounded group flex items-center justify-center gap-3"
             >
               <span>{t('hero.cta')}</span>
@@ -90,7 +97,7 @@ const HeroSection: React.FC = () => {
             </button>
             
             <button
-              onClick={() => scrollToSection('#portfolio')}
+              onClick={() => scrollToSection('portfolio')}
               className="btn-outline-premium rounded flex items-center justify-center gap-3"
             >
               <Play className="w-4 h-4" />
