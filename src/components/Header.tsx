@@ -17,20 +17,31 @@ const Header: React.FC = () => {
   }, []);
 
   const navItems = [
-    { key: 'nav.home', href: '#hero' },
-    { key: 'nav.services', href: '#services' },
-    { key: 'nav.campaigns', href: '#portfolio' },
-    { key: 'nav.process', href: '#process' },
-    { key: 'nav.about', href: '#about' },
-    { key: 'nav.contact', href: '#contact' },
+    { key: 'nav.home', href: 'hero' },
+    { key: 'nav.services', href: 'services' },
+    { key: 'nav.campaigns', href: 'portfolio' },
+    { key: 'nav.process', href: 'process' },
+    { key: 'nav.about', href: 'about' },
+    { key: 'nav.contact', href: 'contact' },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const scrollToSection = (sectionId: string) => {
     setIsMobileMenuOpen(false);
+    
+    // Small delay to allow mobile menu to close first
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 10);
   };
 
   return (
@@ -44,11 +55,14 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#hero" className="flex items-center gap-3 group">
+          <button 
+            onClick={() => scrollToSection('hero')} 
+            className="flex items-center gap-3 group"
+          >
             <span className="font-display text-2xl font-bold text-gradient-gold">
               TORO IA
             </span>
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
@@ -88,7 +102,7 @@ const Header: React.FC = () => {
 
             {/* CTA Button */}
             <button
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => scrollToSection('contact')}
               className="btn-premium rounded"
             >
               <span>{t('hero.cta')}</span>
@@ -149,7 +163,7 @@ const Header: React.FC = () => {
                 </div>
 
                 <button
-                  onClick={() => scrollToSection('#contact')}
+                  onClick={() => scrollToSection('contact')}
                   className="btn-premium rounded mt-4 text-center"
                 >
                   <span>{t('hero.cta')}</span>
