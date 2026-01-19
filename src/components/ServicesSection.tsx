@@ -32,7 +32,7 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="section-cinematic py-24 lg:py-32">
+    <section id="services" className="section-cinematic py-32 lg:py-40">
       <div ref={ref} className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <motion.div

@@ -20,32 +20,32 @@ const translations: Translations = {
   'nav.contact': { es: 'Contacto', en: 'Contact' },
   
   // Hero
-  'hero.subtitle': { es: 'Estudio Creativo Premium', en: 'Premium Creative Studio' },
-  'hero.title1': { es: 'Creamos campañas', en: 'We create premium' },
-  'hero.title2': { es: 'visuales premium', en: 'visual campaigns' },
-  'hero.title3': { es: 'que convierten productos en marcas.', en: 'that turn products into brands.' },
+  'hero.subtitle': { es: 'Estudio Creativo', en: 'Creative Studio' },
+  'hero.title1': { es: 'Campañas visuales premium', en: 'Premium visual campaigns' },
+  'hero.title2': { es: 'para marcas de producto', en: 'for product brands' },
+  'hero.title3': { es: '', en: '' },
   'hero.description': { 
-    es: 'Campañas completas visuales de alto impacto para bebidas y cosméticos. Concepto, estética y ejecución con nivel publicitario.',
-    en: 'High-impact complete visual campaigns for beverages and cosmetics. Concept, aesthetics and execution with advertising-level quality.'
+    es: 'Dirección creativa y estética de alto nivel para bebidas y cosmética.',
+    en: 'High-level creative direction and aesthetics for beverages and cosmetics.'
   },
-  'hero.cta': { es: 'Contratar campaña premium', en: 'Hire premium campaign' },
+  'hero.cta': { es: 'Contratar campaña', en: 'Hire campaign' },
   'hero.cta.secondary': { es: 'Ver campañas', en: 'View campaigns' },
 
   // Services (Positioning Block)
-  'services.subtitle': { es: 'Qué Hacemos', en: 'What We Do' },
-  'services.title': { es: 'Qué hacemos en TORO IA', en: 'What we do at TORO IA' },
+  'services.subtitle': { es: 'Servicios', en: 'Services' },
+  'services.title': { es: 'Qué hacemos', en: 'What we do' },
   'services.description': { 
-    es: 'No hacemos piezas sueltas. Creamos campañas completas visuales premium.',
-    en: 'We don\'t do loose pieces. We create complete premium visual campaigns.'
+    es: 'Campañas completas. Sin piezas sueltas.',
+    en: 'Complete campaigns. No loose pieces.'
   },
-  'services.concept.title': { es: 'Campañas visuales para bebidas', en: 'Visual campaigns for beverages' },
-  'services.concept.desc': { es: 'Visuales publicitarios que transmiten frescura, energía y carácter de marca.', en: 'Advertising visuals that convey freshness, energy and brand character.' },
-  'services.production.title': { es: 'Campañas visuales para cosméticos', en: 'Visual campaigns for cosmetics' },
-  'services.production.desc': { es: 'Estética cuidada, iluminación precisa y sensación de lujo real.', en: 'Careful aesthetics, precise lighting and a real sense of luxury.' },
-  'services.postproduction.title': { es: 'Dirección creativa completa', en: 'Complete creative direction' },
-  'services.postproduction.desc': { es: 'Concepto, narrativa visual y coherencia de marca en toda la campaña.', en: 'Concept, visual narrative and brand coherence throughout the campaign.' },
-  'services.delivery.title': { es: 'Producción visual premium', en: 'Premium visual production' },
-  'services.delivery.desc': { es: 'Renders, escenas y composiciones con acabados de nivel publicitario.', en: 'Renders, scenes and compositions with advertising-level finishes.' },
+  'services.concept.title': { es: 'Bebidas', en: 'Beverages' },
+  'services.concept.desc': { es: 'Frescura, energía y carácter de marca.', en: 'Freshness, energy and brand character.' },
+  'services.production.title': { es: 'Cosméticos', en: 'Cosmetics' },
+  'services.production.desc': { es: 'Estética cuidada. Sensación de lujo real.', en: 'Careful aesthetics. Real sense of luxury.' },
+  'services.postproduction.title': { es: 'Dirección creativa', en: 'Creative direction' },
+  'services.postproduction.desc': { es: 'Concepto y coherencia de marca.', en: 'Concept and brand coherence.' },
+  'services.delivery.title': { es: 'Producción visual', en: 'Visual production' },
+  'services.delivery.desc': { es: 'Acabados de nivel publicitario.', en: 'Advertising-level finishes.' },
 
   // Portfolio
   'portfolio.subtitle': { es: 'Campañas', en: 'Campaigns' },
@@ -72,15 +72,15 @@ const translations: Translations = {
   'process.step4.desc': { es: 'Una campaña completa lista para comunicar, vender y posicionar.', en: 'A complete campaign ready to communicate, sell and position.' },
 
   // About (Positioning Block)
-  'about.subtitle': { es: 'Posicionamiento', en: 'Positioning' },
-  'about.title': { es: 'No hacemos piezas sueltas. Creamos campañas completas visuales premium.', en: 'We don\'t do loose pieces. We create complete premium visual campaigns.' },
+  'about.subtitle': { es: 'Estudio', en: 'Studio' },
+  'about.title': { es: 'Campañas completas. Sin excepciones.', en: 'Complete campaigns. No exceptions.' },
   'about.description': { 
-    es: 'TORO IA es un estudio creativo especializado exclusivamente en campañas visuales completas para marcas de productos.\n\nTrabajamos con una visión integral: desde el concepto creativo hasta el resultado final, cuidando cada detalle visual para posicionar tu producto al más alto nivel.',
-    en: 'TORO IA is a creative studio exclusively specialized in complete visual campaigns for product brands.\n\nWe work with an integral vision: from the creative concept to the final result, taking care of every visual detail to position your product at the highest level.'
+    es: 'TORO IA es un estudio creativo especializado exclusivamente en campañas visuales completas para marcas de productos.',
+    en: 'TORO IA is a creative studio exclusively specialized in complete visual campaigns for product brands.'
   },
   'about.highlight': {
-    es: 'Si buscas renders aislados, diseños rápidos o trabajos parciales, este no es tu lugar.\n\nSi buscas una campaña visual premium, hablamos el mismo idioma.',
-    en: 'If you\'re looking for isolated renders, quick designs or partial work, this is not your place.\n\nIf you\'re looking for a premium visual campaign, we speak the same language.'
+    es: 'Renders aislados, diseños rápidos o trabajos parciales: no.\nCampaña visual premium: sí.',
+    en: 'Isolated renders, quick designs or partial work: no.\nPremium visual campaign: yes.'
   },
 
   // Differential Block
@@ -100,10 +100,10 @@ const translations: Translations = {
 
   // Contact
   'contact.subtitle': { es: 'Contacto', en: 'Contact' },
-  'contact.title': { es: '¿Listo para elevar tu producto al siguiente nivel?', en: 'Ready to take your product to the next level?' },
+  'contact.title': { es: '¿Listo para el siguiente nivel?', en: 'Ready for the next level?' },
   'contact.description': { 
-    es: 'Si tu marca necesita algo más que imágenes bonitas, si buscas una campaña visual premium real, hablemos.',
-    en: 'If your brand needs more than just pretty images, if you\'re looking for a real premium visual campaign, let\'s talk.'
+    es: 'Si buscas más que imágenes bonitas, hablemos.',
+    en: 'If you\'re looking for more than pretty images, let\'s talk.'
   },
   'contact.name': { es: 'Nombre', en: 'Name' },
   'contact.email': { es: 'Email', en: 'Email' },

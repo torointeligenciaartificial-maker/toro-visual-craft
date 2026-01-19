@@ -40,7 +40,7 @@ const PortfolioSection: React.FC = () => {
     : campaigns.filter(c => c.category === activeFilter);
 
   return (
-    <section id="portfolio" className="py-24 lg:py-32 bg-charcoal">
+    <section id="portfolio" className="py-32 lg:py-40 bg-charcoal">
       <div ref={ref} className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <motion.div

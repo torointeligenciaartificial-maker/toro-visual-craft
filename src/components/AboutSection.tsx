@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-24 lg:py-32 bg-charcoal relative overflow-hidden">
+    <section id="about" className="py-32 lg:py-40 bg-charcoal relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent" />
       
@@ -33,8 +33,8 @@ const AboutSection: React.FC = () => {
               </span>
             </div>
 
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="text-gradient-gold">{t('about.title')}</span>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-foreground">
+              {t('about.title')}
             </h2>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-10">
