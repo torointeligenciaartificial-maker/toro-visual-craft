@@ -11,12 +11,14 @@ const ContactSection: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     brand: '',
+    productType: '',
+    email: '',
+    budget: '',
     message: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
@@ -31,12 +33,12 @@ const ContactSection: React.FC = () => {
       description: 'Te contactaremos pronto. / We\'ll contact you soon.',
     });
     
-    setFormData({ name: '', email: '', brand: '', message: '' });
+    setFormData({ name: '', brand: '', productType: '', email: '', budget: '', message: '' });
     setIsSubmitting(false);
   };
 
   const openWhatsApp = () => {
-    const message = encodeURIComponent('Hola, me interesa contratar una campaña visual premium.');
+    const message = encodeURIComponent('Hola, tengo una marca de producto y me interesa una campaña visual completa premium. ¿Podemos hablar?');
     window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
   };
 
@@ -89,7 +91,12 @@ const ContactSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <form onSubmit={handleSubmit} className="card-premium p-8 lg:p-10">
-              <div className="space-y-6">
+              {/* Form Intro */}
+              <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+                {t('contact.formIntro')}
+              </p>
+
+              <div className="space-y-5">
                 {/* Name */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
@@ -104,6 +111,41 @@ const ContactSection: React.FC = () => {
                     required
                     className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300"
                   />
+                </div>
+
+                {/* Brand */}
+                <div>
+                  <label htmlFor="brand" className="block text-sm font-medium text-foreground mb-2">
+                    {t('contact.brand')}
+                  </label>
+                  <input
+                    type="text"
+                    id="brand"
+                    name="brand"
+                    value={formData.brand}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300"
+                  />
+                </div>
+
+                {/* Product Type */}
+                <div>
+                  <label htmlFor="productType" className="block text-sm font-medium text-foreground mb-2">
+                    {t('contact.productType')}
+                  </label>
+                  <select
+                    id="productType"
+                    name="productType"
+                    value={formData.productType}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground focus:outline-none focus:border-primary transition-colors duration-300 appearance-none cursor-pointer"
+                  >
+                    <option value="" disabled>{t('contact.productType.placeholder')}</option>
+                    <option value="beverage">{t('contact.productType.beverage')}</option>
+                    <option value="cosmetics">{t('contact.productType.cosmetics')}</option>
+                  </select>
                 </div>
 
                 {/* Email */}
@@ -122,19 +164,24 @@ const ContactSection: React.FC = () => {
                   />
                 </div>
 
-                {/* Brand */}
+                {/* Budget */}
                 <div>
-                  <label htmlFor="brand" className="block text-sm font-medium text-foreground mb-2">
-                    {t('contact.brand')}
+                  <label htmlFor="budget" className="block text-sm font-medium text-foreground mb-2">
+                    {t('contact.budget')}
                   </label>
-                  <input
-                    type="text"
-                    id="brand"
-                    name="brand"
-                    value={formData.brand}
+                  <select
+                    id="budget"
+                    name="budget"
+                    value={formData.budget}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300"
-                  />
+                    required
+                    className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground focus:outline-none focus:border-primary transition-colors duration-300 appearance-none cursor-pointer"
+                  >
+                    <option value="" disabled>{t('contact.budget.placeholder')}</option>
+                    <option value="hasta-1200">{t('contact.budget.option1')}</option>
+                    <option value="1200-2500">{t('contact.budget.option2')}</option>
+                    <option value="evaluando">{t('contact.budget.option3')}</option>
+                  </select>
                 </div>
 
                 {/* Message */}
@@ -147,7 +194,7 @@ const ContactSection: React.FC = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    rows={4}
+                    rows={3}
                     required
                     className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300 resize-none"
                   />

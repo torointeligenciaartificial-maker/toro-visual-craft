@@ -28,7 +28,7 @@ const translations: Translations = {
     es: 'Dirección creativa y estética de alto nivel para bebidas y cosmética.',
     en: 'High-level creative direction and aesthetics for beverages and cosmetics.'
   },
-  'hero.cta': { es: 'Contratar campaña', en: 'Hire campaign' },
+  'hero.cta': { es: 'Solicitar campaña', en: 'Request campaign' },
   'hero.cta.secondary': { es: 'Ver campañas', en: 'View campaigns' },
 
   // Services (Positioning Block)
@@ -95,8 +95,12 @@ const translations: Translations = {
   // CTA Final
   'cta.title': { es: '¿Listo para elevar tu producto al siguiente nivel?', en: 'Ready to take your product to the next level?' },
   'cta.description': { es: 'Si tu marca necesita algo más que imágenes bonitas, si buscas una campaña visual premium real, hablemos.', en: 'If your brand needs more than just pretty images, if you\'re looking for a real premium visual campaign, let\'s talk.' },
-  'cta.primary': { es: 'Contratar campaña premium', en: 'Hire premium campaign' },
+  'cta.primary': { es: 'Solicitar campaña', en: 'Request campaign' },
   'cta.secondary': { es: 'Contactar por WhatsApp', en: 'Contact via WhatsApp' },
+  'cta.microcopy': { 
+    es: 'Trabajamos con campañas visuales completas de precio cerrado. Analizamos cada proyecto antes de aceptarlo.',
+    en: 'We work with complete visual campaigns at fixed prices. We analyze each project before accepting it.'
+  },
 
   // Contact
   'contact.subtitle': { es: 'Contacto', en: 'Contact' },
@@ -105,11 +109,24 @@ const translations: Translations = {
     es: 'Si buscas más que imágenes bonitas, hablemos.',
     en: 'If you\'re looking for more than pretty images, let\'s talk.'
   },
+  'contact.formIntro': { 
+    es: 'Trabajamos exclusivamente campañas visuales completas premium para marcas de producto. Cuéntanos tu marca y te diremos si encaja.',
+    en: 'We work exclusively on complete premium visual campaigns for product brands. Tell us about your brand and we\'ll tell you if it fits.'
+  },
   'contact.name': { es: 'Nombre', en: 'Name' },
   'contact.email': { es: 'Email', en: 'Email' },
   'contact.brand': { es: 'Marca / Empresa', en: 'Brand / Company' },
-  'contact.message': { es: 'Cuéntanos sobre tu proyecto', en: 'Tell us about your project' },
-  'contact.submit': { es: 'Contratar campaña premium', en: 'Hire premium campaign' },
+  'contact.productType': { es: 'Tipo de producto', en: 'Product type' },
+  'contact.productType.placeholder': { es: 'Selecciona una opción', en: 'Select an option' },
+  'contact.productType.beverage': { es: 'Bebida', en: 'Beverage' },
+  'contact.productType.cosmetics': { es: 'Cosmética', en: 'Cosmetics' },
+  'contact.budget': { es: 'Presupuesto aproximado', en: 'Approximate budget' },
+  'contact.budget.placeholder': { es: 'Selecciona una opción', en: 'Select an option' },
+  'contact.budget.option1': { es: 'Hasta 1.200 €', en: 'Up to €1,200' },
+  'contact.budget.option2': { es: '1.200 € – 2.500 €', en: '€1,200 – €2,500' },
+  'contact.budget.option3': { es: 'Estoy valorando opciones', en: 'I\'m evaluating options' },
+  'contact.message': { es: 'Mensaje', en: 'Message' },
+  'contact.submit': { es: 'Solicitar campaña', en: 'Request campaign' },
   'contact.whatsapp': { es: 'Contactar por WhatsApp', en: 'Contact via WhatsApp' },
 
   // Footer
