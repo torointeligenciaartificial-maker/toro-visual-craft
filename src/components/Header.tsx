@@ -54,12 +54,12 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo Tipográfico Premium */}
           <button 
             onClick={() => scrollToSection('hero')} 
-            className="flex items-center gap-3 group"
+            className="flex items-center group"
           >
-            <span className="font-display text-2xl font-bold text-gradient-gold">
+            <span className="font-serif text-xl md:text-2xl font-medium tracking-[0.25em] text-primary/90 hover:text-primary transition-colors duration-300">
               TORO IA
             </span>
           </button>

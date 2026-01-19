@@ -41,7 +41,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="section-cinematic py-24 lg:py-32 relative overflow-hidden">
+    <section id="contact" className="section-cinematic py-32 lg:py-40 relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-charcoal to-transparent" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px]" />

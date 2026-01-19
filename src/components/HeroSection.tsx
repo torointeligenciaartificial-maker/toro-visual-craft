@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import heroImage from '@/assets/hero-cosmetics.jpg';
 
@@ -24,68 +24,64 @@ const HeroSection: React.FC = () => {
   return (
     <section 
       id="hero" 
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[85vh] lg:min-h-[80vh] flex items-center overflow-hidden"
     >
-      {/* Background Image with Overlay */}
+      {/* Background Image with Overlay - More dark, less gold */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Premium visual campaign"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-center opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent" />
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-[100px]" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
+      {/* Subtle decorative elements */}
+      <div className="absolute top-1/3 left-1/4 w-48 h-48 bg-primary/3 rounded-full blur-[80px]" />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 pt-20">
-        <div className="max-w-4xl">
-          {/* Subtitle */}
+      <div className="relative z-10 container mx-auto px-4 lg:px-8 pt-24 pb-12">
+        <div className="max-w-3xl">
+          {/* Subtle subtitle */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex items-center gap-4 mb-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-8"
           >
-            <div className="w-12 h-0.5 bg-primary" />
-            <span className="text-primary font-medium tracking-widest uppercase text-sm">
+            <span className="text-primary/80 font-medium tracking-[0.2em] uppercase text-xs">
               {t('hero.subtitle')}
             </span>
           </motion.div>
 
-          {/* Main Title */}
+          {/* Main Title - 2 lines max, cleaner */}
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-8"
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] mb-6"
           >
             <span className="text-foreground">{t('hero.title1')}</span>
             <br />
-            <span className="text-gradient-gold">{t('hero.title2')}</span>
-            <br />
-            <span className="text-foreground">{t('hero.title3')}</span>
+            <span className="text-foreground">{t('hero.title2')}</span>
           </motion.h1>
 
-          {/* Description */}
+          {/* Lighter, enigmatic description */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-base md:text-lg text-muted-foreground/80 max-w-xl mb-10 leading-relaxed font-light"
           >
             {t('hero.description')}
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons - cleaner */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
             className="flex flex-col sm:flex-row gap-4"
           >
             <button
@@ -98,27 +94,27 @@ const HeroSection: React.FC = () => {
             
             <button
               onClick={() => scrollToSection('portfolio')}
-              className="btn-outline-premium rounded flex items-center justify-center gap-3"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
             >
-              <Play className="w-4 h-4" />
               <span>{t('hero.cta.secondary')}</span>
+              <ArrowRight className="w-3 h-3" />
             </button>
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Minimal Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={{ opacity: 0.4 }}
         transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2"
       >
-        <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center">
+        <div className="w-5 h-8 border border-muted-foreground/20 rounded-full flex justify-center">
           <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-3 bg-primary rounded-full mt-2"
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="w-1 h-2 bg-muted-foreground/40 rounded-full mt-1.5"
           />
         </div>
       </motion.div>
