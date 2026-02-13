@@ -4,8 +4,10 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers":
-    "authorization, x-client-info, apikey, content-type",
+    "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
 };
+
+const NOTIFICATION_EMAIL = "toro.inteligenciaartificial@gmail.com";
 
 interface LeadData {
   name: string;
@@ -24,11 +26,11 @@ serve(async (req) => {
   try {
     const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
     const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+    const resendApiKey = Deno.env.get("RESEND_API_KEY");
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
     const lead: LeadData = await req.json();
 
-    // Validate
     if (!lead.name || !lead.email || !lead.brand || !lead.productType || !lead.budget || !lead.message) {
       return new Response(
         JSON.stringify({ error: "All fields are required" }),
@@ -54,15 +56,51 @@ serve(async (req) => {
       );
     }
 
-    // Send notification email via Supabase's built-in SMTP (Resend)
-    // For now, we log the lead. Email sending can be configured with a provider.
-    console.log("New lead received:", {
-      name: lead.name,
-      brand: lead.brand,
-      productType: lead.productType,
-      email: lead.email,
-      budget: lead.budget,
-    });
+    // Send notification email via Resend
+    if (resendApiKey) {
+      const budgetLabels: Record<string, string> = {
+        "hasta-1200": "Hasta 1.200 €",
+        "1200-2500": "1.200 € – 2.500 €",
+        "evaluando": "Estoy valorando opciones",
+      };
+      const productLabels: Record<string, string> = {
+        beverage: "Bebida",
+        cosmetics: "Cosmética",
+      };
+
+      const emailRes = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${resendApiKey}`,
+        },
+        body: JSON.stringify({
+          from: "TORO IA Leads <onboarding@resend.dev>",
+          to: [NOTIFICATION_EMAIL],
+          subject: `Nuevo lead: ${lead.brand} — ${productLabels[lead.productType] || lead.productType}`,
+          html: `
+            <div style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #1a1a1a;">
+              <h2 style="font-size: 20px; font-weight: 600; margin-bottom: 24px;">Nuevo lead recibido</h2>
+              <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                <tr><td style="padding: 8px 0; color: #888;">Nombre</td><td style="padding: 8px 0;">${lead.name}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Marca</td><td style="padding: 8px 0;">${lead.brand}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Producto</td><td style="padding: 8px 0;">${productLabels[lead.productType] || lead.productType}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Email</td><td style="padding: 8px 0;"><a href="mailto:${lead.email}">${lead.email}</a></td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Presupuesto</td><td style="padding: 8px 0;">${budgetLabels[lead.budget] || lead.budget}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Mensaje</td><td style="padding: 8px 0;">${lead.message}</td></tr>
+              </table>
+            </div>
+          `,
+        }),
+      });
+
+      if (!emailRes.ok) {
+        const emailError = await emailRes.text();
+        console.error("Resend error:", emailError);
+      } else {
+        console.log("Notification email sent successfully");
+      }
+    }
 
     return new Response(
       JSON.stringify({ success: true }),
