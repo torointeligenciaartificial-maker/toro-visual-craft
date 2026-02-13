@@ -4,6 +4,7 @@ import { Send, MessageCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollAnimations';
 import { toast } from 'sonner';
+import { supabase } from '@/integrations/supabase/client';
 
 const ContactSection: React.FC = () => {
   const { t } = useLanguage();
@@ -26,15 +27,26 @@ const ContactSection: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast.success('¡Mensaje enviado! / Message sent!', {
-      description: 'Te contactaremos pronto. / We\'ll contact you soon.',
-    });
-    
-    setFormData({ name: '', brand: '', productType: '', email: '', budget: '', message: '' });
-    setIsSubmitting(false);
+    try {
+      const { data, error } = await supabase.functions.invoke('submit-lead', {
+        body: formData,
+      });
+
+      if (error) throw error;
+
+      toast.success('¡Mensaje enviado! / Message sent!', {
+        description: 'Te contactaremos pronto. / We\'ll contact you soon.',
+      });
+      
+      setFormData({ name: '', brand: '', productType: '', email: '', budget: '', message: '' });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error('Error al enviar / Error sending', {
+        description: 'Inténtalo de nuevo. / Please try again.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const openWhatsApp = () => {
