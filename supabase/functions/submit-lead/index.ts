@@ -56,6 +56,33 @@ serve(async (req) => {
       );
     }
 
+    // Send data to Make webhook for Google Sheets
+    const makeWebhookUrl = Deno.env.get("MAKE_WEBHOOK_URL");
+    if (makeWebhookUrl) {
+      try {
+        const webhookRes = await fetch(makeWebhookUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            fecha: new Date().toISOString(),
+            nombre: lead.name,
+            marca: lead.brand,
+            tipo_producto: lead.productType === "beverage" ? "Bebida" : lead.productType === "cosmetics" ? "Cosmética" : lead.productType,
+            email: lead.email,
+            presupuesto: lead.budget === "hasta-1200" ? "Hasta 1.200 €" : lead.budget === "1200-2500" ? "1.200 € – 2.500 €" : lead.budget === "evaluando" ? "Estoy valorando opciones" : lead.budget,
+            mensaje: lead.message,
+          }),
+        });
+        if (!webhookRes.ok) {
+          console.error("Make webhook error:", await webhookRes.text());
+        } else {
+          console.log("Make webhook sent successfully");
+        }
+      } catch (e) {
+        console.error("Make webhook fetch error:", e);
+      }
+    }
+
     // Send notification email via Resend
     if (resendApiKey) {
       const budgetLabels: Record<string, string> = {
