@@ -9,6 +9,7 @@ import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import ChatBot from '@/components/ChatBot';
 
 const Index: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const Index: React.FC = () => {
         </main>
         <Footer />
         <WhatsAppButton />
+        <ChatBot />
       </div>
     </LanguageProvider>
   );
