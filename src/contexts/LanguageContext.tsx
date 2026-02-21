@@ -93,6 +93,7 @@ const translations: Translations = {
   'differential.bullet5': { es: 'Posicionamiento de marca, no solo imágenes', en: 'Brand positioning, not just images' },
 
   // CTA Final
+  'cta.subtitle': { es: 'Tu marca merece más', en: 'Your brand deserves more' },
   'cta.title': { es: '¿Listo para elevar tu producto al siguiente nivel?', en: 'Ready to take your product to the next level?' },
   'cta.description': { es: 'Si tu marca necesita algo más que imágenes bonitas, si buscas una campaña visual premium real, hablemos.', en: 'If your brand needs more than just pretty images, if you\'re looking for a real premium visual campaign, let\'s talk.' },
   'cta.primary': { es: 'Solicitar campaña', en: 'Request campaign' },
