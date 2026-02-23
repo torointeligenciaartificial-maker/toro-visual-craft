@@ -51,7 +51,7 @@ const ContactSection: React.FC = () => {
 
   const openWhatsApp = () => {
     const message = encodeURIComponent('Hola, tengo una marca de producto y me interesa una campaña visual completa premium. ¿Podemos hablar?');
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/34663663353?text=${message}`, '_blank');
   };
 
   return (
