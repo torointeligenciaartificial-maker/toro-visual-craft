@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 const WhatsAppButton: React.FC = () => {
   const openWhatsApp = () => {
     const message = encodeURIComponent('Hola, me interesa contratar una campaña visual premium.');
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/34663663353?text=${message}`, '_blank');
   };
 
   return (
