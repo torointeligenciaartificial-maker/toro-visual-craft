@@ -18,8 +18,6 @@ const Header: React.FC = () => {
 
   const navItems = [
     { key: 'nav.home', href: 'hero' },
-    { key: 'nav.services', href: 'services' },
-    { key: 'nav.campaigns', href: 'portfolio' },
     { key: 'nav.process', href: 'process' },
     { key: 'nav.about', href: 'about' },
     { key: 'nav.contact', href: 'contact' },
