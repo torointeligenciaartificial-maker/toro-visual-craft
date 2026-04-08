@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, MessageCircle } from 'lucide-react';
+import { Send } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollAnimations';
 import { toast } from 'sonner';
@@ -34,8 +34,8 @@ const ContactSection: React.FC = () => {
 
       if (error) throw error;
 
-      toast.success('¡Mensaje enviado! / Message sent!', {
-        description: 'Te contactaremos pronto. / We\'ll contact you soon.',
+      toast.success('¡Solicitud enviada! / Request sent!', {
+        description: 'Le contactaremos en las próximas 24 horas. / We\'ll contact you within 24 hours.',
       });
       
       setFormData({ name: '', brand: '', productType: '', email: '', budget: '', message: '' });
@@ -49,14 +49,8 @@ const ContactSection: React.FC = () => {
     }
   };
 
-  const openWhatsApp = () => {
-    const message = encodeURIComponent('Hola, tengo una marca de producto y me interesa una campaña visual completa premium. ¿Podemos hablar?');
-    window.open(`https://wa.me/34663663353?text=${message}`, '_blank');
-  };
-
   return (
     <section id="contact" className="section-cinematic py-32 lg:py-40 relative overflow-hidden">
-      {/* Background Decoration */}
       <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-charcoal to-transparent" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px]" />
 
@@ -82,18 +76,6 @@ const ContactSection: React.FC = () => {
             <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-md">
               {t('contact.description')}
             </p>
-
-            {/* WhatsApp Button */}
-            <div className="mb-8">
-              <p className="text-muted-foreground text-sm mb-4">{t('contact.whatsapp')}</p>
-              <button
-                onClick={openWhatsApp}
-                className="flex items-center gap-3 px-6 py-3 rounded-full bg-[#25D366] text-white font-medium hover:bg-[#20bd5a] transition-colors duration-300"
-              >
-                <MessageCircle className="w-5 h-5" />
-                WhatsApp
-              </button>
-            </div>
           </motion.div>
 
           {/* Right - Form */}
@@ -103,13 +85,11 @@ const ContactSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <form onSubmit={handleSubmit} className="card-premium p-8 lg:p-10">
-              {/* Form Intro */}
               <p className="text-muted-foreground text-sm leading-relaxed mb-8">
                 {t('contact.formIntro')}
               </p>
 
               <div className="space-y-5">
-                {/* Name */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                     {t('contact.name')}
@@ -125,7 +105,6 @@ const ContactSection: React.FC = () => {
                   />
                 </div>
 
-                {/* Brand */}
                 <div>
                   <label htmlFor="brand" className="block text-sm font-medium text-foreground mb-2">
                     {t('contact.brand')}
@@ -141,7 +120,6 @@ const ContactSection: React.FC = () => {
                   />
                 </div>
 
-                {/* Product Type */}
                 <div>
                   <label htmlFor="productType" className="block text-sm font-medium text-foreground mb-2">
                     {t('contact.productType')}
@@ -160,7 +138,6 @@ const ContactSection: React.FC = () => {
                   </select>
                 </div>
 
-                {/* Email */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                     {t('contact.email')}
@@ -176,7 +153,6 @@ const ContactSection: React.FC = () => {
                   />
                 </div>
 
-                {/* Budget */}
                 <div>
                   <label htmlFor="budget" className="block text-sm font-medium text-foreground mb-2">
                     {t('contact.budget')}
@@ -196,7 +172,6 @@ const ContactSection: React.FC = () => {
                   </select>
                 </div>
 
-                {/* Message */}
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                     {t('contact.message')}
@@ -212,7 +187,6 @@ const ContactSection: React.FC = () => {
                   />
                 </div>
 
-                {/* Submit */}
                 <button
                   type="submit"
                   disabled={isSubmitting}

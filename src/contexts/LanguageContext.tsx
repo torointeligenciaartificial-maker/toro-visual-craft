@@ -20,18 +20,24 @@ const translations: Translations = {
   'nav.contact': { es: 'Contacto', en: 'Contact' },
   
   // Hero
-  'hero.subtitle': { es: 'Estudio Creativo', en: 'Creative Studio' },
-  'hero.title1': { es: 'Campañas visuales premium', en: 'Premium visual campaigns' },
-  'hero.title2': { es: 'para marcas de producto', en: 'for product brands' },
-  'hero.title3': { es: '', en: '' },
+  'hero.subtitle': { es: 'Consultoría de Autoridad Visual', en: 'Visual Authority Consulting' },
+  'hero.title1': { es: 'Elevo el Estatus Visual de CEOs', en: 'I Elevate the Visual Status of CEOs' },
+  'hero.title2': { es: 'y Fundadores para Dominar el Mercado de Lujo.', en: 'and Founders to Dominate the Luxury Market.' },
   'hero.description': { 
-    es: 'Dirección creativa y estética de alto nivel para bebidas y cosmética.',
-    en: 'High-level creative direction and aesthetics for beverages and cosmetics.'
+    es: 'No vendemos fotos bonitas. Implementamos sistemas visuales de prestigio para marcas de bebidas y cosmética que necesitan justificar precios High-Ticket.',
+    en: 'We don\'t sell pretty photos. We implement prestige visual systems for beverage and cosmetics brands that need to justify High-Ticket prices.'
   },
-  'hero.cta': { es: 'Solicitar campaña', en: 'Request campaign' },
+  'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
   'hero.cta.secondary': { es: 'Ver campañas', en: 'View campaigns' },
 
-  // Services (Positioning Block)
+  // Problem Section
+  'problem.title': { es: '¿Por qué su producto de 200€ parece de 30€?', en: 'Why does your €200 product look like it\'s worth €30?' },
+  'problem.description': { 
+    es: 'La mayoría de las marcas premium tienen un punto ciego: su estética no está a la altura de su precio. Están perdiendo clientes de alto valor cada día por una imagen visual mediocre. Yo cierro esa brecha.',
+    en: 'Most premium brands have a blind spot: their aesthetics don\'t match their price point. They\'re losing high-value customers every day due to mediocre visual identity. I close that gap.'
+  },
+
+  // Services (kept for nav compatibility)
   'services.subtitle': { es: 'Servicios', en: 'Services' },
   'services.title': { es: 'Qué hacemos', en: 'What we do' },
   'services.description': { 
@@ -59,60 +65,45 @@ const translations: Translations = {
   'portfolio.all': { es: 'Todos', en: 'All' },
   'portfolio.view': { es: 'Ver campañas', en: 'View campaigns' },
 
-  // Process
-  'process.subtitle': { es: 'Cómo Trabajamos', en: 'How We Work' },
-  'process.title': { es: 'Un proceso claro. Un resultado premium.', en: 'A clear process. A premium result.' },
-  'process.step1.title': { es: 'Briefing estratégico', en: 'Strategic briefing' },
-  'process.step1.desc': { es: 'Entendemos tu producto, tu marca y tu objetivo.', en: 'We understand your product, your brand and your goal.' },
-  'process.step2.title': { es: 'Concepto creativo', en: 'Creative concept' },
-  'process.step2.desc': { es: 'Definimos la idea visual que guiará toda la campaña.', en: 'We define the visual idea that will guide the entire campaign.' },
-  'process.step3.title': { es: 'Desarrollo visual', en: 'Visual development' },
-  'process.step3.desc': { es: 'Creamos los assets visuales con calidad premium.', en: 'We create visual assets with premium quality.' },
-  'process.step4.title': { es: 'Entrega final', en: 'Final delivery' },
-  'process.step4.desc': { es: 'Una campaña completa lista para comunicar, vender y posicionar.', en: 'A complete campaign ready to communicate, sell and position.' },
+  // Process (Protocolo de Prestigio)
+  'process.subtitle': { es: 'Metodología', en: 'Methodology' },
+  'process.title': { es: 'El Protocolo de Prestigio de Toro IA', en: 'The Toro IA Prestige Protocol' },
+  'process.description': { es: 'El camino clínico a la autoridad de mercado.', en: 'The clinical path to market authority.' },
+  'process.step1.title': { es: 'Fase I — Diagnóstico de Percepción', en: 'Phase I — Perception Diagnosis' },
+  'process.step1.desc': { es: 'Análisis brutal de su imagen actual y los errores que le están costando dinero. Definición de la narrativa de estatus.', en: 'Brutal analysis of your current image and the mistakes that are costing you money. Status narrative definition.' },
+  'process.step2.title': { es: 'Fase II — Ingeniería Visual de Lujo', en: 'Phase II — Luxury Visual Engineering' },
+  'process.step2.desc': { es: 'Producción visual (foto/video) de nivel Fortune 500. No es artesanía, es la infraestructura visual de su poder.', en: 'Fortune 500-level visual production (photo/video). It\'s not craftsmanship, it\'s the visual infrastructure of your power.' },
+  'process.step3.title': { es: 'Fase III — Despliegue de Autoridad', en: 'Phase III — Authority Deployment' },
+  'process.step3.desc': { es: 'Consultoría estratégica para implementar los nuevos activos y asegurar que cada visual proyecte dominio de mercado.', en: 'Strategic consulting to implement new assets and ensure every visual projects market dominance.' },
 
-  // About (Positioning Block)
+  // About (Who We Are)
   'about.subtitle': { es: 'Estudio', en: 'Studio' },
-  'about.title': { es: 'Campañas completas. Sin excepciones.', en: 'Complete campaigns. No exceptions.' },
+  'about.title': { es: 'Toro IA no es una agencia.', en: 'Toro IA is not an agency.' },
   'about.description': { 
-    es: 'TORO IA es un estudio creativo especializado exclusivamente en campañas visuales completas para marcas de productos.',
-    en: 'TORO IA is a creative studio exclusively specialized in complete visual campaigns for product brands.'
+    es: 'Somos especialistas en la construcción de estatus visual. Mi enfoque es técnico, seco y orientado exclusivamente a los resultados de negocio de CEOs y Fundadores. Si busca un proveedor complaciente, este no es su lugar. Si busca dominar su nicho a través de la percepción de lujo, hablemos.',
+    en: 'We specialize in building visual status. My approach is technical, dry, and exclusively focused on the business results of CEOs and Founders. If you\'re looking for a complacent provider, this is not the place. If you want to dominate your niche through luxury perception, let\'s talk.'
   },
-  'about.highlight': {
-    es: 'Renders aislados, diseños rápidos o trabajos parciales: no.\nCampaña visual premium: sí.',
-    en: 'Isolated renders, quick designs or partial work: no.\nPremium visual campaign: yes.'
-  },
-
-  // Differential Block
-  'differential.subtitle': { es: 'Por Qué Elegirnos', en: 'Why Choose Us' },
-  'differential.title': { es: 'Por qué marcas premium eligen TORO IA', en: 'Why premium brands choose TORO IA' },
-  'differential.bullet1': { es: 'Enfoque exclusivo en campañas completas', en: 'Exclusive focus on complete campaigns' },
-  'differential.bullet2': { es: 'Estética publicitaria de alto nivel', en: 'High-level advertising aesthetics' },
-  'differential.bullet3': { es: 'Coherencia visual en toda la campaña', en: 'Visual coherence throughout the campaign' },
-  'differential.bullet4': { es: 'Atención extrema al detalle', en: 'Extreme attention to detail' },
-  'differential.bullet5': { es: 'Posicionamiento de marca, no solo imágenes', en: 'Brand positioning, not just images' },
 
   // CTA Final
-  'cta.subtitle': { es: 'Tu marca merece más', en: 'Your brand deserves more' },
-  'cta.title': { es: '¿Listo para elevar tu producto al siguiente nivel?', en: 'Ready to take your product to the next level?' },
-  'cta.description': { es: 'Si tu marca necesita algo más que imágenes bonitas, si buscas una campaña visual premium real, hablemos.', en: 'If your brand needs more than just pretty images, if you\'re looking for a real premium visual campaign, let\'s talk.' },
-  'cta.primary': { es: 'Solicitar campaña', en: 'Request campaign' },
-  'cta.secondary': { es: 'Contactar por WhatsApp', en: 'Contact via WhatsApp' },
+  'cta.subtitle': { es: 'Exclusividad', en: 'Exclusivity' },
+  'cta.title': { es: '¿Tienen el valor de cobrar lo que realmente valen?', en: 'Do you have the courage to charge what you\'re really worth?' },
+  'cta.description': { es: 'Solicite una Auditoría de Prestigio. Solo aceptamos 3 marcas por mes.', en: 'Request a Prestige Audit. We only accept 3 brands per month.' },
+  'cta.primary': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
   'cta.microcopy': { 
-    es: 'Trabajamos con campañas visuales completas de precio cerrado. Analizamos cada proyecto antes de aceptarlo.',
-    en: 'We work with complete visual campaigns at fixed prices. We analyze each project before accepting it.'
+    es: 'Solo aceptamos 3 marcas por mes. Analizamos cada proyecto antes de aceptarlo.',
+    en: 'We only accept 3 brands per month. We analyze each project before accepting it.'
   },
 
   // Contact
   'contact.subtitle': { es: 'Contacto', en: 'Contact' },
-  'contact.title': { es: '¿Listo para el siguiente nivel?', en: 'Ready for the next level?' },
+  'contact.title': { es: 'Solicite su Auditoría de Prestigio', en: 'Request your Prestige Audit' },
   'contact.description': { 
-    es: 'Si buscas más que imágenes bonitas, hablemos.',
-    en: 'If you\'re looking for more than pretty images, let\'s talk.'
+    es: 'Complete el formulario y le contactaremos en las próximas 24 horas para evaluar si su marca es candidata.',
+    en: 'Fill out the form and we will contact you within the next 24 hours to evaluate if your brand is a candidate.'
   },
   'contact.formIntro': { 
-    es: 'Trabajamos exclusivamente campañas visuales completas premium para marcas de producto. Cuéntanos tu marca y te diremos si encaja.',
-    en: 'We work exclusively on complete premium visual campaigns for product brands. Tell us about your brand and we\'ll tell you if it fits.'
+    es: 'Solo trabajamos con marcas que buscan dominar su categoría. Cuéntenos su caso.',
+    en: 'We only work with brands that seek to dominate their category. Tell us your case.'
   },
   'contact.name': { es: 'Nombre', en: 'Name' },
   'contact.email': { es: 'Email', en: 'Email' },
@@ -127,12 +118,11 @@ const translations: Translations = {
   'contact.budget.option2': { es: '1.200 € – 2.500 €', en: '€1,200 – €2,500' },
   'contact.budget.option3': { es: 'Estoy valorando opciones', en: 'I\'m evaluating options' },
   'contact.message': { es: 'Mensaje', en: 'Message' },
-  'contact.submit': { es: 'Solicitar campaña', en: 'Request campaign' },
-  'contact.whatsapp': { es: 'Contactar por WhatsApp', en: 'Contact via WhatsApp' },
+  'contact.submit': { es: 'SOLICITAR AUDITORÍA', en: 'REQUEST AUDIT' },
 
   // Footer
   'footer.rights': { es: 'Todos los derechos reservados', en: 'All rights reserved' },
-  'footer.tagline': { es: 'Campañas completas visuales premium para marcas de productos. Bebidas · Cosméticos · Posicionamiento de alto nivel', en: 'Complete premium visual campaigns for product brands. Beverages · Cosmetics · High-level positioning' },
+  'footer.tagline': { es: 'Consultoría de autoridad visual premium para marcas de producto. Bebidas · Cosméticos · Dominio de mercado', en: 'Premium visual authority consulting for product brands. Beverages · Cosmetics · Market dominance' },
 };
 
 interface LanguageContextType {
