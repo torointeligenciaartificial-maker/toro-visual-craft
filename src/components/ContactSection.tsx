@@ -135,6 +135,9 @@ const ContactSection: React.FC = () => {
                     <option value="" disabled>{t('contact.productType.placeholder')}</option>
                     <option value="beverage">{t('contact.productType.beverage')}</option>
                     <option value="cosmetics">{t('contact.productType.cosmetics')}</option>
+                    <option value="fashion">{t('contact.productType.fashion')}</option>
+                    <option value="food">{t('contact.productType.food')}</option>
+                    <option value="other">{t('contact.productType.other')}</option>
                   </select>
                 </div>
 

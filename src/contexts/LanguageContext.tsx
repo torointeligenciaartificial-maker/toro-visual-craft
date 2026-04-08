@@ -24,8 +24,8 @@ const translations: Translations = {
   'hero.title1': { es: 'Elevo el Estatus Visual de CEOs', en: 'I Elevate the Visual Status of CEOs' },
   'hero.title2': { es: 'y Fundadores para Dominar el Mercado de Lujo.', en: 'and Founders to Dominate the Luxury Market.' },
   'hero.description': { 
-    es: 'No vendemos fotos bonitas. Implementamos sistemas visuales de prestigio para marcas de bebidas y cosmética que necesitan justificar precios High-Ticket.',
-    en: 'We don\'t sell pretty photos. We implement prestige visual systems for beverage and cosmetics brands that need to justify High-Ticket prices.'
+    es: 'No vendemos fotos bonitas. Implementamos sistemas visuales de prestigio para marcas premium que necesitan justificar precios High-Ticket.',
+    en: 'We don\'t sell pretty photos. We implement prestige visual systems for premium brands that need to justify High-Ticket prices.'
   },
   'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
   'hero.cta.secondary': { es: 'Ver campañas', en: 'View campaigns' },
@@ -108,10 +108,13 @@ const translations: Translations = {
   'contact.name': { es: 'Nombre', en: 'Name' },
   'contact.email': { es: 'Email', en: 'Email' },
   'contact.brand': { es: 'Marca / Empresa', en: 'Brand / Company' },
-  'contact.productType': { es: 'Tipo de producto', en: 'Product type' },
+  'contact.productType': { es: 'Sector', en: 'Industry' },
   'contact.productType.placeholder': { es: 'Selecciona una opción', en: 'Select an option' },
-  'contact.productType.beverage': { es: 'Bebida', en: 'Beverage' },
+  'contact.productType.beverage': { es: 'Bebidas', en: 'Beverages' },
   'contact.productType.cosmetics': { es: 'Cosmética', en: 'Cosmetics' },
+  'contact.productType.fashion': { es: 'Moda / Lujo', en: 'Fashion / Luxury' },
+  'contact.productType.food': { es: 'Alimentación', en: 'Food' },
+  'contact.productType.other': { es: 'Otro', en: 'Other' },
   'contact.budget': { es: 'Presupuesto aproximado', en: 'Approximate budget' },
   'contact.budget.placeholder': { es: 'Selecciona una opción', en: 'Select an option' },
   'contact.budget.option1': { es: 'Hasta 1.200 €', en: 'Up to €1,200' },
@@ -122,7 +125,7 @@ const translations: Translations = {
 
   // Footer
   'footer.rights': { es: 'Todos los derechos reservados', en: 'All rights reserved' },
-  'footer.tagline': { es: 'Consultoría de autoridad visual premium para marcas de producto. Bebidas · Cosméticos · Dominio de mercado', en: 'Premium visual authority consulting for product brands. Beverages · Cosmetics · Market dominance' },
+  'footer.tagline': { es: 'Consultoría de autoridad visual premium para marcas de producto.', en: 'Premium visual authority consulting for product brands.' },
 };
 
 interface LanguageContextType {
