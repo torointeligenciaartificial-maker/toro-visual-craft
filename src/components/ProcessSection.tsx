@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Search, Gem, Rocket } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollAnimations';
 
@@ -8,10 +9,9 @@ const ProcessSection: React.FC = () => {
   const { ref, isVisible } = useScrollReveal(0.1);
 
   const steps = [
-    { num: '01', titleKey: 'process.step1.title', descKey: 'process.step1.desc' },
-    { num: '02', titleKey: 'process.step2.title', descKey: 'process.step2.desc' },
-    { num: '03', titleKey: 'process.step3.title', descKey: 'process.step3.desc' },
-    { num: '04', titleKey: 'process.step4.title', descKey: 'process.step4.desc' },
+    { icon: Search, titleKey: 'process.step1.title', descKey: 'process.step1.desc' },
+    { icon: Gem, titleKey: 'process.step2.title', descKey: 'process.step2.desc' },
+    { icon: Rocket, titleKey: 'process.step3.title', descKey: 'process.step3.desc' },
   ];
 
   return (
@@ -32,45 +32,41 @@ const ProcessSection: React.FC = () => {
             <div className="w-8 h-0.5 bg-primary" />
           </div>
           
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             {t('process.title')}
           </h2>
+          <p className="text-muted-foreground text-lg">
+            {t('process.description')}
+          </p>
         </motion.div>
 
-        {/* Process Steps */}
-        <div className="relative">
-          {/* Connection Line */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-border -translate-y-1/2" />
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
-            {steps.map((step, index) => (
+        {/* 3 Columns */}
+        <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+          {steps.map((step, index) => {
+            const Icon = step.icon;
+            return (
               <motion.div
-                key={step.num}
+                key={step.titleKey}
                 initial={{ opacity: 0, y: 40 }}
                 animate={isVisible ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="relative text-center"
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="text-center"
               >
-                {/* Number Circle */}
-                <div className="relative z-10 w-20 h-20 mx-auto mb-6 rounded-full bg-background border-2 border-primary flex items-center justify-center group hover:bg-primary transition-all duration-300">
-                  <span className="font-display text-2xl font-bold text-primary group-hover:text-primary-foreground transition-colors duration-300">
-                    {step.num}
-                  </span>
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon className="w-7 h-7 text-primary" />
                 </div>
 
-                {/* Content */}
-                <h3 className="font-display text-xl font-semibold mb-3 text-foreground">
+                <h3 className="font-display text-xl font-semibold mb-4 text-foreground">
                   {t(step.titleKey)}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mx-auto">
+                <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mx-auto">
                   {t(step.descKey)}
                 </p>
               </motion.div>
-            ))}
-          </div>
+            );
+          })}
         </div>
 
-        {/* Bottom Decoration */}
         <motion.div
           initial={{ scaleX: 0 }}
           animate={isVisible ? { scaleX: 1 } : {}}
