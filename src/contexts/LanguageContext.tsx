@@ -24,8 +24,8 @@ const translations: Translations = {
   'hero.title1': { es: 'Elevo el Estatus Visual de CEOs', en: 'I Elevate the Visual Status of CEOs' },
   'hero.title2': { es: 'y Fundadores para Dominar el Mercado de Lujo.', en: 'and Founders to Dominate the Luxury Market.' },
   'hero.description': { 
-    es: 'No vendemos fotos bonitas. Implementamos sistemas visuales de prestigio para marcas de bebidas y cosmética que necesitan justificar precios High-Ticket.',
-    en: 'We don\'t sell pretty photos. We implement prestige visual systems for beverage and cosmetics brands that need to justify High-Ticket prices.'
+    es: 'No vendemos fotos bonitas. Implementamos sistemas visuales de prestigio para marcas premium que necesitan justificar precios High-Ticket.',
+    en: 'We don\'t sell pretty photos. We implement prestige visual systems for premium brands that need to justify High-Ticket prices.'
   },
   'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
   'hero.cta.secondary': { es: 'Ver campañas', en: 'View campaigns' },
@@ -122,7 +122,7 @@ const translations: Translations = {
 
   // Footer
   'footer.rights': { es: 'Todos los derechos reservados', en: 'All rights reserved' },
-  'footer.tagline': { es: 'Consultoría de autoridad visual premium para marcas de producto. Bebidas · Cosméticos · Dominio de mercado', en: 'Premium visual authority consulting for product brands. Beverages · Cosmetics · Market dominance' },
+  'footer.tagline': { es: 'Consultoría de autoridad visual premium para marcas de producto.', en: 'Premium visual authority consulting for product brands.' },
 };
 
 interface LanguageContextType {
