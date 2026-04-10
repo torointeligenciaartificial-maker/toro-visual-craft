@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => {
             </button>
             
             <button
-              onClick={() => scrollToSection('portfolio')}
+              onClick={() => scrollToSection('process')}
               className="text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
             >
               <span>{t('hero.cta.secondary')}</span>
