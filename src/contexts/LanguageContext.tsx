@@ -28,7 +28,7 @@ const translations: Translations = {
     en: 'We don\'t sell pretty photos. We implement prestige visual systems for premium brands that need to justify High-Ticket prices.'
   },
   'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
-  'hero.cta.secondary': { es: 'Ver campañas', en: 'View campaigns' },
+  'hero.cta.secondary': { es: 'Ver proceso', en: 'View process' },
 
   // Problem Section
   'problem.title': { es: '¿Por qué su producto de 200€ parece de 30€?', en: 'Why does your €200 product look like it\'s worth €30?' },
