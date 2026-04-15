@@ -84,13 +84,15 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <button
-              onClick={() => scrollToSection('contact')}
+            <a
+              href="https://calendly.com/oscarvillena-toroia/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-premium rounded group flex items-center justify-center gap-3"
             >
               <span>{t('hero.cta')}</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
             
             <button
               onClick={() => scrollToSection('process')}
