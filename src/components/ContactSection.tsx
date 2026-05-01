@@ -16,6 +16,7 @@ const ContactSection: React.FC = () => {
     productType: '',
     email: '',
     budget: '',
+    bottleneck: '',
     message: '',
   });
 
@@ -38,7 +39,7 @@ const ContactSection: React.FC = () => {
         description: 'Le contactaremos en las próximas 24 horas. / We\'ll contact you within 24 hours.',
       });
       
-      setFormData({ name: '', brand: '', productType: '', email: '', budget: '', message: '' });
+      setFormData({ name: '', brand: '', productType: '', email: '', budget: '', bottleneck: '', message: '' });
     } catch (error) {
       console.error('Error submitting form:', error);
       toast.error('Error al enviar / Error sending', {
@@ -176,6 +177,22 @@ const ContactSection: React.FC = () => {
                 </div>
 
                 <div>
+                  <label htmlFor="bottleneck" className="block text-sm font-medium text-foreground mb-2">
+                    {t('contact.bottleneck')}
+                  </label>
+                  <textarea
+                    id="bottleneck"
+                    name="bottleneck"
+                    value={formData.bottleneck}
+                    onChange={handleChange}
+                    rows={3}
+                    required
+                    placeholder={t('contact.bottleneck.placeholder')}
+                    className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300 resize-none"
+                  />
+                </div>
+
+                <div>
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                     {t('contact.message')}
                   </label>
@@ -184,8 +201,7 @@ const ContactSection: React.FC = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    rows={3}
-                    required
+                    rows={2}
                     className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300 resize-none"
                   />
                 </div>

@@ -20,12 +20,12 @@ const translations: Translations = {
   'nav.contact': { es: 'Contacto', en: 'Contact' },
   
   // Hero
-  'hero.subtitle': { es: 'Consultoría de Autoridad Visual', en: 'Visual Authority Consulting' },
-  'hero.title1': { es: 'Elevo el Estatus Visual de CEOs', en: 'I Elevate the Visual Status of CEOs' },
-  'hero.title2': { es: 'y Fundadores para Dominar el Mercado de Lujo.', en: 'and Founders to Dominate the Luxury Market.' },
+  'hero.subtitle': { es: 'Ingeniería de Autoridad', en: 'Authority Engineering' },
+  'hero.title1': { es: 'Construyo la Infraestructura de Autoridad y Estatus', en: 'I Build the Authority and Status Infrastructure' },
+  'hero.title2': { es: 'para CEOs que dominan su mercado.', en: 'for CEOs who dominate their market.' },
   'hero.description': { 
-    es: 'No vendemos fotos bonitas. Implementamos sistemas visuales de prestigio para marcas premium que necesitan justificar precios High-Ticket.',
-    en: 'We don\'t sell pretty photos. We implement prestige visual systems for premium brands that need to justify High-Ticket prices.'
+    es: 'Fusionamos campañas visuales de élite con sistemas de automatización n8n/Make. Justifique su precio High-Ticket con una operativa que no falla.',
+    en: 'We fuse elite visual campaigns with n8n/Make automation systems. Justify your High-Ticket price with operations that never fail.'
   },
   'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
   'hero.cta.secondary': { es: 'Ver proceso', en: 'View process' },
@@ -33,8 +33,8 @@ const translations: Translations = {
   // Problem Section
   'problem.title': { es: '¿Por qué su producto de 200€ parece de 30€?', en: 'Why does your €200 product look like it\'s worth €30?' },
   'problem.description': { 
-    es: 'La mayoría de las marcas premium tienen un punto ciego: su estética no está a la altura de su precio. Están perdiendo clientes de alto valor cada día por una imagen visual mediocre. Yo cierro esa brecha.',
-    en: 'Most premium brands have a blind spot: their aesthetics don\'t match their price point. They\'re losing high-value customers every day due to mediocre visual identity. I close that gap.'
+    es: 'La mayoría de las marcas premium tienen un punto ciego: su estética y su operativa no están a la altura de su precio. Yo cierro esa brecha fusionando el Yo Digital con ingeniería de procesos.',
+    en: 'Most premium brands have a blind spot: their aesthetics and operations don\'t match their price point. I close that gap by fusing the Digital Self with process engineering.'
   },
 
   // Services (kept for nav compatibility)
@@ -69,19 +69,19 @@ const translations: Translations = {
   'process.subtitle': { es: 'Metodología', en: 'Methodology' },
   'process.title': { es: 'El Protocolo de Prestigio de Toro IA', en: 'The Toro IA Prestige Protocol' },
   'process.description': { es: 'El camino clínico a la autoridad de mercado.', en: 'The clinical path to market authority.' },
-  'process.step1.title': { es: 'Fase I — Diagnóstico de Percepción', en: 'Phase I — Perception Diagnosis' },
-  'process.step1.desc': { es: 'Análisis brutal de su imagen actual y los errores que le están costando dinero. Definición de la narrativa de estatus.', en: 'Brutal analysis of your current image and the mistakes that are costing you money. Status narrative definition.' },
-  'process.step2.title': { es: 'Fase II — Ingeniería Visual de Lujo', en: 'Phase II — Luxury Visual Engineering' },
-  'process.step2.desc': { es: 'Producción visual (foto/video) de nivel Fortune 500. No es artesanía, es la infraestructura visual de su poder.', en: 'Fortune 500-level visual production (photo/video). It\'s not craftsmanship, it\'s the visual infrastructure of your power.' },
-  'process.step3.title': { es: 'Fase III — Despliegue de Autoridad', en: 'Phase III — Authority Deployment' },
-  'process.step3.desc': { es: 'Consultoría estratégica para implementar los nuevos activos y asegurar que cada visual proyecte dominio de mercado.', en: 'Strategic consulting to implement new assets and ensure every visual projects market dominance.' },
+  'process.step1.title': { es: 'Fase I — Diagnóstico de Autoridad', en: 'Phase I — Authority Diagnosis' },
+  'process.step1.desc': { es: 'Análisis quirúrgico de imagen y procesos. Definición de la narrativa de dominio que justifica su posición.', en: 'Surgical analysis of image and processes. Definition of the dominance narrative that justifies your position.' },
+  'process.step2.title': { es: 'Fase II — Ingeniería de Sistemas y Lujo', en: 'Phase II — Systems and Luxury Engineering' },
+  'process.step2.desc': { es: 'Despliegue visual premium e integración de ecosistemas n8n/Make. La estética y la operativa, una sola infraestructura.', en: 'Premium visual deployment and integration of n8n/Make ecosystems. Aesthetics and operations, one single infrastructure.' },
+  'process.step3.title': { es: 'Fase III — Blindaje de Mercado', en: 'Phase III — Market Shielding' },
+  'process.step3.desc': { es: 'Consultoría estratégica para escalar sin depender de tareas manuales. Su autoridad, blindada por sistema.', en: 'Strategic consulting to scale without relying on manual tasks. Your authority, shielded by system.' },
 
   // About (Who We Are)
   'about.subtitle': { es: 'Estudio', en: 'Studio' },
   'about.title': { es: 'Toro IA no es una agencia.', en: 'Toro IA is not an agency.' },
   'about.description': { 
-    es: 'Somos especialistas en la construcción de estatus visual. Mi enfoque es técnico, seco y orientado exclusivamente a los resultados de negocio de CEOs y Fundadores. Si busca un proveedor complaciente, este no es su lugar. Si busca dominar su nicho a través de la percepción de lujo, hablemos.',
-    en: 'We specialize in building visual status. My approach is technical, dry, and exclusively focused on the business results of CEOs and Founders. If you\'re looking for a complacent provider, this is not the place. If you want to dominate your niche through luxury perception, let\'s talk.'
+    es: 'Somos especialistas en la construcción de estatus visual. Enfoque técnico, seco y orientado a resultados de negocio. Si busca un proveedor complaciente, este no es su lugar.',
+    en: 'We specialize in building visual status. Technical, dry, business-results-driven approach. If you\'re looking for a complacent provider, this is not the place.'
   },
 
   // CTA Final
@@ -121,6 +121,8 @@ const translations: Translations = {
   'contact.budget.option2': { es: '1.200 € – 2.500 €', en: '€1,200 – €2,500' },
   'contact.budget.option3': { es: 'Estoy valorando opciones', en: 'I\'m evaluating options' },
   'contact.message': { es: 'Mensaje', en: 'Message' },
+  'contact.bottleneck': { es: '¿Cuál es su principal cuello de botella operativo?', en: 'What is your main operational bottleneck?' },
+  'contact.bottleneck.placeholder': { es: 'Describa el proceso que hoy le impide escalar.', en: 'Describe the process that prevents you from scaling today.' },
   'contact.submit': { es: 'SOLICITAR AUDITORÍA', en: 'REQUEST AUDIT' },
 
   // Footer
