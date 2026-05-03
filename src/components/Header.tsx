@@ -152,35 +152,12 @@ const Header: React.FC = () => {
                   {t('nav.methodology')}
                 </button>
 
-                <div>
-                  <button
-                    onClick={() => setIsMobileSolutionsOpen(!isMobileSolutionsOpen)}
-                    className="w-full flex items-center justify-between text-left text-lg font-medium text-cream-muted hover:text-primary transition-colors duration-300 py-2"
-                  >
-                    {t('nav.solutions')}
-                    <ChevronDown size={18} className={`transition-transform duration-300 ${isMobileSolutionsOpen ? 'rotate-180' : ''}`} />
-                  </button>
-                  <AnimatePresence>
-                    {isMobileSolutionsOpen && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="overflow-hidden pl-4 border-l border-border ml-2"
-                      >
-                        {solutionsItems.map((item) => (
-                          <button
-                            key={item.key}
-                            onClick={() => scrollToSection(item.href)}
-                            className="block w-full text-left py-2 text-base text-cream-muted hover:text-primary transition-colors duration-200"
-                          >
-                            {t(item.key)}
-                          </button>
-                        ))}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
+                <button
+                  onClick={() => scrollToSection('ecosystem')}
+                  className="text-left text-lg font-medium text-cream-muted hover:text-primary transition-colors duration-300 py-2"
+                >
+                  {t('nav.solutions')}
+                </button>
 
                 <button
                   onClick={() => scrollToSection('cases')}
