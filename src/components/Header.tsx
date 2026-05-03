@@ -39,11 +39,6 @@ const Header: React.FC = () => {
     }, 10);
   };
 
-  const openCalendly = () => {
-    setIsMobileMenuOpen(false);
-    window.open(CALENDLY_URL, '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -263,7 +258,8 @@ const Header: React.FC = () => {
         href={CALENDLY_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="lg:hidden fixed left-4 right-4 bottom-4 z-50 btn-premium btn-appointment-spotlight rounded flex items-center justify-center gap-2 py-4 text-sm"
+        aria-label={t('nav.cta')}
+        className="fixed left-4 right-4 bottom-4 z-50 btn-premium btn-appointment-spotlight rounded flex items-center justify-center gap-2 py-4 text-sm lg:left-auto lg:right-6 lg:bottom-6 lg:w-auto lg:px-10 lg:py-5 lg:text-base"
       >
         <CalendarDays className="relative z-10 w-4 h-4" aria-hidden="true" />
         <span>{t('nav.cta')}</span>
