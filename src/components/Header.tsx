@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, CalendarDays } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const CALENDLY_URL = 'https://calendar.app.google/Guvvm7K1oUy7Lop5A';
@@ -141,19 +141,31 @@ const Header: React.FC = () => {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-premium rounded"
+              className="btn-premium btn-appointment-spotlight rounded"
             >
               <span>{t('nav.cta')}</span>
             </a>
           </div>
 
-          <button
-            className="lg:hidden p-2 text-cream"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-premium btn-appointment-spotlight rounded px-3 py-2 text-[10px] sm:px-4 sm:py-2.5 sm:text-xs flex items-center gap-2"
+            >
+              <CalendarDays className="relative z-10 w-3.5 h-3.5 sm:w-4 sm:h-4" aria-hidden="true" />
+              <span>{t('nav.cta')}</span>
+            </a>
+
+            <button
+              className="p-2 text-cream"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -237,7 +249,7 @@ const Header: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="btn-premium rounded mt-4 text-center"
+                  className="btn-premium btn-appointment-spotlight rounded mt-4 text-center"
                 >
                   <span>{t('nav.cta')}</span>
                 </a>
