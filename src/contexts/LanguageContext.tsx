@@ -15,9 +15,55 @@ const translations: Translations = {
   'nav.services': { es: 'Servicios', en: 'Services' },
   'nav.campaigns': { es: 'Campañas', en: 'Campaigns' },
   'nav.process': { es: 'Proceso', en: 'Process' },
+  'nav.methodology': { es: 'Metodología', en: 'Methodology' },
+  'nav.solutions': { es: 'Soluciones', en: 'Solutions' },
+  'nav.solutions.consulting': { es: 'Consultoría de Operaciones', en: 'Operations Consulting' },
+  'nav.solutions.automation': { es: 'Sistemas de Automatización', en: 'Automation Systems' },
+  'nav.solutions.identity': { es: 'Identidad de Autoridad', en: 'Authority Identity' },
+  'nav.cases': { es: 'Casos de Éxito', en: 'Case Studies' },
   'nav.about': { es: 'Nosotros', en: 'About' },
   'nav.blog': { es: 'Blog', en: 'Blog' },
   'nav.contact': { es: 'Contacto', en: 'Contact' },
+  'nav.cta': { es: 'Concertar Cita', en: 'Book a Meeting' },
+
+  // Ecosystem Section
+  'ecosystem.subtitle': { es: 'Ecosistema', en: 'Ecosystem' },
+  'ecosystem.title': { es: 'Ecosistema de Autoridad Total', en: 'Total Authority Ecosystem' },
+  'ecosystem.description': {
+    es: 'Transformamos pymes en búnkeres de venta blindados: estrategia, sistemas e identidad operando como una sola infraestructura.',
+    en: 'We transform SMEs into armored sales bunkers: strategy, systems and identity operating as a single infrastructure.'
+  },
+  'ecosystem.p1.subtitle': { es: 'Pilar 1 — El Cerebro', en: 'Pillar 1 — The Brain' },
+  'ecosystem.p1.title': { es: 'Consultoría Estratégica', en: 'Strategic Consulting' },
+  'ecosystem.p1.desc': {
+    es: 'Auditoría quirúrgica de procesos y hoja de ruta digital para CEOs. Definimos dónde se pierde margen y dónde se construye autoridad.',
+    en: 'Surgical audit of processes and digital roadmap for CEOs. We define where margin is lost and where authority is built.'
+  },
+  'ecosystem.p2.subtitle': { es: 'Pilar 2 — El Músculo', en: 'Pillar 2 — The Muscle' },
+  'ecosystem.p2.title': { es: 'Ingeniería de Procesos e IA', en: 'Process & AI Engineering' },
+  'ecosystem.p2.desc': {
+    es: 'Implementación técnica con n8n y Make para eliminar la fricción operativa. Sistemas que escalan sin depender de tareas manuales.',
+    en: 'Technical implementation with n8n and Make to eliminate operational friction. Systems that scale without relying on manual tasks.'
+  },
+  'ecosystem.p3.subtitle': { es: 'Pilar 3 — La Armadura', en: 'Pillar 3 — The Armor' },
+  'ecosystem.p3.title': { es: 'Ingeniería de Autoridad Visual', en: 'Visual Authority Engineering' },
+  'ecosystem.p3.desc': {
+    es: 'Campañas premium y activos visuales de alto estatus. La estética que justifica el precio y blinda la percepción de marca.',
+    en: 'Premium campaigns and high-status visual assets. The aesthetic that justifies the price and shields brand perception.'
+  },
+
+  // Case Studies
+  'cases.subtitle': { es: 'Casos de Éxito', en: 'Case Studies' },
+  'cases.title': { es: 'Resultados bajo acuerdo de confidencialidad', en: 'Results under confidentiality agreement' },
+  'cases.description': {
+    es: 'Trabajamos con CEOs que exigen discreción. Los detalles de cada operación se comparten únicamente en la Auditoría de Prestigio.',
+    en: 'We work with CEOs who demand discretion. Operation details are shared only during the Prestige Audit.'
+  },
+  'cases.confidential': { es: 'Confidencial', en: 'Confidential' },
+  'cases.placeholder': {
+    es: 'Caso disponible bajo NDA en la sesión privada.',
+    en: 'Case available under NDA during the private session.'
+  },
   
   // Hero
   'hero.subtitle': { es: 'Ingeniería de Autoridad', en: 'Authority Engineering' },
