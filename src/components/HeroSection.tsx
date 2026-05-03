@@ -85,7 +85,7 @@ const HeroSection: React.FC = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="https://calendly.com/oscarvillena-toroia/30min"
+              href="https://calendar.app.google/Guvvm7K1oUy7Lop5A"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-premium rounded group flex items-center justify-center gap-3"

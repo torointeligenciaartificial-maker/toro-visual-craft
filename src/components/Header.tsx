@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-const CALENDLY_URL = 'https://calendly.com/oscarvillena-toroia/30min';
+const CALENDLY_URL = 'https://calendar.app.google/Guvvm7K1oUy7Lop5A';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
