@@ -88,9 +88,9 @@ const HeroSection: React.FC = () => {
               href="https://calendar.app.google/Guvvm7K1oUy7Lop5A"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-premium rounded group flex items-center justify-center gap-3"
+              className="btn-premium btn-appointment-spotlight rounded group flex items-center justify-center gap-3 text-base px-9 py-5"
             >
-              <span>{t('hero.cta')}</span>
+              <span>{t('nav.cta')}</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             
