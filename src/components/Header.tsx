@@ -258,6 +258,16 @@ const Header: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <a
+        href={CALENDLY_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="lg:hidden fixed left-4 right-4 bottom-4 z-50 btn-premium btn-appointment-spotlight rounded flex items-center justify-center gap-2 py-4 text-sm"
+      >
+        <CalendarDays className="relative z-10 w-4 h-4" aria-hidden="true" />
+        <span>{t('nav.cta')}</span>
+      </a>
     </header>
   );
 };
