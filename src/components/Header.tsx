@@ -64,43 +64,12 @@ const Header: React.FC = () => {
               {t('nav.methodology')}
             </button>
 
-            {/* Solutions Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setIsSolutionsOpen(true)}
-              onMouseLeave={() => setIsSolutionsOpen(false)}
+            <button
+              onClick={() => scrollToSection('ecosystem')}
+              className="relative text-sm font-medium text-cream-muted hover:text-cream transition-colors duration-300 line-animate"
             >
-              <button
-                onClick={() => scrollToSection('ecosystem')}
-                className="flex items-center gap-1 text-sm font-medium text-cream-muted hover:text-cream transition-colors duration-300"
-              >
-                {t('nav.solutions')}
-                <ChevronDown size={14} className={`transition-transform duration-300 ${isSolutionsOpen ? 'rotate-180' : ''}`} />
-              </button>
-              <AnimatePresence>
-                {isSolutionsOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 8 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute top-full left-1/2 -translate-x-1/2 pt-4 min-w-[260px]"
-                  >
-                    <div className="bg-background/98 backdrop-blur-md border border-border py-2">
-                      {solutionsItems.map((item) => (
-                        <button
-                          key={item.key}
-                          onClick={() => scrollToSection(item.href)}
-                          className="block w-full text-left px-5 py-3 text-sm text-cream-muted hover:text-primary hover:bg-card/60 transition-colors duration-200"
-                        >
-                          {t(item.key)}
-                        </button>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+              {t('nav.solutions')}
+            </button>
 
             <button
               onClick={() => scrollToSection('cases')}
