@@ -232,9 +232,15 @@ const Header: React.FC = () => {
                   </button>
                 </div>
 
-                <button onClick={openCalendly} className="btn-premium rounded mt-4 text-center">
+                <a
+                  href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="btn-premium rounded mt-4 text-center"
+                >
                   <span>{t('nav.cta')}</span>
-                </button>
+                </a>
               </nav>
             </div>
           </motion.div>
