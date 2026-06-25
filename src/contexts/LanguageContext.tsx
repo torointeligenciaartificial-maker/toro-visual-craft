@@ -24,7 +24,7 @@ const translations: Translations = {
   'nav.about': { es: 'Nosotros', en: 'About' },
   'nav.blog': { es: 'Blog', en: 'Blog' },
   'nav.contact': { es: 'Contacto', en: 'Contact' },
-  'nav.cta': { es: 'Concertar Cita', en: 'Book a Meeting' },
+  'nav.cta': { es: 'Reserva tu diagnóstico gratuito de 20 min', en: 'Book your free 20-min diagnosis' },
 
   // Ecosystem Section
   'ecosystem.subtitle': { es: 'Ecosistema', en: 'Ecosystem' },
@@ -66,12 +66,12 @@ const translations: Translations = {
   },
   
   // Hero
-  'hero.subtitle': { es: 'Ingeniería de Autoridad', en: 'Authority Engineering' },
-  'hero.title1': { es: 'Construyo la Infraestructura de Autoridad y Estatus', en: 'I Build the Authority and Status Infrastructure' },
-  'hero.title2': { es: 'para CEOs que dominan su mercado.', en: 'for CEOs who dominate their market.' },
+  'hero.subtitle': { es: 'Automatización con IA', en: 'AI Automation' },
+  'hero.title1': { es: 'Tu equipo pierde entre 5 y 20 horas a la semana en tareas que ya puede hacer la IA sola.', en: 'Your team loses 5 to 20 hours a week on tasks AI can already handle alone.' },
+  'hero.title2': { es: '', en: '' },
   'hero.description': { 
-    es: 'Fusionamos campañas visuales de élite con sistemas de automatización n8n/Make. Justifique su precio High-Ticket con una operativa que no falla.',
-    en: 'We fuse elite visual campaigns with n8n/Make automation systems. Justify your High-Ticket price with operations that never fail.'
+    es: 'Ayudamos a empresas de seguridad y servicios profesionales a eliminar el trabajo manual con IA. Sin cambiar tus sistemas. Sin equipo técnico. Con resultados en 2 semanas.',
+    en: 'We help security and professional services companies eliminate manual work with AI. Without changing your systems. Without a tech team. With results in 2 weeks.'
   },
   'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
   'hero.cta.secondary': { es: 'Ver proceso', en: 'View process' },
@@ -142,10 +142,10 @@ const translations: Translations = {
 
   // Contact
   'contact.subtitle': { es: 'Contacto', en: 'Contact' },
-  'contact.title': { es: 'Solicite su Auditoría de Prestigio', en: 'Request your Prestige Audit' },
+  'contact.title': { es: '¿Cuántas horas pierde tu empresa a la semana?', en: 'How many hours does your company lose per week?' },
   'contact.description': { 
-    es: 'Complete el formulario y le contactaremos en las próximas 24 horas para evaluar si su marca es candidata.',
-    en: 'Fill out the form and we will contact you within the next 24 hours to evaluate if your brand is a candidate.'
+    es: 'Cuéntanoslo en 2 minutos y te decimos exactamente qué se puede automatizar.',
+    en: 'Tell us in 2 minutes and we\'ll tell you exactly what can be automated.'
   },
   'contact.formIntro': { 
     es: 'Solo trabajamos con marcas que buscan dominar su categoría. Cuéntenos su caso.',
