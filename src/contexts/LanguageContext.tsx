@@ -33,19 +33,19 @@ const translations: Translations = {
     es: 'Transformamos pymes en búnkeres de venta blindados: estrategia, sistemas e identidad operando como una sola infraestructura.',
     en: 'We transform SMEs into armored sales bunkers: strategy, systems and identity operating as a single infrastructure.'
   },
-  'ecosystem.p1.subtitle': { es: 'Pilar 1 — El Cerebro', en: 'Pillar 1 — The Brain' },
+  'ecosystem.p1.subtitle': { es: 'Fase 1 — Diagnóstico: Identificamos los 3 procesos que más tiempo consumen', en: 'Phase 1 — Diagnosis: We identify the 3 most time-consuming processes' },
   'ecosystem.p1.title': { es: 'Consultoría Estratégica', en: 'Strategic Consulting' },
   'ecosystem.p1.desc': {
     es: 'Auditoría quirúrgica de procesos y hoja de ruta digital para CEOs. Definimos dónde se pierde margen y dónde se construye autoridad.',
     en: 'Surgical audit of processes and digital roadmap for CEOs. We define where margin is lost and where authority is built.'
   },
-  'ecosystem.p2.subtitle': { es: 'Pilar 2 — El Músculo', en: 'Pillar 2 — The Muscle' },
+  'ecosystem.p2.subtitle': { es: 'Fase 2 — Implantación: Automatizamos sobre lo que ya usas, sin cambiar nada', en: 'Phase 2 — Implementation: We automate on top of what you already use, without changing anything' },
   'ecosystem.p2.title': { es: 'Ingeniería de Procesos e IA', en: 'Process & AI Engineering' },
   'ecosystem.p2.desc': {
     es: 'Implementación técnica con n8n y Make para eliminar la fricción operativa. Sistemas que escalan sin depender de tareas manuales.',
     en: 'Technical implementation with n8n and Make to eliminate operational friction. Systems that scale without relying on manual tasks.'
   },
-  'ecosystem.p3.subtitle': { es: 'Pilar 3 — La Armadura', en: 'Pillar 3 — The Armor' },
+  'ecosystem.p3.subtitle': { es: 'Fase 3 — Resultados: Tu equipo trabaja solo. Medimos el ahorro en horas y euros', en: 'Phase 3 — Results: Your team works alone. We measure savings in hours and euros' },
   'ecosystem.p3.title': { es: 'Ingeniería de Autoridad Visual', en: 'Visual Authority Engineering' },
   'ecosystem.p3.desc': {
     es: 'Campañas premium y activos visuales de alto estatus. La estética que justifica el precio y blinda la percepción de marca.',
