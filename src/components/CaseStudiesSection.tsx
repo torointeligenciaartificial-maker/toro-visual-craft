@@ -1,12 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Lock } from 'lucide-react';
+import { Quote } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollAnimations';
 
 const CaseStudiesSection: React.FC = () => {
-  const { t } = useLanguage();
+  const { language } = useLanguage();
   const { ref, isVisible } = useScrollReveal(0.1);
+
+  const testimonial = language === 'es'
+    ? {
+        quote: "Al reducir tareas repetitivas, el empleado puede hacer otras cosas sin contratar más gente. He ahorrado más de 4.000€ al año.",
+        author: "Cliente de servicios profesionales, Toledo"
+      }
+    : {
+        quote: "By reducing repetitive tasks, the employee can do other things without hiring more people. I have saved more than €4,000 a year.",
+        author: "Professional services client, Toledo"
+      };
 
   return (
     <section id="cases" className="py-32 lg:py-40 relative overflow-hidden">
@@ -22,37 +32,28 @@ const CaseStudiesSection: React.FC = () => {
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="w-8 h-0.5 bg-primary" />
             <span className="text-primary font-medium tracking-widest uppercase text-sm">
-              {t('cases.subtitle')}
+              {language === 'es' ? 'Casos de Éxito' : 'Case Studies'}
             </span>
             <div className="w-8 h-0.5 bg-primary" />
           </div>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground leading-tight">
-            {t('cases.title')}
-          </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            {t('cases.description')}
-          </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
-          {[1, 2, 3].map((i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: i * 0.12 }}
-              className="aspect-[4/5] border border-border bg-card/40 flex flex-col items-center justify-center p-8 text-center"
-            >
-              <Lock className="w-6 h-6 text-primary/60 mb-4" />
-              <span className="text-primary text-xs tracking-widest uppercase mb-2">
-                {t('cases.confidential')}
-              </span>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {t('cases.placeholder')}
-              </p>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="max-w-4xl mx-auto text-center"
+        >
+          <div className="border border-border bg-card/40 p-10 lg:p-14 relative">
+            <Quote className="w-8 h-8 text-primary/60 mx-auto mb-6" />
+            <blockquote className="font-display text-2xl md:text-3xl lg:text-4xl text-foreground leading-snug mb-8">
+              "{testimonial.quote}"
+            </blockquote>
+            <p className="text-primary font-medium tracking-wide uppercase text-sm">
+              {testimonial.author}
+            </p>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ scaleX: 0 }}

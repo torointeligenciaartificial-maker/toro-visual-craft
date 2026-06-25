@@ -24,7 +24,7 @@ const translations: Translations = {
   'nav.about': { es: 'Nosotros', en: 'About' },
   'nav.blog': { es: 'Blog', en: 'Blog' },
   'nav.contact': { es: 'Contacto', en: 'Contact' },
-  'nav.cta': { es: 'Concertar Cita', en: 'Book a Meeting' },
+  'nav.cta': { es: 'Reserva tu diagnóstico gratuito de 20 min', en: 'Book your free 20-min diagnosis' },
 
   // Ecosystem Section
   'ecosystem.subtitle': { es: 'Ecosistema', en: 'Ecosystem' },
