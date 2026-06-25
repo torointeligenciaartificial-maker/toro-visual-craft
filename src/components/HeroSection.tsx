@@ -63,8 +63,12 @@ const HeroSection: React.FC = () => {
             className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] mb-6"
           >
             <span className="text-foreground">{t('hero.title1')}</span>
-            <br />
-            <span className="text-foreground">{t('hero.title2')}</span>
+            {t('hero.title2') && (
+              <>
+                <br />
+                <span className="text-foreground">{t('hero.title2')}</span>
+              </>
+            )}
           </motion.h1>
 
           {/* Lighter, enigmatic description */}
