@@ -76,12 +76,13 @@ const translations: Translations = {
   'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
   'hero.cta.secondary': { es: 'Ver proceso', en: 'View process' },
 
-  // Problem Section
-  'problem.title': { es: '¿Por qué su producto de 200€ parece de 30€?', en: 'Why does your €200 product look like it\'s worth €30?' },
+  // Problem Section (now testimonial)
+  'problem.title': { es: 'Un cliente ahorró más de 4.000€ al año sin contratar a nadie más', en: 'A client saved over €4,000 a year without hiring anyone else' },
   'problem.description': { 
-    es: 'La mayoría de las marcas premium tienen un punto ciego: su estética y su operativa no están a la altura de su precio. Yo cierro esa brecha fusionando el Yo Digital con ingeniería de procesos.',
-    en: 'Most premium brands have a blind spot: their aesthetics and operations don\'t match their price point. I close that gap by fusing the Digital Self with process engineering.'
+    es: 'Al reducir tareas repetitivas, el empleado puede hacer otras cosas sin necesidad de contratar más gente.',
+    en: 'By reducing repetitive tasks, the employee can do other things without needing to hire more people.'
   },
+  'problem.attribution': { es: '— Cliente de servicios profesionales, Toledo', en: '— Professional services client, Toledo' },
 
   // Services (kept for nav compatibility)
   'services.subtitle': { es: 'Servicios', en: 'Services' },
@@ -111,23 +112,23 @@ const translations: Translations = {
   'portfolio.all': { es: 'Todos', en: 'All' },
   'portfolio.view': { es: 'Ver campañas', en: 'View campaigns' },
 
-  // Process (Protocolo de Prestigio)
+  // Process (Cómo trabajamos)
   'process.subtitle': { es: 'Metodología', en: 'Methodology' },
-  'process.title': { es: 'El Protocolo de Prestigio de Toro IA', en: 'The Toro IA Prestige Protocol' },
-  'process.description': { es: 'El camino clínico a la autoridad de mercado.', en: 'The clinical path to market authority.' },
-  'process.step1.title': { es: 'Fase I — Diagnóstico de Autoridad', en: 'Phase I — Authority Diagnosis' },
-  'process.step1.desc': { es: 'Análisis quirúrgico de imagen y procesos. Definición de la narrativa de dominio que justifica su posición.', en: 'Surgical analysis of image and processes. Definition of the dominance narrative that justifies your position.' },
-  'process.step2.title': { es: 'Fase II — Ingeniería de Sistemas y Lujo', en: 'Phase II — Systems and Luxury Engineering' },
-  'process.step2.desc': { es: 'Despliegue visual premium e integración de ecosistemas n8n/Make. La estética y la operativa, una sola infraestructura.', en: 'Premium visual deployment and integration of n8n/Make ecosystems. Aesthetics and operations, one single infrastructure.' },
-  'process.step3.title': { es: 'Fase III — Blindaje de Mercado', en: 'Phase III — Market Shielding' },
-  'process.step3.desc': { es: 'Consultoría estratégica para escalar sin depender de tareas manuales. Su autoridad, blindada por sistema.', en: 'Strategic consulting to scale without relying on manual tasks. Your authority, shielded by system.' },
+  'process.title': { es: 'Cómo trabajamos', en: 'How we work' },
+  'process.description': { es: 'Un proceso de 6 semanas con resultados visibles desde la primera.', en: 'A 6-week process with visible results from week one.' },
+  'process.step1.title': { es: 'Fase 1 — Diagnóstico: identificamos dónde pierde tiempo tu empresa', en: 'Phase 1 — Diagnosis: we identify where your company loses time' },
+  'process.step1.desc': { es: 'Analizamos tus procesos actuales y detectamos los 3 cuellos de botella que más horas consumen.', en: 'We analyze your current processes and detect the 3 bottlenecks that consume the most hours.' },
+  'process.step2.title': { es: 'Fase 2 — Implantación: automatizamos sobre lo que ya usas, sin cambiar nada', en: 'Phase 2 — Implementation: we automate on top of what you already use, without changing anything' },
+  'process.step2.desc': { es: 'Construimos flujos con n8n/Make conectados a tus herramientas actuales. Sin migraciones ni nuevas plataformas.', en: 'We build flows with n8n/Make connected to your current tools. No migrations or new platforms.' },
+  'process.step3.title': { es: 'Fase 3 — Resultados: tu equipo trabaja solo y medimos el ahorro en horas y euros', en: 'Phase 3 — Results: your team works alone and we measure savings in hours and euros' },
+  'process.step3.desc': { es: 'Tu equipo ejecuta sin trabajo manual. Te entregamos el informe de horas y dinero ahorrados cada mes.', en: 'Your team executes without manual work. We deliver the report of hours and money saved every month.' },
 
   // About (Who We Are)
   'about.subtitle': { es: 'Estudio', en: 'Studio' },
-  'about.title': { es: 'Toro IA no es una agencia.', en: 'Toro IA is not an agency.' },
+  'about.title': { es: 'Toroia no es una agencia de marketing.', en: 'Toroia is not a marketing agency.' },
   'about.description': { 
-    es: 'Somos especialistas en la construcción de estatus visual. Enfoque técnico, seco y orientado a resultados de negocio. Si busca un proveedor complaciente, este no es su lugar.',
-    en: 'We specialize in building visual status. Technical, dry, business-results-driven approach. If you\'re looking for a complacent provider, this is not the place.'
+    es: 'Somos consultores especializados en digitalización con IA para empresas de seguridad y servicios profesionales. Nuestro trabajo es eliminar el trabajo manual de tu equipo y que notes el ahorro desde la primera semana.',
+    en: 'We are consultants specialized in AI-driven digitalization for security and professional services companies. Our job is to eliminate manual work from your team and make you feel the savings from week one.'
   },
 
   // CTA Final
