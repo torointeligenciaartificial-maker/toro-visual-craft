@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Quote } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollAnimations';
 
@@ -24,14 +25,18 @@ const ProblemSection: React.FC = () => {
             {t('problem.title')}
           </motion.h2>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-muted-foreground text-lg md:text-xl leading-relaxed max-w-2xl mx-auto"
           >
-            {t('problem.description')}
-          </motion.p>
+            <Quote className="w-8 h-8 text-primary/40 mx-auto mb-4" />
+            <p className="italic mb-4">{t('problem.description')}</p>
+            <p className="text-sm text-muted-foreground/70 font-medium tracking-wide uppercase">
+              {t('problem.attribution')}
+            </p>
+          </motion.div>
 
           <motion.div
             initial={{ scaleX: 0 }}
