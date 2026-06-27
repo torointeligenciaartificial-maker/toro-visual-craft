@@ -36,9 +36,11 @@ const LegalNotice = () => {
               <div className="bg-card border border-border rounded-lg p-6 space-y-2">
                 <p><strong className="text-foreground">Razón social:</strong> toroia</p>
                 <p><strong className="text-foreground">Responsable:</strong> Oscar Villena Carrasco</p>
+                <p><strong className="text-foreground">Forma jurídica:</strong> Autónomo</p>
                 <p><strong className="text-foreground">NIF/CIF:</strong> 08937774C</p>
                 <p><strong className="text-foreground">Dirección:</strong> Castillo de Almansa 428, Escalona (Toledo)</p>
                 <p><strong className="text-foreground">Correo electrónico:</strong> oscarvillena@toroia.vip</p>
+                <p><strong className="text-foreground">Correo corporativo:</strong> info@toroia.vip</p>
               </div>
             </section>
 

@@ -45,6 +45,10 @@ const Footer: React.FC = () => {
             <a href="/cookies" className="hover:text-primary transition-colors">
               Política de Cookies
             </a>
+            <span className="text-border">|</span>
+            <a href="mailto:info@toroia.vip" className="hover:text-primary transition-colors">
+              info@toroia.vip
+            </a>
           </div>
 
           {/* Copyright */}
