@@ -1,9 +1,7 @@
 import { Helmet } from "react-helmet-async";
-import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowLeft, Scale } from "lucide-react";
 
 const LegalNotice = () => {
-  const { t } = useLanguage();
 
   return (
     <>
@@ -20,7 +18,7 @@ const LegalNotice = () => {
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-12"
           >
             <ArrowLeft className="w-4 h-4" />
-            {t('nav.home')}
+            Inicio
           </a>
 
           <div className="flex items-center gap-4 mb-8">
