@@ -32,6 +32,21 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
+          {/* Legal Links */}
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
+            <a href="/aviso-legal" className="hover:text-primary transition-colors">
+              Aviso Legal
+            </a>
+            <span className="text-border">|</span>
+            <a href="/privacidad" className="hover:text-primary transition-colors">
+              Política de Privacidad
+            </a>
+            <span className="text-border">|</span>
+            <a href="/cookies" className="hover:text-primary transition-colors">
+              Política de Cookies
+            </a>
+          </div>
+
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-muted-foreground text-sm">
