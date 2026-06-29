@@ -74,9 +74,29 @@ const ContactSection: React.FC = () => {
               {t('contact.title')}
             </h2>
 
-            <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-md">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-md">
               {t('contact.description')}
             </p>
+
+            {/* NAP + Mapa para SEO local */}
+            <div className="space-y-3 text-sm text-muted-foreground mb-6">
+              <p><span className="text-primary">Dirección:</span> C. Castillo de Almansa, 45910 Escalona, Toledo</p>
+              <p><span className="text-primary">Teléfono:</span> <a href="tel:+34663683353" className="hover:text-cream transition-colors">663 68 33 53</a></p>
+              <p><span className="text-primary">Email:</span> <a href="mailto:info@toroia.vip" className="hover:text-cream transition-colors">info@toroia.vip</a></p>
+              <p><span className="text-primary">Horario:</span> L–V de 9:00 a 18:00</p>
+            </div>
+
+            <div className="border border-border rounded overflow-hidden aspect-[4/3] max-w-md">
+              <iframe
+                src="https://www.google.com/maps?q=Castillo+de+Almansa,+45910+Escalona,+Toledo&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación TORO IA en Escalona, Toledo"
+              />
+            </div>
           </motion.div>
 
           {/* Right - Form */}
