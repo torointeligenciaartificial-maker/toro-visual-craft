@@ -90,6 +90,15 @@ const EcosystemSection: React.FC = () => {
           })}
         </div>
 
+        {/* Quick links to dedicated service pages (SEO) */}
+        <div className="mt-12 flex flex-wrap justify-center gap-3 text-sm">
+          <a href="/servicios/automatizacion-n8n" className="px-4 py-2 border border-border hover:border-primary/60 text-muted-foreground hover:text-primary transition-colors">Automatización con n8n</a>
+          <a href="/servicios/consultoria-ia-pymes" className="px-4 py-2 border border-border hover:border-primary/60 text-muted-foreground hover:text-primary transition-colors">Consultoría de IA</a>
+          <a href="/servicios/auditoria-procesos-empresariales" className="px-4 py-2 border border-border hover:border-primary/60 text-muted-foreground hover:text-primary transition-colors">Auditoría de procesos</a>
+          <a href="/servicios/automatizacion-empresas-seguridad" className="px-4 py-2 border border-border hover:border-primary/60 text-muted-foreground hover:text-primary transition-colors">Seguridad privada</a>
+          <a href="/servicios/optimizacion-operativa-ia" className="px-4 py-2 border border-border hover:border-primary/60 text-muted-foreground hover:text-primary transition-colors">Optimización operativa</a>
+        </div>
+
         <motion.div
           initial={{ scaleX: 0 }}
           animate={isVisible ? { scaleX: 1 } : {}}
