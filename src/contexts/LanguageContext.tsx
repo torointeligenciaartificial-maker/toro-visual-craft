@@ -78,12 +78,12 @@ const translations: Translations = {
   'hero.microcopy': { es: 'Responderé en menos de 24h. Sin compromiso.', en: 'I will reply within 24 hours. No commitment.' },
 
   // Problem Section (now testimonial)
-  'problem.title': { es: 'Un cliente ahorró más de 4.000€ al año sin contratar a nadie más', en: 'A client saved over €4,000 a year without hiring anyone else' },
+  'problem.title': { es: 'Testimonios', en: 'Testimonials' },
   'problem.description': { 
-    es: 'Al reducir tareas repetitivas, el empleado puede hacer otras cosas sin necesidad de contratar más gente.',
-    en: 'By reducing repetitive tasks, the employee can do other things without needing to hire more people.'
+    es: 'Un cliente redujo más de 4.000 € al año en tareas repetitivas sin contratar a nadie más. La automatización liberó horas críticas y aumentó la capacidad operativa.',
+    en: 'A client reduced over €4,000 a year in repetitive tasks without hiring anyone. Automation freed critical hours and increased operational capacity.'
   },
-  'problem.attribution': { es: '— Cliente de servicios profesionales, Toledo', en: '— Professional services client, Toledo' },
+  'problem.attribution': { es: '— Empresa de servicios profesionales, Toledo', en: '— Professional services company, Toledo' },
 
   // Services (kept for nav compatibility)
   'services.subtitle': { es: 'Servicios', en: 'Services' },
@@ -117,12 +117,12 @@ const translations: Translations = {
   'process.subtitle': { es: 'Metodología', en: 'Methodology' },
   'process.title': { es: 'Cómo trabajamos', en: 'How we work' },
   'process.description': { es: 'Un proceso de 6 semanas con resultados visibles desde la primera.', en: 'A 6-week process with visible results from week one.' },
-  'process.step1.title': { es: 'Fase 1 — Diagnóstico: identificamos dónde pierde tiempo tu empresa', en: 'Phase 1 — Diagnosis: we identify where your company loses time' },
-  'process.step1.desc': { es: 'Analizamos tus procesos actuales y detectamos los 3 cuellos de botella que más horas consumen.', en: 'We analyze your current processes and detect the 3 bottlenecks that consume the most hours.' },
-  'process.step2.title': { es: 'Fase 2 — Implantación: automatizamos sobre lo que ya usas, sin cambiar nada', en: 'Phase 2 — Implementation: we automate on top of what you already use, without changing anything' },
-  'process.step2.desc': { es: 'Construimos flujos con n8n/Make conectados a tus herramientas actuales. Sin migraciones ni nuevas plataformas.', en: 'We build flows with n8n/Make connected to your current tools. No migrations or new platforms.' },
-  'process.step3.title': { es: 'Fase 3 — Resultados: tu equipo trabaja solo y medimos el ahorro en horas y euros', en: 'Phase 3 — Results: your team works alone and we measure savings in hours and euros' },
-  'process.step3.desc': { es: 'Tu equipo ejecuta sin trabajo manual. Te entregamos el informe de horas y dinero ahorrados cada mes.', en: 'Your team executes without manual work. We deliver the report of hours and money saved every month.' },
+  'process.step1.title': { es: 'Fase 1 — Diagnóstico', en: 'Phase 1 — Diagnosis' },
+  'process.step1.desc': { es: 'Identificamos los 3 cuellos de botella que más horas consumen.', en: 'We identify the 3 bottlenecks that consume the most hours.' },
+  'process.step2.title': { es: 'Fase 2 — Implantación', en: 'Phase 2 — Implementation' },
+  'process.step2.desc': { es: 'Automatizamos sobre tus herramientas actuales con n8n/Make. Sin cambiar nada.', en: 'We automate on top of your current tools with n8n/Make. Without changing anything.' },
+  'process.step3.title': { es: 'Fase 3 — Resultados', en: 'Phase 3 — Results' },
+  'process.step3.desc': { es: 'Tu equipo trabaja solo. Medimos ahorro mensual en horas y euros.', en: 'Your team works alone. We measure monthly savings in hours and euros.' },
 
   // About (Who We Are)
   'about.subtitle': { es: 'Estudio', en: 'Studio' },
@@ -137,10 +137,7 @@ const translations: Translations = {
   'cta.title': { es: '¿Tienen el valor de cobrar lo que realmente valen?', en: 'Do you have the courage to charge what you\'re really worth?' },
   'cta.description': { es: 'Solicite una Auditoría de Prestigio. Solo aceptamos 3 marcas por mes.', en: 'Request a Prestige Audit. We only accept 3 brands per month.' },
   'cta.primary': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
-  'cta.microcopy': { 
-    es: 'Solo aceptamos 3 marcas por mes. Analizamos cada proyecto antes de aceptarlo.',
-    en: 'We only accept 3 brands per month. We analyze each project before accepting it.'
-  },
+  'cta.microcopy': { es: 'Responderé en menos de 24h. Sin compromiso.', en: 'I will reply within 24 hours. No commitment.' },
 
   // Contact
   'contact.subtitle': { es: 'Contacto', en: 'Contact' },
