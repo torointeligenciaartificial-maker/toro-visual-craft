@@ -86,21 +86,26 @@ const HeroSection: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-4 items-start"
           >
-            <a
-              href="https://calendar.app.google/Guvvm7K1oUy7Lop5A"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-premium btn-appointment-spotlight rounded group flex items-center justify-center gap-3 text-base px-9 py-5"
-            >
-              <span>{t('nav.cta')}</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+            <div className="flex flex-col items-center gap-3">
+              <a
+                href="https://calendar.app.google/Guvvm7K1oUy7Lop5A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-premium btn-appointment-spotlight rounded group flex items-center justify-center gap-3 text-base px-9 py-5"
+              >
+                <span>{t('nav.cta')}</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+              <p className="text-xs text-muted-foreground/70 tracking-wide">
+                {t('hero.microcopy')}
+              </p>
+            </div>
             
             <button
               onClick={() => scrollToSection('process')}
-              className="text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-300 flex items-center justify-center gap-2 text-sm font-medium mt-5"
             >
               <span>{t('hero.cta.secondary')}</span>
               <ArrowRight className="w-3 h-3" />
