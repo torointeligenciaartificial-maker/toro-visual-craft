@@ -8,6 +8,7 @@ import LegalNotice from "./pages/LegalNotice";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import ServicePage from "./pages/ServicePage";
+import MetodologiaPage from "./pages/MetodologiaPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
