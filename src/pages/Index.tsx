@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
+import BenefitsSection from '@/components/BenefitsSection';
 import EcosystemSection from '@/components/EcosystemSection';
 import ProblemSection from '@/components/ProblemSection';
 import ProcessSection from '@/components/ProcessSection';

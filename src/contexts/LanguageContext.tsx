@@ -77,6 +77,14 @@ const translations: Translations = {
   'hero.cta.secondary': { es: 'Ver proceso', en: 'View process' },
   'hero.microcopy': { es: 'Responderé en menos de 24h. Sin compromiso.', en: 'I will reply within 24 hours. No commitment.' },
 
+  // Benefits Section
+  'benefits.subtitle': { es: 'Beneficios', en: 'Benefits' },
+  'benefits.title': { es: 'Recupera tiempo real desde la primera semana', en: 'Recover real time from week one' },
+  'benefits.b1': { es: 'Recupera entre 5 y 20 horas semanales sin contratar más personal.', en: 'Recover between 5 and 20 hours per week without hiring more staff.' },
+  'benefits.b2': { es: 'Automatización sobre tus herramientas actuales: sin migraciones.', en: 'Automation on top of your current tools: no migrations.' },
+  'benefits.b3': { es: 'Reducción inmediata de errores operativos.', en: 'Immediate reduction of operational errors.' },
+  'benefits.b4': { es: 'Ahorro visible desde la primera semana.', en: 'Visible savings from the first week.' },
+
   // Problem Section (now testimonial)
   'problem.title': { es: 'Testimonios', en: 'Testimonials' },
   'problem.description': { 
