@@ -67,14 +67,15 @@ const translations: Translations = {
   
   // Hero
   'hero.subtitle': { es: 'Automatización con IA', en: 'AI Automation' },
-  'hero.title1': { es: 'Tu equipo pierde entre 5 y 20 horas a la semana en tareas que ya puede hacer la IA sola.', en: 'Your team loses 5 to 20 hours a week on tasks AI can already handle alone.' },
+  'hero.title1': { es: 'Automatización con IA para empresas de seguridad y servicios profesionales', en: 'AI automation for security and professional services companies' },
   'hero.title2': { es: '', en: '' },
   'hero.description': { 
-    es: 'Ayudamos a empresas de seguridad y servicios profesionales a eliminar el trabajo manual con IA. Sin cambiar tus sistemas. Sin equipo técnico. Con resultados en 2 semanas.',
-    en: 'We help security and professional services companies eliminate manual work with AI. Without changing your systems. Without a tech team. With results in 2 weeks.'
+    es: 'Tu equipo pierde entre 5 y 20 horas a la semana en tareas repetitivas. La IA ya puede hacerlas sola. Eliminamos trabajo manual sin cambiar tus sistemas.',
+    en: 'Your team loses 5 to 20 hours a week on repetitive tasks. AI can already handle them alone. We eliminate manual work without changing your systems.'
   },
   'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
   'hero.cta.secondary': { es: 'Ver proceso', en: 'View process' },
+  'hero.microcopy': { es: 'Responderé en menos de 24h. Sin compromiso.', en: 'I will reply within 24 hours. No commitment.' },
 
   // Problem Section (now testimonial)
   'problem.title': { es: 'Un cliente ahorró más de 4.000€ al año sin contratar a nadie más', en: 'A client saved over €4,000 a year without hiring anyone else' },
