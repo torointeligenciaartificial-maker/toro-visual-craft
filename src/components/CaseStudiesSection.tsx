@@ -153,23 +153,48 @@ const CaseStudiesSection: React.FC = () => {
           })}
         </div>
 
-        {/* Reseñas Google Business placeholder */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="max-w-2xl mx-auto text-center border border-border bg-card/40 p-8"
-        >
-          <div className="flex items-center justify-center gap-2 mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-5 h-5 text-primary fill-primary" />
+        {/* Reseñas verificadas de Google Business */}
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-primary text-xs tracking-widest uppercase mb-3">{labels.reviews}</p>
+            <div className="flex items-center justify-center gap-2">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 text-primary fill-primary" />
+              ))}
+              <span className="ml-2 text-foreground font-semibold">5,0</span>
+              <span className="text-muted-foreground text-sm">({language === 'es' ? '8 reseñas' : '8 reviews'})</span>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {reviews.map((r, i) => (
+              <motion.article
+                key={r.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isVisible ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 0.4 + i * 0.1 }}
+                className="border border-border bg-card/40 p-6 flex flex-col"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold">
+                    {r.name.charAt(0).toUpperCase()}
+                  </div>
+                  <div>
+                    <p className="text-foreground font-medium text-sm">{r.name}</p>
+                    <p className="text-muted-foreground text-xs">{r.badge}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 mb-3">
+                  {[...Array(5)].map((_, j) => (
+                    <Star key={j} className="w-3.5 h-3.5 text-primary fill-primary" />
+                  ))}
+                  <span className="text-muted-foreground text-xs">· {r.time}</span>
+                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed">"{r.text}"</p>
+              </motion.article>
             ))}
           </div>
-          <p className="text-primary text-xs tracking-widest uppercase mb-3">{labels.reviews}</p>
-          <p className="text-muted-foreground text-sm leading-relaxed">
-            {labels.soon}
-          </p>
-        </motion.div>
+        </div>
+
 
         <motion.div
           initial={{ scaleX: 0 }}
