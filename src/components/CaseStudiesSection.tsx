@@ -57,8 +57,35 @@ const CaseStudiesSection: React.FC = () => {
   ];
 
   const labels = language === 'es'
-    ? { initial: 'Situación inicial', solution: 'Solución aplicada', result: 'Resultado', reviews: 'Reseñas de Google Business', soon: 'Próximamente publicaremos reseñas verificadas de nuestros clientes en Google Business.' }
-    : { initial: 'Initial situation', solution: 'Applied solution', result: 'Result', reviews: 'Google Business reviews', soon: 'We will soon publish verified client reviews on Google Business.' };
+    ? { initial: 'Situación inicial', solution: 'Solución aplicada', result: 'Resultado', reviews: 'Reseñas verificadas de Google Business' }
+    : { initial: 'Initial situation', solution: 'Applied solution', result: 'Result', reviews: 'Verified Google Business reviews' };
+
+  const reviews = [
+    {
+      name: 'isabel villena',
+      badge: language === 'es' ? 'Local Guide · 23 reseñas' : 'Local Guide · 23 reviews',
+      time: language === 'es' ? 'Hace 8 semanas' : '8 weeks ago',
+      text: language === 'es'
+        ? 'Buscábamos desmarcarnos de la competencia y la consultoría técnica de Óscar ha sido la clave. Ha sabido integrar IA y procesos avanzados de una manera que no solo optimiza la empresa, sino que nos posiciona como referentes tecnológicos en nuestro sector. Su visión sobre la Ingeniería de Autoridad es lo que toda pyme necesita hoy para ser competitiva a nivel premium.'
+        : 'We wanted to stand out from the competition and Óscar\'s technical consulting was key. He integrated AI and advanced processes in a way that not only optimizes the company, but positions us as tech leaders in our sector.',
+    },
+    {
+      name: 'Mercedes Martínez',
+      badge: language === 'es' ? '7 reseñas' : '7 reviews',
+      time: language === 'es' ? 'Hace 19 horas' : '19 hours ago',
+      text: language === 'es'
+        ? 'Cumplió con todas nuestras expectativas, y con trato personalizado y un producto adaptado a nuestras necesidades, lo recomiendo al 100%.'
+        : 'Met all our expectations, with personalized service and a product adapted to our needs. 100% recommended.',
+    },
+    {
+      name: 'Yaron SK8',
+      badge: language === 'es' ? '3 reseñas' : '3 reviews',
+      time: language === 'es' ? 'Hace 3 días' : '3 days ago',
+      text: language === 'es'
+        ? 'La profesionalidad y compromiso que te dedica Óscar hace que no solo su servicio sea práctico, sino también te genere resultado.'
+        : 'The professionalism and commitment Óscar dedicates makes his service not only practical, but also results-driven.',
+    },
+  ];
 
   return (
     <section id="cases" className="py-32 lg:py-40 relative overflow-hidden">
