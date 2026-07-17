@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "sdk_version": "0.23.0",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "toro-ia-mcp",
+      "version": "0.1.0",
+      "title": "TORO IA"
+    },
+    "tools": [
+      {
+        "name": "list_services",
+        "title": "List TORO IA services",
+        "description": "Returns the catalog of TORO IA's consulting services (slug, title and subtitle). Use to discover which services exist before fetching details.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_service",
+        "title": "Get TORO IA service detail",
+        "description": "Returns the full detail of a single TORO IA service by its slug: benefits, what is included, steps and SEO metadata.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "slug": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Service slug, e.g. 'automatizacion-n8n' or 'consultoria-ia-pymes'."
+            }
+          },
+          "required": [
+            "slug"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_methodology",
+        "title": "Get TORO IA methodology",
+        "description": "Returns TORO IA's 6-week consulting methodology for AI and automation projects.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "submit_lead",
+        "title": "Request a TORO IA audit",
+        "description": "Submits a qualified lead to TORO IA (same intake as the website contact form). Use only when the caller confirms they want to request a prestige audit and has provided all fields.",
+        "annotations": {
+          "readOnlyHint": false,
+          "destructiveHint": false,
+          "idempotentHint": false,
+          "openWorldHint": true
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200,
+              "description": "Full name of the requester."
+            },
+            "brand": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 200,
+              "description": "Company or brand name."
+            },
+            "productType": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100,
+              "description": "Sector or product type, e.g. 'beverage', 'cosmetics', 'B2B services'."
+            },
+            "email": {
+              "type": "string",
+              "maxLength": 255,
+              "format": "email",
+              "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
+              "description": "Contact email."
+            },
+            "budget": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 50,
+              "description": "Budget tier: 'hasta-1200', '1200-2500' or 'evaluando'."
+            },
+            "message": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000,
+              "description": "Brief context of the project or challenge."
+            }
+          },
+          "required": [
+            "name",
+            "brand",
+            "productType",
+            "email",
+            "budget",
+            "message"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
