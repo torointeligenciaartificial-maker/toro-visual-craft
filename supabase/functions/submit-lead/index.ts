@@ -38,6 +38,8 @@ interface LeadData {
   budget: string;
   bottleneck: string;
   message?: string;
+  website?: string;
+  elapsedMs?: number;
 }
 
 serve(async (req) => {
@@ -53,9 +55,24 @@ serve(async (req) => {
 
     const lead: LeadData = await req.json();
 
+    // Antispam: campo trampa relleno o envío en menos de 3 s => bot. Respondemos OK sin guardar nada.
+    if ((lead.website && lead.website.trim() !== "") || (typeof lead.elapsedMs === "number" && lead.elapsedMs < 3000)) {
+      return new Response(
+        JSON.stringify({ success: true }),
+        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
     if (!lead.name || !lead.email || !lead.brand || !lead.productType || !lead.budget || !lead.bottleneck) {
       return new Response(
         JSON.stringify({ error: "All fields are required" }),
+        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(lead.email.trim())) {
+      return new Response(
+        JSON.stringify({ error: "Invalid email" }),
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
