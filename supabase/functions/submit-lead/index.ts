@@ -9,13 +9,22 @@ const corsHeaders = {
 
 const NOTIFICATION_EMAIL = "info@toroia.vip";
 
+const escapeHtml = (value: string) =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
 interface LeadData {
   name: string;
   brand: string;
   productType: string;
   email: string;
   budget: string;
-  message: string;
+  bottleneck: string;
+  message?: string;
 }
 
 serve(async (req) => {
@@ -31,12 +40,16 @@ serve(async (req) => {
 
     const lead: LeadData = await req.json();
 
-    if (!lead.name || !lead.email || !lead.brand || !lead.productType || !lead.budget || !lead.message) {
+    if (!lead.name || !lead.email || !lead.brand || !lead.productType || !lead.budget || !lead.bottleneck) {
       return new Response(
         JSON.stringify({ error: "All fields are required" }),
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
+
+    const extraMessage = lead.message?.trim() ?? "";
+    const combinedMessage = `Cuello de botella: ${lead.bottleneck.trim()}` +
+      (extraMessage ? `\nMensaje: ${extraMessage}` : "");
 
     // Insert lead
     const { error: insertError } = await supabase.from("leads").insert({
@@ -45,7 +58,7 @@ serve(async (req) => {
       product_type: lead.productType.trim().slice(0, 100),
       email: lead.email.trim().slice(0, 255),
       budget: lead.budget.trim().slice(0, 50),
-      message: lead.message.trim().slice(0, 2000),
+      message: combinedMessage.slice(0, 2000),
     });
 
     if (insertError) {
@@ -70,7 +83,8 @@ serve(async (req) => {
             tipo_producto: lead.productType === "beverage" ? "Bebida" : lead.productType === "cosmetics" ? "Cosmética" : lead.productType,
             email: lead.email,
             presupuesto: lead.budget === "hasta-1200" ? "Hasta 1.200 €" : lead.budget === "1200-2500" ? "1.200 € – 2.500 €" : lead.budget === "evaluando" ? "Estoy valorando opciones" : lead.budget,
-            mensaje: lead.message,
+            cuello_botella: lead.bottleneck,
+            mensaje: lead.message ?? "",
           }),
         });
         if (!webhookRes.ok) {
@@ -109,12 +123,13 @@ serve(async (req) => {
             <div style="font-family: Georgia, serif; max-width: 560px; margin: 0 auto; color: #1a1a1a;">
               <h2 style="font-size: 20px; font-weight: 600; margin-bottom: 24px;">Nuevo lead recibido</h2>
               <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-                <tr><td style="padding: 8px 0; color: #888;">Nombre</td><td style="padding: 8px 0;">${lead.name}</td></tr>
-                <tr><td style="padding: 8px 0; color: #888;">Marca</td><td style="padding: 8px 0;">${lead.brand}</td></tr>
-                <tr><td style="padding: 8px 0; color: #888;">Producto</td><td style="padding: 8px 0;">${productLabels[lead.productType] || lead.productType}</td></tr>
-                <tr><td style="padding: 8px 0; color: #888;">Email</td><td style="padding: 8px 0;"><a href="mailto:${lead.email}">${lead.email}</a></td></tr>
-                <tr><td style="padding: 8px 0; color: #888;">Presupuesto</td><td style="padding: 8px 0;">${budgetLabels[lead.budget] || lead.budget}</td></tr>
-                <tr><td style="padding: 8px 0; color: #888;">Mensaje</td><td style="padding: 8px 0;">${lead.message}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Nombre</td><td style="padding: 8px 0;">${escapeHtml(lead.name)}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Marca</td><td style="padding: 8px 0;">${escapeHtml(lead.brand)}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Producto</td><td style="padding: 8px 0;">${escapeHtml(productLabels[lead.productType] || lead.productType)}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Email</td><td style="padding: 8px 0;"><a href="mailto:${escapeHtml(lead.email)}">${escapeHtml(lead.email)}</a></td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Presupuesto</td><td style="padding: 8px 0;">${escapeHtml(budgetLabels[lead.budget] || lead.budget)}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Cuello de botella</td><td style="padding: 8px 0;">${escapeHtml(lead.bottleneck)}</td></tr>
+                <tr><td style="padding: 8px 0; color: #888;">Mensaje</td><td style="padding: 8px 0;">${extraMessage ? escapeHtml(extraMessage) : "—"}</td></tr>
               </table>
             </div>
           `,
