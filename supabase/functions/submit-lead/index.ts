@@ -9,6 +9,19 @@ const corsHeaders = {
 
 const NOTIFICATION_EMAIL = "info@toroia.vip";
 
+const sectorLabels: Record<string, string> = {
+  security: "Seguridad",
+  advisory: "Asesoría / gestoría",
+  clinic: "Clínica",
+  construction: "Reformas / mantenimiento",
+  hospitality: "Hotel / restauración",
+  other: "Otro",
+  beverage: "Bebida",
+  cosmetics: "Cosmética",
+  fashion: "Moda / Lujo",
+  food: "Alimentación",
+};
+
 const escapeHtml = (value: string) =>
   value
     .replace(/&/g, "&amp;")
@@ -80,7 +93,7 @@ serve(async (req) => {
             fecha: new Date().toISOString(),
             nombre: lead.name,
             marca: lead.brand,
-            tipo_producto: lead.productType === "beverage" ? "Bebida" : lead.productType === "cosmetics" ? "Cosmética" : lead.productType,
+            tipo_producto: sectorLabels[lead.productType] || lead.productType,
             email: lead.email,
             presupuesto: lead.budget === "hasta-1200" ? "Hasta 1.200 €" : lead.budget === "1200-2500" ? "1.200 € – 2.500 €" : lead.budget === "evaluando" ? "Estoy valorando opciones" : lead.budget,
             cuello_botella: lead.bottleneck,
@@ -104,10 +117,7 @@ serve(async (req) => {
         "1200-2500": "1.200 € – 2.500 €",
         "evaluando": "Estoy valorando opciones",
       };
-      const productLabels: Record<string, string> = {
-        beverage: "Bebida",
-        cosmetics: "Cosmética",
-      };
+      const productLabels = sectorLabels;
 
       const emailRes = await fetch("https://api.resend.com/emails", {
         method: "POST",

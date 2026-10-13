@@ -154,10 +154,11 @@ const ContactSection: React.FC = () => {
                     className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground focus:outline-none focus:border-primary transition-colors duration-300 appearance-none cursor-pointer"
                   >
                     <option value="" disabled>{t('contact.productType.placeholder')}</option>
-                    <option value="beverage">{t('contact.productType.beverage')}</option>
-                    <option value="cosmetics">{t('contact.productType.cosmetics')}</option>
-                    <option value="fashion">{t('contact.productType.fashion')}</option>
-                    <option value="food">{t('contact.productType.food')}</option>
+                    <option value="security">{t('contact.productType.security')}</option>
+                    <option value="advisory">{t('contact.productType.advisory')}</option>
+                    <option value="clinic">{t('contact.productType.clinic')}</option>
+                    <option value="construction">{t('contact.productType.construction')}</option>
+                    <option value="hospitality">{t('contact.productType.hospitality')}</option>
                     <option value="other">{t('contact.productType.other')}</option>
                   </select>
                 </div>
