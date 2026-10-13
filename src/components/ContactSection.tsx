@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -10,6 +10,8 @@ const ContactSection: React.FC = () => {
   const { t } = useLanguage();
   const { ref, isVisible } = useScrollReveal(0.1);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const openedAt = useRef(Date.now());
+  const [website, setWebsite] = useState(''); // honeypot: los humanos no lo ven
   const [formData, setFormData] = useState({
     name: '',
     brand: '',
@@ -30,7 +32,7 @@ const ContactSection: React.FC = () => {
     
     try {
       const { data, error } = await supabase.functions.invoke('submit-lead', {
-        body: formData,
+        body: { ...formData, website, elapsedMs: Date.now() - openedAt.current },
       });
 
       if (error) throw error;
@@ -106,6 +108,12 @@ const ContactSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <form onSubmit={handleSubmit} className="card-premium p-8 lg:p-10">
+              <div aria-hidden="true" style={{ position: 'absolute', left: '-10000px', width: 1, height: 1, overflow: 'hidden' }}>
+                <label>
+                  Website
+                  <input type="text" name="website" tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
+                </label>
+              </div>
               <p className="text-muted-foreground text-sm leading-relaxed mb-8">
                 {t('contact.formIntro')}
               </p>
@@ -154,10 +162,11 @@ const ContactSection: React.FC = () => {
                     className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground focus:outline-none focus:border-primary transition-colors duration-300 appearance-none cursor-pointer"
                   >
                     <option value="" disabled>{t('contact.productType.placeholder')}</option>
-                    <option value="beverage">{t('contact.productType.beverage')}</option>
-                    <option value="cosmetics">{t('contact.productType.cosmetics')}</option>
-                    <option value="fashion">{t('contact.productType.fashion')}</option>
-                    <option value="food">{t('contact.productType.food')}</option>
+                    <option value="security">{t('contact.productType.security')}</option>
+                    <option value="advisory">{t('contact.productType.advisory')}</option>
+                    <option value="clinic">{t('contact.productType.clinic')}</option>
+                    <option value="construction">{t('contact.productType.construction')}</option>
+                    <option value="hospitality">{t('contact.productType.hospitality')}</option>
                     <option value="other">{t('contact.productType.other')}</option>
                   </select>
                 </div>
