@@ -142,8 +142,8 @@ const ChatBot: React.FC = () => {
   };
 
   const greeting = language === 'es'
-    ? '¡Hola! Soy la asistente de TORO IA. ¿En qué puedo ayudarte con tu campaña visual?'
-    : "Hi! I'm TORO IA's assistant. How can I help you with your visual campaign?";
+    ? '¡Hola! Soy el asistente de TORO IA. ¿Qué tareas repetitivas de tu empresa te gustaría automatizar?'
+    : "Hi! I'm TORO IA's assistant. Which repetitive tasks in your company would you like to automate?";
 
   return (
     <>

@@ -155,8 +155,8 @@ const translations: Translations = {
     en: 'Tell us in 2 minutes and we\'ll tell you exactly what can be automated.'
   },
   'contact.formIntro': { 
-    es: 'Solo trabajamos con marcas que buscan dominar su categoría. Cuéntenos su caso.',
-    en: 'We only work with brands that seek to dominate their category. Tell us your case.'
+    es: 'Cuéntanos tu caso y te respondo en menos de 24 horas con una propuesta para tu diagnóstico gratuito de 20 minutos.',
+    en: 'Tell us about your case and I will reply within 24 hours with a proposal for your free 20-minute diagnosis.'
   },
   'contact.name': { es: 'Nombre', en: 'Name' },
   'contact.email': { es: 'Email', en: 'Email' },
