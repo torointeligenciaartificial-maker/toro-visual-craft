@@ -294,7 +294,8 @@ var submit_lead_default = defineTool4({
     productType: z3.string().min(1).max(100).describe("Sector or product type, e.g. 'beverage', 'cosmetics', 'B2B services'."),
     email: z3.string().email().max(255).describe("Contact email."),
     budget: z3.string().min(1).max(50).describe("Budget tier: 'hasta-1200', '1200-2500' or 'evaluando'."),
-    message: z3.string().min(1).max(2e3).describe("Brief context of the project or challenge.")
+    bottleneck: z3.string().min(1).max(2e3).describe("Main operational bottleneck the company wants to solve."),
+    message: z3.string().max(2e3).optional().describe("Optional additional context about the project.")
   },
   annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: false, openWorldHint: true },
   handler: async (input) => {

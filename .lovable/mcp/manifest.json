@@ -114,11 +114,16 @@
               "maxLength": 50,
               "description": "Budget tier: 'hasta-1200', '1200-2500' or 'evaluando'."
             },
-            "message": {
+            "bottleneck": {
               "type": "string",
               "minLength": 1,
               "maxLength": 2000,
-              "description": "Brief context of the project or challenge."
+              "description": "Main operational bottleneck the company wants to solve."
+            },
+            "message": {
+              "description": "Optional additional context about the project.",
+              "type": "string",
+              "maxLength": 2000
             }
           },
           "required": [
@@ -127,7 +132,7 @@
             "productType",
             "email",
             "budget",
-            "message"
+            "bottleneck"
           ]
         },
         "outputSchema": null
