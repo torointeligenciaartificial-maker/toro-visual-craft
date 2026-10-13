@@ -20,7 +20,8 @@ export default defineTool({
       .min(1)
       .max(50)
       .describe("Budget tier: 'hasta-1200', '1200-2500' or 'evaluando'."),
-    message: z.string().min(1).max(2000).describe("Brief context of the project or challenge."),
+    bottleneck: z.string().min(1).max(2000).describe("Main operational bottleneck the company wants to solve."),
+    message: z.string().max(2000).optional().describe("Optional additional context about the project."),
   },
   annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: false, openWorldHint: true },
   handler: async (input) => {
