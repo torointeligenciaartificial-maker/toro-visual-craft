@@ -72,6 +72,13 @@ const Header: React.FC = () => {
             </button>
 
             <button
+              onClick={() => scrollToSection('academy')}
+              className="relative text-sm font-medium text-cream-muted hover:text-cream transition-colors duration-300 line-animate"
+            >
+              {t('nav.academy')}
+            </button>
+
+            <button
               onClick={() => scrollToSection('cases')}
               className="relative text-sm font-medium text-cream-muted hover:text-cream transition-colors duration-300 line-animate"
             >
@@ -157,6 +164,13 @@ const Header: React.FC = () => {
                   className="text-left text-lg font-medium text-cream-muted hover:text-primary transition-colors duration-300 py-2"
                 >
                   {t('nav.solutions')}
+                </button>
+
+                <button
+                  onClick={() => scrollToSection('academy')}
+                  className="text-left text-lg font-medium text-cream-muted hover:text-primary transition-colors duration-300 py-2"
+                >
+                  {t('nav.academy')}
                 </button>
 
                 <button
