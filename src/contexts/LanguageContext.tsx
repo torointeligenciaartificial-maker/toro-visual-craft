@@ -16,7 +16,7 @@ const translations: Translations = {
   'nav.campaigns': { es: 'Campañas', en: 'Campaigns' },
   'nav.process': { es: 'Proceso', en: 'Process' },
   'nav.methodology': { es: 'Metodología', en: 'Methodology' },
-  'nav.solutions': { es: 'Soluciones', en: 'Solutions' },
+  'nav.solutions': { es: 'Precios', en: 'Prices' },
   'nav.solutions.consulting': { es: 'Consultoría de Operaciones', en: 'Operations Consulting' },
   'nav.solutions.automation': { es: 'Sistemas de Automatización', en: 'Automation Systems' },
   'nav.solutions.identity': { es: 'Identidad de Autoridad', en: 'Authority Identity' },

@@ -26,11 +26,10 @@ const Footer: React.FC = () => {
               Servicios
             </h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="/servicios/automatizacion-n8n" className="hover:text-primary transition-colors">Automatización con n8n</a></li>
-              <li><a href="/servicios/consultoria-ia-pymes" className="hover:text-primary transition-colors">Consultoría de IA para pymes</a></li>
-              <li><a href="/servicios/auditoria-procesos-empresariales" className="hover:text-primary transition-colors">Auditoría de procesos</a></li>
-              <li><a href="/servicios/automatizacion-empresas-seguridad" className="hover:text-primary transition-colors">Automatización para seguridad</a></li>
-              <li><a href="/servicios/optimizacion-operativa-ia" className="hover:text-primary transition-colors">Optimización operativa</a></li>
+              <li><a href="/#pricing" className="hover:text-primary transition-colors">Precios</a></li>
+              <li><a href="/#process" className="hover:text-primary transition-colors">Cómo trabajamos</a></li>
+              <li><a href="/#cases" className="hover:text-primary transition-colors">Reseñas de clientes</a></li>
+              <li><a href="/#contact" className="hover:text-primary transition-colors">Contacto</a></li>
             </ul>
           </div>
 

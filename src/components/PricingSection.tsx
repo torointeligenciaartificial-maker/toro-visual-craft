@@ -62,6 +62,9 @@ const PricingSection: React.FC = () => {
               ? 'Te digo el importe exacto después de una llamada de 20 minutos.'
               : 'I give you the exact amount after a 20-minute call.'}
           </p>
+          <p className="text-muted-foreground text-sm mt-3">
+            {es ? 'Todos los precios incluyen IVA.' : 'All prices include VAT.'}
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto mb-10">

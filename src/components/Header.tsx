@@ -65,7 +65,7 @@ const Header: React.FC = () => {
             </button>
 
             <button
-              onClick={() => scrollToSection('ecosystem')}
+              onClick={() => scrollToSection('pricing')}
               className="relative text-sm font-medium text-cream-muted hover:text-cream transition-colors duration-300 line-animate"
             >
               {t('nav.solutions')}
@@ -160,7 +160,7 @@ const Header: React.FC = () => {
                 </button>
 
                 <button
-                  onClick={() => scrollToSection('ecosystem')}
+                  onClick={() => scrollToSection('pricing')}
                   className="text-left text-lg font-medium text-cream-muted hover:text-primary transition-colors duration-300 py-2"
                 >
                   {t('nav.solutions')}
