@@ -57,22 +57,27 @@ const CaseStudiesSection: React.FC = () => {
   ];
 
   const labels = language === 'es'
-    ? { initial: 'Situación inicial', solution: 'Solución aplicada', result: 'Resultado', reviews: 'Reseñas verificadas de Google Business' }
-    : { initial: 'Initial situation', solution: 'Applied solution', result: 'Result', reviews: 'Verified Google Business reviews' };
+    ? { initial: 'Situación inicial', solution: 'Solución aplicada', result: 'Resultado', reviews: 'Reseñas de clientes en Google' }
+    : { initial: 'Initial situation', solution: 'Applied solution', result: 'Result', reviews: 'Customer reviews on Google' };
 
   const reviews = [
     {
-      name: 'isabel villena',
-      badge: language === 'es' ? 'Local Guide · 23 reseñas' : 'Local Guide · 23 reviews',
-      time: language === 'es' ? 'Hace 8 semanas' : '8 weeks ago',
+      name: 'Roberto Perez',
+      badge: language === 'es' ? '1 reseña' : '1 review',
       text: language === 'es'
-        ? 'Buscábamos desmarcarnos de la competencia y la consultoría técnica de Óscar ha sido la clave. Ha sabido integrar IA y procesos avanzados de una manera que no solo optimiza la empresa, sino que nos posiciona como referentes tecnológicos en nuestro sector. Su visión sobre la Ingeniería de Autoridad es lo que toda pyme necesita hoy para ser competitiva a nivel premium.'
-        : 'We wanted to stand out from the competition and Óscar\'s technical consulting was key. He integrated AI and advanced processes in a way that not only optimizes the company, but positions us as tech leaders in our sector.',
+        ? 'Profesional con muchas ideas. Un placer trabajar con él. Rapidez y eficacia. Me transmite tranquilidad. Totalmente recomendable.'
+        : 'A professional full of ideas. A pleasure to work with. Fast and effective. He gives me peace of mind. Totally recommended.',
+    },
+    {
+      name: 'Anbadul SLU',
+      badge: language === 'es' ? '5 reseñas' : '5 reviews',
+      text: language === 'es'
+        ? 'Muy atento y explica con mucha paciencia hasta que lo entiendas todo, y no se ponen pesados de contratar un producto si no lo pides tú. Merece la pena contactar con ellos.'
+        : 'Very attentive and explains with great patience until you understand everything, and they never push you to buy something you did not ask for. Worth getting in touch.',
     },
     {
       name: 'Mercedes Martínez',
-      badge: language === 'es' ? '7 reseñas' : '7 reviews',
-      time: language === 'es' ? 'Hace 19 horas' : '19 hours ago',
+      badge: language === 'es' ? '8 reseñas' : '8 reviews',
       text: language === 'es'
         ? 'Cumplió con todas nuestras expectativas, y con trato personalizado y un producto adaptado a nuestras necesidades, lo recomiendo al 100%.'
         : 'Met all our expectations, with personalized service and a product adapted to our needs. 100% recommended.',
@@ -80,10 +85,23 @@ const CaseStudiesSection: React.FC = () => {
     {
       name: 'Yaron SK8',
       badge: language === 'es' ? '3 reseñas' : '3 reviews',
-      time: language === 'es' ? 'Hace 3 días' : '3 days ago',
       text: language === 'es'
         ? 'La profesionalidad y compromiso que te dedica Óscar hace que no solo su servicio sea práctico, sino también te genere resultado.'
         : 'The professionalism and commitment Óscar dedicates makes his service not only practical, but also results-driven.',
+    },
+    {
+      name: 'advc vilca',
+      badge: language === 'es' ? 'Local Guide · 24 reseñas' : 'Local Guide · 24 reviews',
+      text: language === 'es'
+        ? 'Un servicio de calidad que permite trabajar con mayor agilidad y eficacia.'
+        : 'A quality service that lets you work with more agility and efficiency.',
+    },
+    {
+      name: 'Freddy Espinoza',
+      badge: language === 'es' ? '2 reseñas' : '2 reviews',
+      text: language === 'es'
+        ? 'Me ayudó mucho con el flujo de mi trabajo, reduciendo costes y horas perdidas.'
+        : 'He helped me a lot with my workflow, cutting costs and wasted hours.',
     },
   ];
 
@@ -162,7 +180,7 @@ const CaseStudiesSection: React.FC = () => {
                 <Star key={i} className="w-5 h-5 text-primary fill-primary" />
               ))}
               <span className="ml-2 text-foreground font-semibold">5,0</span>
-              <span className="text-muted-foreground text-sm">({language === 'es' ? '8 reseñas' : '8 reviews'})</span>
+              <span className="text-muted-foreground text-sm">({language === 'es' ? '10 reseñas' : '10 reviews'})</span>
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -187,7 +205,6 @@ const CaseStudiesSection: React.FC = () => {
                   {[...Array(5)].map((_, j) => (
                     <Star key={j} className="w-3.5 h-3.5 text-primary fill-primary" />
                   ))}
-                  <span className="text-muted-foreground text-xs">· {r.time}</span>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">"{r.text}"</p>
               </motion.article>

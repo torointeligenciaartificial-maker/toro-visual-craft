@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, CalendarDays } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
-const CALENDLY_URL = 'https://calendar.app.google/Guvvm7K1oUy7Lop5A';
+const CALENDLY_URL = 'https://wa.me/34663663353?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20web%20y%20el%20asistente%20de%20WhatsApp%20para%20mi%20negocio.';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);

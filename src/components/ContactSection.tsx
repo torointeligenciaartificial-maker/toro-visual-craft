@@ -17,7 +17,7 @@ const ContactSection: React.FC = () => {
     brand: '',
     productType: '',
     email: '',
-    budget: '',
+    budget: 'evaluando',
     bottleneck: '',
     message: '',
   });
@@ -41,7 +41,7 @@ const ContactSection: React.FC = () => {
         description: 'Le contactaremos en las próximas 24 horas. / We\'ll contact you within 24 hours.',
       });
       
-      setFormData({ name: '', brand: '', productType: '', email: '', budget: '', bottleneck: '', message: '' });
+      setFormData({ name: '', brand: '', productType: '', email: '', budget: 'evaluando', bottleneck: '', message: '' });
     } catch (error) {
       console.error('Error submitting form:', error);
       toast.error('Error al enviar / Error sending', {
@@ -83,7 +83,7 @@ const ContactSection: React.FC = () => {
             {/* NAP + Mapa para SEO local */}
             <div className="space-y-3 text-sm text-muted-foreground mb-6">
               <p><span className="text-primary">Dirección:</span> C. Castillo de Almansa, 45910 Escalona, Toledo</p>
-              <p><span className="text-primary">Teléfono:</span> <a href="tel:+34663683353" className="hover:text-cream transition-colors">663 68 33 53</a></p>
+              <p><span className="text-primary">Teléfono:</span> <a href="tel:+34663663353" className="hover:text-cream transition-colors">663 66 33 53</a></p>
               <p><span className="text-primary">Email:</span> <a href="mailto:info@toroia.vip" className="hover:text-cream transition-colors">info@toroia.vip</a></p>
               <p><span className="text-primary">Horario:</span> L–V de 9:00 a 18:00</p>
             </div>
@@ -162,11 +162,10 @@ const ContactSection: React.FC = () => {
                     className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground focus:outline-none focus:border-primary transition-colors duration-300 appearance-none cursor-pointer"
                   >
                     <option value="" disabled>{t('contact.productType.placeholder')}</option>
-                    <option value="security">{t('contact.productType.security')}</option>
+                    <option value="Despacho de abogados">{t('contact.productType.security')}</option>
                     <option value="advisory">{t('contact.productType.advisory')}</option>
-                    <option value="clinic">{t('contact.productType.clinic')}</option>
-                    <option value="construction">{t('contact.productType.construction')}</option>
-                    <option value="hospitality">{t('contact.productType.hospitality')}</option>
+                    <option value="Comercio local">{t('contact.productType.clinic')}</option>
+                    <option value="Otro negocio de servicios">{t('contact.productType.construction')}</option>
                     <option value="other">{t('contact.productType.other')}</option>
                   </select>
                 </div>
@@ -184,25 +183,6 @@ const ContactSection: React.FC = () => {
                     required
                     className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300"
                   />
-                </div>
-
-                <div>
-                  <label htmlFor="budget" className="block text-sm font-medium text-foreground mb-2">
-                    {t('contact.budget')}
-                  </label>
-                  <select
-                    id="budget"
-                    name="budget"
-                    value={formData.budget}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground focus:outline-none focus:border-primary transition-colors duration-300 appearance-none cursor-pointer"
-                  >
-                    <option value="" disabled>{t('contact.budget.placeholder')}</option>
-                    <option value="hasta-1200">{t('contact.budget.option1')}</option>
-                    <option value="1200-2500">{t('contact.budget.option2')}</option>
-                    <option value="evaluando">{t('contact.budget.option3')}</option>
-                  </select>
                 </div>
 
                 <div>

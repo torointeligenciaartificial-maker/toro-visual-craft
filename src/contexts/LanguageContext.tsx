@@ -60,7 +60,7 @@ const translations: Translations = {
   'academy.mock.l3': { es: 'La IA en el día a día', en: 'AI in everyday life' },
   'academy.mock.l4': { es: 'Cuestionario y diploma', en: 'Quiz and diploma' },
 
-  'nav.cta': { es: 'Reserva tu diagnóstico gratuito de 20 min', en: 'Book your free 20-min diagnosis' },
+  'nav.cta': { es: 'Escríbenos por WhatsApp', en: 'Write to us on WhatsApp' },
 
   // Ecosystem Section
   'ecosystem.subtitle': { es: 'Ecosistema', en: 'Ecosystem' },
@@ -102,24 +102,24 @@ const translations: Translations = {
   },
   
   // Hero
-  'hero.subtitle': { es: 'Automatización con IA', en: 'AI Automation' },
-  'hero.title1': { es: 'Automatización con IA para empresas de seguridad y servicios profesionales', en: 'AI automation for security and professional services companies' },
+  'hero.subtitle': { es: 'Webs y apps especialistas en abogados', en: 'Websites and apps for law firms' },
+  'hero.title1': { es: 'Tu despacho responde solo, también fuera de horario', en: 'Your firm answers on its own, even after hours' },
   'hero.title2': { es: '', en: '' },
-  'hero.description': { 
-    es: 'Tu equipo pierde entre 5 y 20 horas a la semana en tareas repetitivas. La IA ya puede hacerlas sola. Eliminamos trabajo manual sin cambiar tus sistemas.',
-    en: 'Your team loses 5 to 20 hours a week on repetitive tasks. AI can already handle them alone. We eliminate manual work without changing your systems.'
+  'hero.description': {
+    es: 'Hacemos webs y apps para despachos de abogados: tu web profesional, tu ficha de Google y un asistente de WhatsApp que contesta las dudas de siempre.',
+    en: 'We build websites and apps for law firms: a professional website, your Google profile and a WhatsApp assistant that answers the usual questions.'
   },
   'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
   'hero.cta.secondary': { es: 'Ver proceso', en: 'View process' },
-  'hero.microcopy': { es: 'Responderé en menos de 24h. Sin compromiso.', en: 'I will reply within 24 hours. No commitment.' },
+  'hero.microcopy': { es: 'O llama al 663 66 33 53. Te respondo en menos de 24 horas, sin compromiso.', en: 'Or call 663 66 33 53. I reply within 24 hours, no commitment.' },
 
   // Benefits Section
   'benefits.subtitle': { es: 'Beneficios', en: 'Benefits' },
-  'benefits.title': { es: 'Recupera tiempo real desde la primera semana', en: 'Recover real time from week one' },
-  'benefits.b1': { es: 'Recupera entre 5 y 20 horas semanales sin contratar más personal.', en: 'Recover between 5 and 20 hours per week without hiring more staff.' },
-  'benefits.b2': { es: 'Automatización sobre tus herramientas actuales: sin migraciones.', en: 'Automation on top of your current tools: no migrations.' },
-  'benefits.b3': { es: 'Reducción inmediata de errores operativos.', en: 'Immediate reduction of operational errors.' },
-  'benefits.b4': { es: 'Ahorro visible desde la primera semana.', en: 'Visible savings from the first week.' },
+  'benefits.title': { es: 'Menos llamadas repetidas, más clientes que te eligen', en: 'Fewer repeated calls, more clients who choose you' },
+  'benefits.b1': { es: 'El asistente contesta horarios, documentos y primeras dudas, y te pasa solo lo que importa.', en: 'The assistant answers opening hours, documents and first questions, and passes you only what matters.' },
+  'benefits.b2': { es: 'Una web clara y una ficha de Google con reseñas hacen que te elijan a ti.', en: 'A clear website and a Google profile with reviews make people choose you.' },
+  'benefits.b3': { es: 'Lo montamos sobre tu WhatsApp y tu correo de siempre, sin cambiar cómo trabajas.', en: 'We set it up on your usual WhatsApp and email, without changing how you work.' },
+  'benefits.b4': { es: 'Lo pruebas tú antes de que lo vea ningún cliente.', en: 'You test it before any client sees it.' },
 
   // Problem Section (now testimonial)
   'problem.title': { es: 'Testimonios', en: 'Testimonials' },
@@ -160,20 +160,20 @@ const translations: Translations = {
   // Process (Cómo trabajamos)
   'process.subtitle': { es: 'Metodología', en: 'Methodology' },
   'process.title': { es: 'Cómo trabajamos', en: 'How we work' },
-  'process.description': { es: 'Un proceso de 6 semanas con resultados visibles desde la primera.', en: 'A 6-week process with visible results from week one.' },
-  'process.step1.title': { es: 'Fase 1 — Diagnóstico', en: 'Phase 1 — Diagnosis' },
-  'process.step1.desc': { es: 'Identificamos los 3 cuellos de botella que más horas consumen.', en: 'We identify the 3 bottlenecks that consume the most hours.' },
-  'process.step2.title': { es: 'Fase 2 — Implantación', en: 'Phase 2 — Implementation' },
-  'process.step2.desc': { es: 'Automatizamos sobre tus herramientas actuales con n8n/Make. Sin cambiar nada.', en: 'We automate on top of your current tools with n8n/Make. Without changing anything.' },
-  'process.step3.title': { es: 'Fase 3 — Resultados', en: 'Phase 3 — Results' },
-  'process.step3.desc': { es: 'Tu equipo trabaja solo. Medimos ahorro mensual en horas y euros.', en: 'Your team works alone. We measure monthly savings in hours and euros.' },
+  'process.description': { es: 'Tres pasos sencillos, sin complicaciones.', en: 'Three simple steps, no complications.' },
+  'process.step1.title': { es: 'Paso 1 — Hablamos', en: 'Step 1 — We talk' },
+  'process.step1.desc': { es: 'Hablamos 20 minutos y vemos qué preguntas te repiten más.', en: 'We talk for 20 minutes and see which questions you get asked most.' },
+  'process.step2.title': { es: 'Paso 2 — Lo montamos', en: 'Step 2 — We set it up' },
+  'process.step2.desc': { es: 'Lo montamos y lo pruebas tú antes de que lo vea ningún cliente.', en: 'We set it up and you test it before any client sees it.' },
+  'process.step3.title': { es: 'Paso 3 — Revisamos cada mes', en: 'Step 3 — Monthly review' },
+  'process.step3.desc': { es: 'Revisamos cada mes qué preguntan tus clientes y ajustamos lo que haga falta.', en: 'Each month we review what your clients ask and adjust what is needed.' },
 
   // About (Who We Are)
   'about.subtitle': { es: 'Estudio', en: 'Studio' },
   'about.title': { es: 'Toroia no es una agencia de marketing.', en: 'Toroia is not a marketing agency.' },
-  'about.description': { 
-    es: 'Somos consultores especializados en digitalización con IA para empresas de seguridad y servicios profesionales. Nuestro trabajo es eliminar el trabajo manual de tu equipo y que notes el ahorro desde la primera semana.',
-    en: 'We are consultants specialized in AI-driven digitalization for security and professional services companies. Our job is to eliminate manual work from your team and make you feel the savings from week one.'
+  'about.description': {
+    es: 'Hacemos webs y apps especialistas en abogados, y ayudamos también a negocios de la comarca. Nuestro trabajo es que tu despacho se vea bien en internet y conteste solo a lo de siempre.',
+    en: 'We build websites and apps specialised in law firms, and we also help local businesses. Our job is to make your firm look good online and answer the usual questions by itself.'
   },
 
   // CTA Final
@@ -185,25 +185,24 @@ const translations: Translations = {
 
   // Contact
   'contact.subtitle': { es: 'Contacto', en: 'Contact' },
-  'contact.title': { es: '¿Cuántas horas pierde tu empresa a la semana?', en: 'How many hours does your company lose per week?' },
-  'contact.description': { 
-    es: 'Cuéntanoslo en 2 minutos y te decimos exactamente qué se puede automatizar.',
-    en: 'Tell us in 2 minutes and we\'ll tell you exactly what can be automated.'
+  'contact.title': { es: '¿Cuántas llamadas repetidas atiendes a la semana?', en: 'How many repeated calls do you handle each week?' },
+  'contact.description': {
+    es: 'Cuéntanoslo en 2 minutos y te decimos qué se puede contestar solo.',
+    en: 'Tell us in 2 minutes and we will tell you what can be answered automatically.'
   },
-  'contact.formIntro': { 
-    es: 'Cuéntanos tu caso y te respondo en menos de 24 horas con una propuesta para tu diagnóstico gratuito de 20 minutos.',
-    en: 'Tell us about your case and I will reply within 24 hours with a proposal for your free 20-minute diagnosis.'
+  'contact.formIntro': {
+    es: 'Cuéntanos tu caso y te respondo en menos de 24 horas.',
+    en: 'Tell us about your case and I will reply within 24 hours.'
   },
   'contact.name': { es: 'Nombre', en: 'Name' },
   'contact.email': { es: 'Email', en: 'Email' },
-  'contact.brand': { es: 'Marca / Empresa', en: 'Brand / Company' },
+  'contact.brand': { es: 'Despacho o negocio', en: 'Firm or business' },
   'contact.productType': { es: 'Sector', en: 'Industry' },
   'contact.productType.placeholder': { es: 'Selecciona una opción', en: 'Select an option' },
-  'contact.productType.security': { es: 'Seguridad', en: 'Security' },
+  'contact.productType.security': { es: 'Despacho de abogados', en: 'Law firm' },
   'contact.productType.advisory': { es: 'Asesoría / gestoría', en: 'Advisory / accounting' },
-  'contact.productType.clinic': { es: 'Clínica', en: 'Clinic' },
-  'contact.productType.construction': { es: 'Reformas / mantenimiento', en: 'Renovation / maintenance' },
-  'contact.productType.hospitality': { es: 'Hotel / restauración', en: 'Hotel / restaurant' },
+  'contact.productType.clinic': { es: 'Comercio local', en: 'Local shop' },
+  'contact.productType.construction': { es: 'Otro negocio de servicios', en: 'Other service business' },
   'contact.productType.other': { es: 'Otro', en: 'Other' },
   'contact.budget': { es: 'Presupuesto aproximado', en: 'Approximate budget' },
   'contact.budget.placeholder': { es: 'Selecciona una opción', en: 'Select an option' },
@@ -211,13 +210,13 @@ const translations: Translations = {
   'contact.budget.option2': { es: '1.200 € – 2.500 €', en: '€1,200 – €2,500' },
   'contact.budget.option3': { es: 'Estoy valorando opciones', en: 'I\'m evaluating options' },
   'contact.message': { es: 'Mensaje', en: 'Message' },
-  'contact.bottleneck': { es: '¿Cuál es su principal cuello de botella operativo?', en: 'What is your main operational bottleneck?' },
-  'contact.bottleneck.placeholder': { es: 'Describa el proceso que hoy le impide escalar.', en: 'Describe the process that prevents you from scaling today.' },
-  'contact.submit': { es: 'SOLICITAR AUDITORÍA', en: 'REQUEST AUDIT' },
+  'contact.bottleneck': { es: '¿Qué preguntas te repiten más los clientes?', en: 'Which questions do clients ask you most?' },
+  'contact.bottleneck.placeholder': { es: 'Por ejemplo: horarios, documentos que hay que traer, precios de una primera consulta.', en: 'For example: opening hours, documents to bring, price of a first consultation.' },
+  'contact.submit': { es: 'ENVIAR', en: 'SEND' },
 
   // Footer
   'footer.rights': { es: 'Todos los derechos reservados', en: 'All rights reserved' },
-  'footer.tagline': { es: 'Consultoría de autoridad visual premium para marcas de producto.', en: 'Premium visual authority consulting for product brands.' },
+  'footer.tagline': { es: 'Webs y apps especialistas en abogados, y asistente de WhatsApp para despachos y negocios de la comarca.', en: 'Websites and apps for law firms, plus a WhatsApp assistant for firms and local businesses.' },
 };
 
 interface LanguageContextType {

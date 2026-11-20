@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="tel:+34663683353" className="hover:text-primary transition-colors">663 68 33 53</a>
+                <a href="tel:+34663663353" className="hover:text-primary transition-colors">663 66 33 53</a>
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />

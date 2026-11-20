@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import heroImage from '@/assets/hero-cosmetics.jpg';
 
 const HeroSection: React.FC = () => {
   const { t } = useLanguage();
@@ -28,11 +27,6 @@ const HeroSection: React.FC = () => {
     >
       {/* Background Image with Overlay - More dark, less gold */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Premium visual campaign"
-          className="w-full h-full object-cover object-center opacity-40"
-        />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent" />
       </div>
@@ -90,7 +84,7 @@ const HeroSection: React.FC = () => {
           >
             <div className="flex flex-col items-center gap-3">
               <a
-                href="https://calendar.app.google/Guvvm7K1oUy7Lop5A"
+                href="https://wa.me/34663663353?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20web%20y%20el%20asistente%20de%20WhatsApp%20para%20mi%20negocio."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-premium btn-appointment-spotlight rounded group flex items-center justify-center gap-3 text-base px-9 py-5"

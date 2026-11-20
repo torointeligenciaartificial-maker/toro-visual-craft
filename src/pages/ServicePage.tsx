@@ -24,7 +24,7 @@ const ServicePage: React.FC = () => {
       '@type': 'LocalBusiness',
       name: 'TORO IA',
       url: SITE,
-      telephone: '+34 663 68 33 53',
+      telephone: '+34 663 66 33 53',
       email: 'info@toroia.vip',
       address: {
         '@type': 'PostalAddress',

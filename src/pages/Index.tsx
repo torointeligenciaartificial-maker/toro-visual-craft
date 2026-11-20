@@ -4,7 +4,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import BenefitsSection from '@/components/BenefitsSection';
-import EcosystemSection from '@/components/EcosystemSection';
+import PricingSection from '@/components/PricingSection';
 import ProblemSection from '@/components/ProblemSection';
 import ProcessSection from '@/components/ProcessSection';
 import AcademySection from '@/components/AcademySection';
@@ -27,13 +27,13 @@ const Index: React.FC = () => {
         <main>
           <HeroSection />
           <BenefitsSection />
-          <EcosystemSection />
+          <PricingSection />
           <ProblemSection />
           <ProcessSection />
-          <AcademySection />
           <CaseStudiesSection />
           <AboutSection />
           <ContactSection />
+          <AcademySection />
         </main>
         <Footer />
       </div>
