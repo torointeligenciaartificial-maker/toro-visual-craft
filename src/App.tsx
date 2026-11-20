@@ -10,6 +10,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import MetodologiaPage from "./pages/MetodologiaPage";
 import WebAbogadosToledo from "./pages/WebAbogadosToledo";
+import NegociosEscalonaToledo from '@/pages/NegociosEscalonaToledo';
 import AsistenteWhatsAppAbogados from "./pages/AsistenteWhatsAppAbogados";
 import NotFound from "./pages/NotFound";
 
@@ -26,7 +27,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/metodologia" element={<MetodologiaPage />} />
           <Route path="/web-para-abogados-toledo" element={<WebAbogadosToledo />} />
-          <Route path="/asistente-whatsapp-abogados" element={<AsistenteWhatsAppAbogados />} />
+          <Route path="/web-negocios-escalona-toledo" element={<NegociosEscalonaToledo />} />
+            <Route path="/asistente-whatsapp-abogados" element={<AsistenteWhatsAppAbogados />} />
           <Route path="/servicios/*" element={<Navigate to="/" replace />} />
           <Route path="/aviso-legal" element={<LegalNotice />} />
           <Route path="/privacidad" element={<PrivacyPolicy />} />
