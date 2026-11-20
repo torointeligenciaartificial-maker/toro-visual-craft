@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { LanguageProvider } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import BenefitsSection from '@/components/BenefitsSection';
@@ -16,7 +15,7 @@ import Footer from '@/components/Footer';
 
 const Index: React.FC = () => {
   return (
-    <LanguageProvider>
+    <>
       <Helmet>
         <link rel="canonical" href="https://toroia.vip/" />
         <meta property="og:url" content="https://toroia.vip/" />
@@ -37,7 +36,7 @@ const Index: React.FC = () => {
         </main>
         <Footer />
       </div>
-    </LanguageProvider>
+    </>
   );
 };
 
