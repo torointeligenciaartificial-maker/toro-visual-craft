@@ -3,7 +3,8 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Footer: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const es = language === 'es';
   const currentYear = new Date().getFullYear();
 
   return (
@@ -23,25 +24,25 @@ const Footer: React.FC = () => {
           {/* Servicios */}
           <div>
             <h3 className="text-foreground text-sm font-semibold tracking-widest uppercase mb-4">
-              Servicios
+              {es ? 'Servicios' : 'Services'}
             </h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="/#pricing" className="hover:text-primary transition-colors">Precios</a></li>
-              <li><a href="/#process" className="hover:text-primary transition-colors">Cómo trabajamos</a></li>
-              <li><a href="/#cases" className="hover:text-primary transition-colors">Reseñas de clientes</a></li>
-              <li><a href="/#contact" className="hover:text-primary transition-colors">Contacto</a></li>
+              <li><a href="/#pricing" className="hover:text-primary transition-colors">{es ? 'Precios' : 'Prices'}</a></li>
+              <li><a href="/#process" className="hover:text-primary transition-colors">{es ? 'Cómo trabajamos' : 'How we work'}</a></li>
+              <li><a href="/#cases" className="hover:text-primary transition-colors">{es ? 'Reseñas de clientes' : 'Customer reviews'}</a></li>
+              <li><a href="/#contact" className="hover:text-primary transition-colors">{es ? 'Contacto' : 'Contact'}</a></li>
             </ul>
           </div>
 
           {/* Contacto / Presencia local */}
           <div>
             <h3 className="text-foreground text-sm font-semibold tracking-widest uppercase mb-4">
-              Presencia local
+              {es ? 'Presencia local' : 'Local presence'}
             </h3>
             <address className="not-italic space-y-3 text-sm text-muted-foreground">
               <p className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                <span>C. Castillo de Almansa<br />45910 Escalona, Toledo, España</span>
+                <span>C. Castillo de Almansa<br />45910 Escalona, Toledo, {es ? 'España' : 'Spain'}</span>
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
@@ -53,7 +54,7 @@ const Footer: React.FC = () => {
               </p>
               <p className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-primary flex-shrink-0" />
-                <span>L–V de 9:00 a 18:00</span>
+                <span>{es ? 'L–V de 9:00 a 18:00' : 'Mon–Fri, 9:00 to 18:00'}</span>
               </p>
             </address>
           </div>
@@ -62,11 +63,11 @@ const Footer: React.FC = () => {
         {/* Legal bar */}
         <div className="border-t border-border pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-muted-foreground">
           <div className="flex flex-wrap items-center gap-3">
-            <a href="/aviso-legal" className="hover:text-primary transition-colors">Aviso Legal</a>
+            <a href="/aviso-legal" className="hover:text-primary transition-colors">{es ? 'Aviso Legal' : 'Legal Notice'}</a>
             <span className="text-border">|</span>
-            <a href="/privacidad" className="hover:text-primary transition-colors">Política de Privacidad</a>
+            <a href="/privacidad" className="hover:text-primary transition-colors">{es ? 'Política de Privacidad' : 'Privacy Policy'}</a>
             <span className="text-border">|</span>
-            <a href="/cookies" className="hover:text-primary transition-colors">Política de Cookies</a>
+            <a href="/cookies" className="hover:text-primary transition-colors">{es ? 'Política de Cookies' : 'Cookie Policy'}</a>
           </div>
           <p>© {currentYear} TORO IA. {t('footer.rights')}.</p>
         </div>
