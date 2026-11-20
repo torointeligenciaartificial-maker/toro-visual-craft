@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import BenefitsSection from '@/components/BenefitsSection';
 import PricingSection from '@/components/PricingSection';
-import ProblemSection from '@/components/ProblemSection';
+import MoreServicesSection from '@/components/MoreServicesSection';
 import ProcessSection from '@/components/ProcessSection';
 import AcademySection from '@/components/AcademySection';
 import CaseStudiesSection from '@/components/CaseStudiesSection';
@@ -28,7 +28,7 @@ const Index: React.FC = () => {
           <HeroSection />
           <BenefitsSection />
           <PricingSection />
-          <ProblemSection />
+          <MoreServicesSection />
           <ProcessSection />
           <CaseStudiesSection />
           <AboutSection />

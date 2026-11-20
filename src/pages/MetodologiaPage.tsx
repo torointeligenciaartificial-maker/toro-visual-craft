@@ -1,13 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
-import { Search, Layers, BarChart3, ArrowLeft, CalendarDays } from 'lucide-react';
+import { Search, Layers, BarChart3, MessageCircle } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollAnimations';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const CALENDLY_URL = 'https://calendar.app.google/Guvvm7K1oUy7Lop5A';
+const WHATSAPP_URL = 'https://wa.me/34663663353?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20web%20y%20el%20asistente%20de%20WhatsApp%20para%20mi%20negocio.';
 
 const MetodologiaPage: React.FC = () => {
   const { t } = useLanguage();
@@ -19,28 +19,28 @@ const MetodologiaPage: React.FC = () => {
   const phases = [
     {
       icon: Search,
-      title: 'Fase 1 — Diagnóstico',
-      desc: 'Analizamos tus procesos actuales y detectamos los 3 cuellos de botella que más horas consumen. Entregamos un informe claro con impacto económico estimado.',
+      title: '1. Hablamos 20 minutos',
+      desc: 'Me cuentas cómo trabajas y qué preguntas te repiten más los clientes. Sin compromiso y sin tecnicismos.',
     },
     {
       icon: Layers,
-      title: 'Fase 2 — Implantación',
-      desc: 'Automatizamos sobre tus herramientas actuales con n8n/Make. Sin migraciones, sin fricción y con control de errores, logs y reintentos.',
+      title: '2. Lo montamos por ti',
+      desc: 'Preparamos tu web y, si quieres, un asistente de WhatsApp que contesta lo de siempre. Sobre tu WhatsApp y tu correo, sin cambiar cómo trabajas.',
     },
     {
       icon: BarChart3,
-      title: 'Fase 3 — Resultados',
-      desc: 'Tu equipo trabaja solo. Medimos ahorro real en horas y euros mes a mes y ajustamos los flujos para maximizar retorno.',
+      title: '3. Lo pruebas y te acompañamos',
+      desc: 'Lo pruebas tú antes de que lo vea ningún cliente. Después seguimos contigo: cambios, dudas y mantenimiento.',
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Metodología de automatización con IA | TORO IA</title>
-        <meta name="description" content="Proceso premium de 6 semanas para automatizar tareas, eliminar trabajo manual y medir ahorro desde la primera semana." />
+        <title>Cómo trabajamos | TORO IA</title>
+        <meta name="description" content="Tres pasos sencillos para tener tu web y tu asistente de WhatsApp funcionando, sin complicaciones." />
         <link rel="canonical" href="https://toroia.vip/metodologia" />
-        <meta property="og:title" content="Metodología de automatización con IA | TORO IA" />
+        <meta property="og:title" content="Cómo trabajamos | TORO IA" />
         <meta property="og:url" content="https://toroia.vip/metodologia" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -67,10 +67,10 @@ const MetodologiaPage: React.FC = () => {
                 </div>
 
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Metodología de trabajo con IA y automatización
+                  Así trabajamos
                 </h1>
                 <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-                  Un proceso de 6 semanas diseñado para eliminar trabajo manual, escalar operaciones y medir ahorro desde la primera semana.
+                  Tres pasos, en tu idioma y sin tecnicismos.
                 </p>
               </motion.div>
             </div>
@@ -118,7 +118,7 @@ const MetodologiaPage: React.FC = () => {
               >
                 <div className="divider-gold mb-8" />
                 <p className="text-lg md:text-xl text-foreground leading-relaxed font-display">
-                  Trabajamos con empresas de seguridad y servicios profesionales que buscan eliminar tareas manuales y escalar sin contratar más personal.
+                  Trabajamos con despachos de abogados y negocios locales de la zona que quieren atender mejor a sus clientes sin perder tiempo en lo repetitivo.
                 </p>
                 <div className="divider-gold mt-8" />
               </motion.div>
@@ -135,23 +135,23 @@ const MetodologiaPage: React.FC = () => {
                 className="max-w-2xl mx-auto text-center"
               >
                 <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-                  Comienza con un diagnóstico gratuito
+                  Cuéntanos tu caso
                 </h2>
                 <p className="text-muted-foreground text-lg mb-10">
-                  Agenda 20 minutos y descubre exactamente qué procesos de tu empresa pueden automatizarse hoy.
+                  Escríbenos por WhatsApp o llama al 663 66 33 53 y vemos qué te conviene, sin compromiso.
                 </p>
 
                 <a
-                  href={CALENDLY_URL}
+                  href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-premium btn-appointment-spotlight rounded inline-flex items-center gap-3"
                 >
-                  <CalendarDays className="w-5 h-5 relative z-10" aria-hidden="true" />
-                  <span>Reserva tu diagnóstico gratuito de 20 min</span>
+                  <MessageCircle className="w-5 h-5 relative z-10" aria-hidden="true" />
+                  <span>Escríbenos por WhatsApp</span>
                 </a>
                 <p className="mt-4 text-sm text-muted-foreground">
-                  Responderé en menos de 24h. Sin compromiso.
+                  Te respondo en menos de 24 horas. Sin compromiso.
                 </p>
               </motion.div>
             </div>

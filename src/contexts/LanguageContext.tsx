@@ -20,7 +20,7 @@ const translations: Translations = {
   'nav.solutions.consulting': { es: 'Consultoría de Operaciones', en: 'Operations Consulting' },
   'nav.solutions.automation': { es: 'Sistemas de Automatización', en: 'Automation Systems' },
   'nav.solutions.identity': { es: 'Identidad de Autoridad', en: 'Authority Identity' },
-  'nav.cases': { es: 'Casos de Éxito', en: 'Case Studies' },
+  'nav.cases': { es: 'Opiniones', en: 'Reviews' },
   'nav.about': { es: 'Nosotros', en: 'About' },
   'nav.blog': { es: 'Blog', en: 'Blog' },
   'nav.contact': { es: 'Contacto', en: 'Contact' },
@@ -63,44 +63,7 @@ const translations: Translations = {
   'nav.cta': { es: 'Escríbenos por WhatsApp', en: 'Write to us on WhatsApp' },
 
   // Ecosystem Section
-  'ecosystem.subtitle': { es: 'Ecosistema', en: 'Ecosystem' },
-  'ecosystem.title': { es: 'Ecosistema de Autoridad Total', en: 'Total Authority Ecosystem' },
-  'ecosystem.description': {
-    es: 'Transformamos pymes en búnkeres de venta blindados: estrategia, sistemas e identidad operando como una sola infraestructura.',
-    en: 'We transform SMEs into armored sales bunkers: strategy, systems and identity operating as a single infrastructure.'
-  },
-  'ecosystem.p1.subtitle': { es: 'Fase 1 — Diagnóstico: Identificamos los 3 procesos que más tiempo consumen', en: 'Phase 1 — Diagnosis: We identify the 3 most time-consuming processes' },
-  'ecosystem.p1.title': { es: 'Consultoría Estratégica', en: 'Strategic Consulting' },
-  'ecosystem.p1.desc': {
-    es: 'Auditoría quirúrgica de procesos y hoja de ruta digital para CEOs. Definimos dónde se pierde margen y dónde se construye autoridad.',
-    en: 'Surgical audit of processes and digital roadmap for CEOs. We define where margin is lost and where authority is built.'
-  },
-  'ecosystem.p2.subtitle': { es: 'Fase 2 — Implantación: Automatizamos sobre lo que ya usas, sin cambiar nada', en: 'Phase 2 — Implementation: We automate on top of what you already use, without changing anything' },
-  'ecosystem.p2.title': { es: 'Ingeniería de Procesos e IA', en: 'Process & AI Engineering' },
-  'ecosystem.p2.desc': {
-    es: 'Implementación técnica con n8n y Make para eliminar la fricción operativa. Sistemas que escalan sin depender de tareas manuales.',
-    en: 'Technical implementation with n8n and Make to eliminate operational friction. Systems that scale without relying on manual tasks.'
-  },
-  'ecosystem.p3.subtitle': { es: 'Fase 3 — Resultados: Tu equipo trabaja solo. Medimos el ahorro en horas y euros', en: 'Phase 3 — Results: Your team works alone. We measure savings in hours and euros' },
-  'ecosystem.p3.title': { es: 'Ingeniería de Autoridad Visual', en: 'Visual Authority Engineering' },
-  'ecosystem.p3.desc': {
-    es: 'Campañas premium y activos visuales de alto estatus. La estética que justifica el precio y blinda la percepción de marca.',
-    en: 'Premium campaigns and high-status visual assets. The aesthetic that justifies the price and shields brand perception.'
-  },
 
-  // Case Studies
-  'cases.subtitle': { es: 'Casos de Éxito', en: 'Case Studies' },
-  'cases.title': { es: 'Resultados bajo acuerdo de confidencialidad', en: 'Results under confidentiality agreement' },
-  'cases.description': {
-    es: 'Trabajamos con CEOs que exigen discreción. Los detalles de cada operación se comparten únicamente en la Auditoría de Prestigio.',
-    en: 'We work with CEOs who demand discretion. Operation details are shared only during the Prestige Audit.'
-  },
-  'cases.confidential': { es: 'Confidencial', en: 'Confidential' },
-  'cases.placeholder': {
-    es: 'Caso disponible bajo NDA en la sesión privada.',
-    en: 'Case available under NDA during the private session.'
-  },
-  
   // Hero
   'hero.subtitle': { es: 'Webs y apps especialistas en abogados', en: 'Websites and apps for law firms' },
   'hero.title1': { es: 'Tu despacho responde solo, también fuera de horario', en: 'Your firm answers on its own, even after hours' },
@@ -109,7 +72,7 @@ const translations: Translations = {
     es: 'Hacemos webs y apps para despachos de abogados: tu web profesional, tu ficha de Google y un asistente de WhatsApp que contesta las dudas de siempre.',
     en: 'We build websites and apps for law firms: a professional website, your Google profile and a WhatsApp assistant that answers the usual questions.'
   },
-  'hero.cta': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
+  'hero.cta': { es: 'Escríbenos por WhatsApp', en: 'Message us on WhatsApp' },
   'hero.cta.secondary': { es: 'Ver proceso', en: 'View process' },
   'hero.microcopy': { es: 'O llama al 663 66 33 53. Te respondo en menos de 24 horas, sin compromiso.', en: 'Or call 663 66 33 53. I reply within 24 hours, no commitment.' },
 
@@ -120,14 +83,6 @@ const translations: Translations = {
   'benefits.b2': { es: 'Una web clara y una ficha de Google con reseñas hacen que te elijan a ti.', en: 'A clear website and a Google profile with reviews make people choose you.' },
   'benefits.b3': { es: 'Lo montamos sobre tu WhatsApp y tu correo de siempre, sin cambiar cómo trabajas.', en: 'We set it up on your usual WhatsApp and email, without changing how you work.' },
   'benefits.b4': { es: 'Lo pruebas tú antes de que lo vea ningún cliente.', en: 'You test it before any client sees it.' },
-
-  // Problem Section (now testimonial)
-  'problem.title': { es: 'Testimonios', en: 'Testimonials' },
-  'problem.description': { 
-    es: 'Un cliente redujo más de 4.000 € al año en tareas repetitivas sin contratar a nadie más. La automatización liberó horas críticas y aumentó la capacidad operativa.',
-    en: 'A client reduced over €4,000 a year in repetitive tasks without hiring anyone. Automation freed critical hours and increased operational capacity.'
-  },
-  'problem.attribution': { es: '— Empresa de servicios profesionales, Toledo', en: '— Professional services company, Toledo' },
 
   // Services (kept for nav compatibility)
   'services.subtitle': { es: 'Servicios', en: 'Services' },
@@ -177,11 +132,6 @@ const translations: Translations = {
   },
 
   // CTA Final
-  'cta.subtitle': { es: 'Exclusividad', en: 'Exclusivity' },
-  'cta.title': { es: '¿Tienen el valor de cobrar lo que realmente valen?', en: 'Do you have the courage to charge what you\'re really worth?' },
-  'cta.description': { es: 'Solicite una Auditoría de Prestigio. Solo aceptamos 3 marcas por mes.', en: 'Request a Prestige Audit. We only accept 3 brands per month.' },
-  'cta.primary': { es: 'SOLICITAR AUDITORÍA DE PRESTIGIO', en: 'REQUEST PRESTIGE AUDIT' },
-  'cta.microcopy': { es: 'Responderé en menos de 24h. Sin compromiso.', en: 'I will reply within 24 hours. No commitment.' },
 
   // Contact
   'contact.subtitle': { es: 'Contacto', en: 'Contact' },
