@@ -178,7 +178,18 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('es');
+  const [language, setLanguageState] = useState<Language>(() => {
+    try {
+      const saved = localStorage.getItem('toroia-lang');
+      return saved === 'en' ? 'en' : 'es';
+    } catch {
+      return 'es';
+    }
+  });
+  const setLanguage = (lang: Language) => {
+    setLanguageState(lang);
+    try { localStorage.setItem('toroia-lang', lang); } catch { /* sin almacenamiento */ }
+  };
 
   const t = useCallback((key: string): string => {
     const translation = translations[key];
