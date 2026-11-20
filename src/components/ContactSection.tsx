@@ -7,7 +7,8 @@ import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 
 const ContactSection: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const es = language === 'es';
   const { ref, isVisible } = useScrollReveal(0.1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const openedAt = useRef(Date.now());
@@ -82,10 +83,10 @@ const ContactSection: React.FC = () => {
 
             {/* NAP + Mapa para SEO local */}
             <div className="space-y-3 text-sm text-muted-foreground mb-6">
-              <p><span className="text-primary">Dirección:</span> C. Castillo de Almansa, 45910 Escalona, Toledo</p>
-              <p><span className="text-primary">Teléfono:</span> <a href="tel:+34663663353" className="hover:text-cream transition-colors">663 66 33 53</a></p>
+              <p><span className="text-primary">{es ? 'Dirección:' : 'Address:'}</span> C. Castillo de Almansa, 45910 Escalona, Toledo</p>
+              <p><span className="text-primary">{es ? 'Teléfono:' : 'Phone:'}</span> <a href="tel:+34663663353" className="hover:text-cream transition-colors">663 66 33 53</a></p>
               <p><span className="text-primary">Email:</span> <a href="mailto:oscarvillena@toroia.vip" className="hover:text-cream transition-colors">oscarvillena@toroia.vip</a></p>
-              <p><span className="text-primary">Horario:</span> L–V de 9:00 a 18:00</p>
+              <p><span className="text-primary">{es ? 'Horario:' : 'Hours:'}</span> {es ? 'L–V de 9:00 a 18:00' : 'Mon–Fri, 9:00 to 18:00'}</p>
             </div>
 
             <div className="border border-border rounded overflow-hidden aspect-[4/3] max-w-md">
