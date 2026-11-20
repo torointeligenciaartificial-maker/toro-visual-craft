@@ -44,7 +44,7 @@
             "slug": {
               "type": "string",
               "minLength": 1,
-              "description": "Service slug, e.g. 'automatizacion-n8n' or 'consultoria-ia-pymes'."
+              "description": "Service slug, e.g. 'web-para-abogados-toledo' or 'asistente-whatsapp-abogados'."
             }
           },
           "required": [
@@ -56,7 +56,7 @@
       {
         "name": "get_methodology",
         "title": "Get TORO IA methodology",
-        "description": "Returns TORO IA's 6-week consulting methodology for AI and automation projects.",
+        "description": "Returns TORO IA's way of working: from the free 20-minute chat to launch and monthly maintenance.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
