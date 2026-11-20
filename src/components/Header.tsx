@@ -28,6 +28,10 @@ const Header: React.FC = () => {
     setIsMobileMenuOpen(false);
     setIsSolutionsOpen(false);
     setIsMobileSolutionsOpen(false);
+    if (window.location.pathname !== '/') {
+      window.location.assign('/#' + sectionId);
+      return;
+    }
     setTimeout(() => {
       const element = document.getElementById(sectionId);
       if (element) {

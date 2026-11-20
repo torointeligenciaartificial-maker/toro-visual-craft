@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
@@ -14,6 +14,16 @@ import Footer from '@/components/Footer';
 
 
 const Index: React.FC = () => {
+  useEffect(() => {
+    const id = window.location.hash.replace('#', '');
+    if (!id) return;
+    const timer = setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'smooth' });
+    }, 600);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <Helmet>
