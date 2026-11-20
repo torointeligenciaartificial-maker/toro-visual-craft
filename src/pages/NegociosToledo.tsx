@@ -7,9 +7,9 @@ import Footer from '@/components/Footer';
 
 const WHATSAPP_URL =
   'https://wa.me/34663663353?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20una%20web%20y%20el%20asistente%20de%20WhatsApp%20para%20mi%20negocio.';
-const URL_PAGE = 'https://toroia.vip/web-negocios-escalona-toledo';
+const URL_PAGE = 'https://toroia.vip/web-negocios-toledo';
 
-const NegociosEscalonaToledo: React.FC = () => {
+const NegociosToledo: React.FC = () => {
   const { language } = useLanguage();
   const es = language === 'es';
 
@@ -36,10 +36,10 @@ const NegociosEscalonaToledo: React.FC = () => {
 
   const faqs = [
     {
-      q: es ? '¿Trabajáis con negocios de Escalona y alrededores?' : 'Do you work with businesses in Escalona and the surrounding area?',
+      q: es ? '¿Trabajáis con negocios de Toledo y de los pueblos de alrededor?' : 'Do you work with businesses in Toledo and the nearby towns?',
       a: es
-        ? 'Sí. Estoy en Escalona (Toledo) y trabajo con negocios y despachos de la comarca: Hormigos, Almorox, Maqueda y toda la provincia. Puedo ir a verte en persona dos mañanas a la semana.'
-        : 'Yes. I am based in Escalona (Toledo) and work with businesses and firms in the area: Hormigos, Almorox, Maqueda and the whole province. I can visit you in person two mornings a week.',
+        ? 'Sí. Trabajo con negocios y despachos de Toledo y de los pueblos de alrededor. Puedo ir a verte en persona dos mañanas a la semana.'
+        : 'Yes. I work with businesses and firms in Toledo and the nearby towns. I can visit you in person two mornings a week.',
     },
     {
       q: es ? '¿Cuánto cuesta?' : 'How much does it cost?',
@@ -68,11 +68,11 @@ const NegociosEscalonaToledo: React.FC = () => {
   ];
 
   const title = es
-    ? 'Web y WhatsApp para negocios y gestorías en Escalona y Toledo | TORO IA'
-    : 'Website and WhatsApp for businesses and accountancy firms in Escalona and Toledo | TORO IA';
+    ? 'Web y WhatsApp para negocios y gestorías en Toledo y alrededores | TORO IA'
+    : 'Website and WhatsApp for businesses and accountancy firms in Toledo and nearby towns | TORO IA';
   const description = es
-    ? 'Web profesional y asistente de WhatsApp para negocios, gestorías y asesorías de Escalona y la provincia de Toledo. Web desde 700 € con IVA, sin permanencia.'
-    : 'Professional website and WhatsApp assistant for businesses and accountancy firms in Escalona and Toledo province. Website from €700 incl. VAT, no lock-in.';
+    ? 'Web profesional y asistente de WhatsApp para negocios, gestorías y asesorías de Toledo y los pueblos de alrededor. Web desde 700 € con IVA, sin permanencia.'
+    : 'Professional website and WhatsApp assistant for businesses and accountancy firms in Toledo and nearby towns. Website from €700 incl. VAT, no lock-in.';
 
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -106,7 +106,7 @@ const NegociosEscalonaToledo: React.FC = () => {
                 {es ? 'Negocios, gestorías y asesorías' : 'Businesses and advisory firms'}
               </p>
               <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                {es ? 'Web y WhatsApp para tu negocio en Escalona y Toledo' : 'Website and WhatsApp for your business in Escalona and Toledo'}
+                {es ? 'Web y WhatsApp para tu negocio en Toledo y pueblos de alrededor' : 'Website and WhatsApp for your business in Toledo and nearby towns'}
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl leading-relaxed mb-10">
                 {es
@@ -191,4 +191,4 @@ const NegociosEscalonaToledo: React.FC = () => {
   );
 };
 
-export default NegociosEscalonaToledo;
+export default NegociosToledo;

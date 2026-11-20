@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="/web-para-abogados-toledo" className="hover:text-primary transition-colors">{es ? 'Web para abogados' : 'Website for lawyers'}</a></li>
               <li><a href="/asistente-whatsapp-abogados" className="hover:text-primary transition-colors">{es ? 'Asistente de WhatsApp' : 'WhatsApp assistant'}</a></li>
-              <li><a href="/web-negocios-escalona-toledo" className="hover:text-primary transition-colors">{es ? 'Negocios y gestorías' : 'Businesses and advisory firms'}</a></li>
+              <li><a href="/web-negocios-toledo" className="hover:text-primary transition-colors">{es ? 'Negocios y gestorías' : 'Businesses and advisory firms'}</a></li>
               <li><a href="/#pricing" className="hover:text-primary transition-colors">{es ? 'Precios' : 'Prices'}</a></li>
               <li><a href="/#process" className="hover:text-primary transition-colors">{es ? 'Cómo trabajamos' : 'How we work'}</a></li>
               <li><a href="/#cases" className="hover:text-primary transition-colors">{es ? 'Reseñas de clientes' : 'Customer reviews'}</a></li>

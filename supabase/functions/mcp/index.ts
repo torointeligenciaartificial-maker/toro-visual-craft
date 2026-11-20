@@ -36,7 +36,7 @@ var SERVICES = [
       { title: "Construcci\xF3n", desc: "Preparamos la web y la revisas antes de publicarla." },
       { title: "Publicaci\xF3n", desc: "La publicamos y te acompa\xF1o si quieres mantenimiento mensual." }
     ],
-    keywords: "web abogados Toledo, p\xE1gina web despacho abogados, web despacho Escalona"
+    keywords: "web abogados Toledo, p\xE1gina web despacho abogados"
   },
   {
     slug: "asistente-whatsapp-abogados",
@@ -66,13 +66,13 @@ var SERVICES = [
     keywords: "asistente WhatsApp abogados, WhatsApp despacho, atenci\xF3n clientes despacho"
   },
   {
-    slug: "web-negocios-escalona-toledo",
-    title: "Web y WhatsApp para negocios y gestor\xEDas en Escalona y Toledo | TORO IA",
-    metaDescription: "Web profesional y asistente de WhatsApp para negocios, gestor\xEDas y asesor\xEDas de Escalona y la provincia de Toledo. Web desde 700 \u20AC con IVA, sin permanencia.",
-    h1: "Web y WhatsApp para tu negocio en Escalona y Toledo",
+    slug: "web-negocios-toledo",
+    title: "Web y WhatsApp para negocios y gestor\xEDas en Toledo y alrededores | TORO IA",
+    metaDescription: "Web profesional y asistente de WhatsApp para negocios, gestor\xEDas y asesor\xEDas de Toledo y los pueblos de alrededor. Web desde 700 \u20AC con IVA, sin permanencia.",
+    h1: "Web y WhatsApp para tu negocio en Toledo y pueblos de alrededor",
     subtitle: "Una web que te encuentren en Google y un asistente que atiende a tus clientes por WhatsApp, tambi\xE9n fuera de horario.",
     price: "Web desde 700 \u20AC; asistente desde 300 \u20AC m\xE1s 50 a 90 \u20AC al mes; con IVA, sin permanencia",
-    url: "https://toroia.vip/web-negocios-escalona-toledo",
+    url: "https://toroia.vip/web-negocios-toledo",
     benefits: [
       "Sin tecnicismos y con un precio claro",
       "Trabajo con negocios de la comarca y visitas en persona dos ma\xF1anas a la semana",
@@ -85,7 +85,7 @@ var SERVICES = [
       { title: "Propuesta clara", desc: "Te digo qu\xE9 necesitas y cu\xE1nto cuesta." },
       { title: "Puesta en marcha", desc: "Lo montamos y lo pruebas antes de activarlo." }
     ],
-    keywords: "web negocios Escalona, gestor\xEDas Toledo, asistente WhatsApp negocio local"
+    keywords: "web negocios Toledo, gestor\xEDas Toledo, asistente WhatsApp negocio local"
   },
   {
     slug: "mantenimiento-web",
