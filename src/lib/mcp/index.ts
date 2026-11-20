@@ -9,6 +9,6 @@ export default defineMcp({
   title: "TORO IA",
   version: "0.1.0",
   instructions:
-    "Tools to explore TORO IA's premium AI & automation consulting: browse services, read the 6-week methodology, and submit a qualified audit request. All data exposed here is public; the submit_lead tool creates a lead in TORO IA's CRM.",
+    "Tools to explore TORO IA's digital consulting for law firms and local businesses: browse services, read how we work, and submit a contact request. All data exposed here is public; the submit_lead tool creates a lead in TORO IA's CRM.",
   tools: [listServices, getService, getMethodology, submitLead],
 });

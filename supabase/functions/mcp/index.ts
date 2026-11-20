@@ -12,194 +12,96 @@ import { z } from "npm:zod@^4.4.3";
 // src/data/services.ts
 var SERVICES = [
   {
-    slug: "automatizacion-n8n",
-    title: "Automatizaci\xF3n con n8n para empresas | TORO IA",
-    metaDescription: "Implantamos flujos de automatizaci\xF3n con n8n conectados a tus herramientas actuales. Sin migraciones. Resultados medibles en 2 semanas. Toledo y toda Espa\xF1a.",
-    h1: "Automatizaci\xF3n con n8n para empresas que quieren escalar sin contratar",
-    subtitle: "Dise\xF1amos e implantamos flujos n8n auto-alojados sobre tu stack actual. Tu equipo deja de hacer tareas manuales y empieza a producir resultados reales.",
+    slug: "web-para-abogados-toledo",
+    title: "Web para despachos de abogados en Toledo | TORO IA",
+    metaDescription: "Web profesional para despachos de abogados de Toledo: clara, r\xE1pida y pensada para que te encuentren en Google y te contacten. Desde 700 \u20AC con IVA.",
+    h1: "Web para despachos de abogados en Toledo",
+    subtitle: "Una web clara que se ve bien en el m\xF3vil, te encuentran en Google y tus clientes pueden contactar contigo en un toque.",
+    price: "700 \u20AC con IVA, sin permanencia",
+    url: "https://toroia.vip/web-para-abogados-toledo",
     benefits: [
-      "Reducci\xF3n de 5 a 20 horas semanales de tareas repetitivas",
-      "Integraci\xF3n con tus herramientas actuales (CRM, email, ERP, WhatsApp)",
-      "Flujos visuales, mantenibles y auditables, no cajas negras",
-      "Infraestructura propia: tus datos no se exponen a terceros",
-      "Implantaci\xF3n en 2 semanas con m\xE9tricas de ahorro reales",
-      "Soporte t\xE9cnico continuo en espa\xF1ol"
+      "Se ve bien en el m\xF3vil y carga r\xE1pido",
+      "Tu ficha de Google y tu web cuentan lo mismo",
+      "Bot\xF3n de WhatsApp y tel\xE9fono siempre a mano",
+      "Precio cerrado, sin cuotas ocultas"
     ],
     includes: [
-      "Auditor\xEDa de los procesos a automatizar",
-      "Dise\xF1o t\xE9cnico de los flujos n8n",
-      "Conexi\xF3n con APIs, bases de datos y servicios externos",
-      "Despliegue en servidor propio o cloud",
-      "Documentaci\xF3n operativa y formaci\xF3n al equipo",
-      "30 d\xEDas de soporte post-implantaci\xF3n"
+      "Web de presentaci\xF3n del despacho",
+      "Textos claros, sin tecnicismos",
+      "Ficha de Google revisada",
+      "Bot\xF3n de WhatsApp"
     ],
     steps: [
-      {
-        title: "Diagn\xF3stico t\xE9cnico",
-        desc: "Mapeamos los procesos que m\xE1s horas consumen y validamos viabilidad de automatizaci\xF3n con n8n."
-      },
-      {
-        title: "Construcci\xF3n de flujos",
-        desc: "Implementamos cada workflow conectado a tu stack actual, con control de errores y reintentos."
-      },
-      {
-        title: "Puesta en producci\xF3n",
-        desc: "Desplegamos, monitorizamos y medimos el ahorro real en horas y euros mes a mes."
-      }
+      { title: "Charla de 20 minutos", desc: "Me cuentas c\xF3mo trabaja tu despacho, sin compromiso." },
+      { title: "Construcci\xF3n", desc: "Preparamos la web y la revisas antes de publicarla." },
+      { title: "Publicaci\xF3n", desc: "La publicamos y te acompa\xF1o si quieres mantenimiento mensual." }
     ],
-    keywords: "automatizaci\xF3n n8n, n8n Espa\xF1a, consultor\xEDa n8n, flujos n8n, automatizaci\xF3n procesos pyme"
+    keywords: "web abogados Toledo, p\xE1gina web despacho abogados, web despacho Escalona"
   },
   {
-    slug: "consultoria-ia-pymes",
-    title: "Consultor\xEDa de IA para pymes en Espa\xF1a | TORO IA",
-    metaDescription: "Consultor\xEDa estrat\xE9gica de Inteligencia Artificial para pymes espa\xF1olas. Identificamos d\xF3nde aplicar IA con retorno real. Sin humo, sin promesas inventadas.",
-    h1: "Consultor\xEDa de IA para pymes con criterio t\xE9cnico, no con humo",
-    subtitle: "Te ayudamos a decidir d\xF3nde aplicar IA, d\xF3nde no, y con qu\xE9 herramientas. Roadmap claro, sin dependencias innecesarias y con m\xE9tricas de impacto.",
+    slug: "asistente-whatsapp-abogados",
+    title: "Asistente de WhatsApp para abogados | TORO IA",
+    metaDescription: "Asistente de WhatsApp para despachos: contesta a cualquier hora las dudas de siempre y te avisa cuando un cliente necesita hablar contigo. Desde 300 \u20AC con IVA.",
+    h1: "Asistente de WhatsApp para abogados",
+    subtitle: "Contesta por WhatsApp las dudas de siempre, tambi\xE9n fuera de horario, y te pasa solo lo que importa.",
+    price: "300 a 500 \u20AC de alta m\xE1s 50 a 90 \u20AC al mes, con IVA, sin permanencia",
+    url: "https://toroia.vip/asistente-whatsapp-abogados",
     benefits: [
-      "Hoja de ruta de IA priorizada por retorno econ\xF3mico",
-      "Selecci\xF3n de herramientas adecuadas a tu tama\xF1o y presupuesto",
-      "Evaluaci\xF3n honesta de qu\xE9 procesos no merecen IA",
-      "Cumplimiento de la normativa europea (AI Act, RGPD)",
-      "Lenguaje claro para direcci\xF3n, no jerga t\xE9cnica vac\xEDa",
-      "Acompa\xF1amiento durante la implantaci\xF3n"
+      "Atiende a tus clientes tambi\xE9n fuera de horario",
+      "No da consejo legal: solo informaci\xF3n pr\xE1ctica que t\xFA decides",
+      "Te avisa cuando alguien necesita hablar contigo",
+      "No cambias de n\xFAmero ni de forma de trabajar"
     ],
     includes: [
-      "Sesi\xF3n de diagn\xF3stico inicial de 90 minutos",
-      "Mapeo de procesos candidatos a IA",
-      "Informe priorizado con coste, esfuerzo y retorno estimado",
-      "Recomendaci\xF3n de stack tecnol\xF3gico (LLMs, automatizaci\xF3n, RPA)",
-      "Plan de implantaci\xF3n por fases",
-      "Revisi\xF3n trimestral de resultados"
+      "Respuestas escritas con tus propias palabras",
+      "Conexi\xF3n con tu WhatsApp",
+      "Prueba previa por tu parte",
+      "Mejora mensual"
     ],
     steps: [
-      {
-        title: "An\xE1lisis del negocio",
-        desc: "Entendemos modelo, equipo, herramientas y dolor operativo real antes de proponer nada."
-      },
-      {
-        title: "Dise\xF1o de la estrategia",
-        desc: "Definimos qu\xE9 casos de uso atacar primero seg\xFAn retorno y viabilidad t\xE9cnica."
-      },
-      {
-        title: "Implantaci\xF3n y medici\xF3n",
-        desc: "Ejecutamos los primeros pilotos y medimos impacto real, no m\xE9tricas de vanidad."
-      }
+      { title: "Hablamos", desc: "Me cuentas qu\xE9 te preguntan m\xE1s los clientes." },
+      { title: "Lo montamos", desc: "Preparamos las respuestas y lo conectamos a tu WhatsApp." },
+      { title: "Lo pruebas", desc: "Lo pruebas t\xFA primero; cuando te convence, lo activamos." }
     ],
-    keywords: "consultor\xEDa IA pymes, inteligencia artificial empresa, consultor IA Espa\xF1a, estrategia IA pyme"
+    keywords: "asistente WhatsApp abogados, WhatsApp despacho, atenci\xF3n clientes despacho"
   },
   {
-    slug: "auditoria-procesos-empresariales",
-    title: "Auditor\xEDa de procesos empresariales con IA | TORO IA",
-    metaDescription: "Auditor\xEDa t\xE9cnica de procesos para empresas que quieren ahorrar horas y euros. Detectamos cuellos de botella y proponemos soluciones automatizables.",
-    h1: "Auditor\xEDa de procesos empresariales: d\xF3nde pierde tiempo tu empresa",
-    subtitle: "An\xE1lisis quir\xFArgico de los procesos que consumen m\xE1s horas. Te entregamos un informe con cuellos de botella, soluciones priorizadas y ahorro estimado.",
+    slug: "web-negocios-escalona-toledo",
+    title: "Web y WhatsApp para negocios y gestor\xEDas en Escalona y Toledo | TORO IA",
+    metaDescription: "Web profesional y asistente de WhatsApp para negocios, gestor\xEDas y asesor\xEDas de Escalona y la provincia de Toledo. Web desde 700 \u20AC con IVA, sin permanencia.",
+    h1: "Web y WhatsApp para tu negocio en Escalona y Toledo",
+    subtitle: "Una web que te encuentren en Google y un asistente que atiende a tus clientes por WhatsApp, tambi\xE9n fuera de horario.",
+    price: "Web desde 700 \u20AC; asistente desde 300 \u20AC m\xE1s 50 a 90 \u20AC al mes; con IVA, sin permanencia",
+    url: "https://toroia.vip/web-negocios-escalona-toledo",
     benefits: [
-      "Identificaci\xF3n de los 3 procesos que m\xE1s horas se llevan",
-      "C\xE1lculo del coste real de cada tarea manual",
-      "Propuestas concretas de automatizaci\xF3n o redise\xF1o",
-      "Informe ejecutivo apto para direcci\xF3n y socios",
-      "Sin compromiso de contratar la implantaci\xF3n con nosotros",
-      "Entrega en 7-10 d\xEDas laborables"
+      "Sin tecnicismos y con un precio claro",
+      "Trabajo con negocios de la comarca y visitas en persona dos ma\xF1anas a la semana",
+      "Recordatorios a clientes para gestor\xEDas y asesor\xEDas",
+      "Comisi\xF3n del 10 al 15 % si recomiendas a un cliente"
     ],
-    includes: [
-      "Entrevistas con los responsables operativos",
-      "Mapeo BPMN de procesos cr\xEDticos",
-      "An\xE1lisis de herramientas y datos actuales",
-      "Cuantificaci\xF3n de horas perdidas y coste asociado",
-      "Roadmap priorizado de mejoras",
-      "Presentaci\xF3n final con recomendaciones"
-    ],
+    includes: ["Web profesional", "Asistente de WhatsApp", "Revisi\xF3n de ayudas para digitalizar"],
     steps: [
-      {
-        title: "Inmersi\xF3n",
-        desc: "Recopilamos informaci\xF3n de procesos, equipos y herramientas durante 3-5 d\xEDas."
-      },
-      {
-        title: "An\xE1lisis",
-        desc: "Detectamos cuellos de botella, duplicidades y tareas que ya puede hacer la IA."
-      },
-      {
-        title: "Informe y roadmap",
-        desc: "Te entregamos el documento con prioridades, coste estimado y ahorro proyectado."
-      }
+      { title: "Charla gratuita", desc: "Veinte minutos, sin compromiso." },
+      { title: "Propuesta clara", desc: "Te digo qu\xE9 necesitas y cu\xE1nto cuesta." },
+      { title: "Puesta en marcha", desc: "Lo montamos y lo pruebas antes de activarlo." }
     ],
-    keywords: "auditor\xEDa procesos empresariales, optimizaci\xF3n procesos, auditor\xEDa operativa pyme, BPM Espa\xF1a"
+    keywords: "web negocios Escalona, gestor\xEDas Toledo, asistente WhatsApp negocio local"
   },
   {
-    slug: "automatizacion-empresas-seguridad",
-    title: "Automatizaci\xF3n con IA para empresas de seguridad | TORO IA",
-    metaDescription: "Automatizamos procesos cr\xEDticos de empresas de seguridad privada: turnos, partes, facturaci\xF3n, control de accesos y reportes. Especialistas del sector.",
-    h1: "Automatizaci\xF3n con IA espec\xEDfica para empresas de seguridad privada",
-    subtitle: "Conocemos el sector. Eliminamos el trabajo manual en turnos, partes de servicio, facturaci\xF3n, control horario y reportes a cliente sin cambiar tu software actual.",
-    benefits: [
-      "Automatizaci\xF3n de partes de servicio y novedades",
-      "Generaci\xF3n autom\xE1tica de cuadrantes y turnos",
-      "Reportes a cliente sin intervenci\xF3n manual",
-      "Control horario y geolocalizaci\xF3n integrados",
-      "Conexi\xF3n con tu software de facturaci\xF3n actual",
-      "Cumplimiento normativo del sector (LSP, RGPD)"
-    ],
-    includes: [
-      "Auditor\xEDa operativa espec\xEDfica del sector seguridad",
-      "Automatizaci\xF3n de partes diarios y semanales",
-      "Flujos para gesti\xF3n de bajas, sustituciones y horas extra",
-      "Reportes autom\xE1ticos a clientes finales",
-      "Integraci\xF3n con software existente (Plus Vigilancia, etc.)",
-      "Formaci\xF3n a coordinadores y administraci\xF3n"
-    ],
+    slug: "mantenimiento-web",
+    title: "Mantenimiento mensual de tu web | TORO IA",
+    metaDescription: "Mantenimiento mensual de tu web: cambios, copias y revisi\xF3n de que todo funciona. De 90 a 150 \u20AC al mes con IVA, sin permanencia.",
+    h1: "Mantenimiento mensual de tu web",
+    subtitle: "Me ocupo de que tu web siga funcionando y actualizada, para que t\xFA te dediques a tu negocio.",
+    price: "90 a 150 \u20AC al mes, con IVA, sin permanencia",
+    url: "https://toroia.vip/#precios",
+    benefits: ["Cambios de textos y datos cuando los necesites", "Revisi\xF3n de que todo funciona", "Sin permanencia"],
+    includes: ["Cambios sencillos", "Copias de seguridad", "Revisi\xF3n mensual"],
     steps: [
-      {
-        title: "Diagn\xF3stico sectorial",
-        desc: "Analizamos las tareas administrativas y operativas espec\xEDficas de tu empresa de seguridad."
-      },
-      {
-        title: "Implantaci\xF3n silenciosa",
-        desc: "Automatizamos sobre tu stack actual sin parar la operaci\xF3n ni cambiar el software del equipo."
-      },
-      {
-        title: "Medici\xF3n de ahorro",
-        desc: "Reportamos horas y euros ahorrados cada mes con datos reales de tu operaci\xF3n."
-      }
+      { title: "Lo acordamos", desc: "Defino contigo qu\xE9 incluye cada mes." },
+      { title: "Me ocupo", desc: "Hago los cambios y reviso la web." }
     ],
-    keywords: "automatizaci\xF3n empresas seguridad, IA seguridad privada, software seguridad privada, automatizar partes vigilancia"
-  },
-  {
-    slug: "optimizacion-operativa-ia",
-    title: "Optimizaci\xF3n operativa con IA para pymes | TORO IA",
-    metaDescription: "Optimizamos la operaci\xF3n de tu pyme con IA y automatizaci\xF3n. Menos horas perdidas, m\xE1s margen, sin contratar m\xE1s personal. Diagn\xF3stico gratuito de 20 min.",
-    h1: "Optimizaci\xF3n operativa con IA: m\xE1s margen sin contratar m\xE1s personal",
-    subtitle: "Reducimos horas perdidas en tareas administrativas y operativas combinando IA, automatizaci\xF3n y redise\xF1o de procesos. El ahorro se mide desde el primer mes.",
-    benefits: [
-      "Aumento de capacidad operativa sin ampliar plantilla",
-      "Reducci\xF3n de errores humanos en tareas cr\xEDticas",
-      "Mejor uso del tiempo del equipo en actividades de valor",
-      "Integraci\xF3n limpia con las herramientas que ya usas",
-      "M\xE9tricas claras de ahorro en horas y euros",
-      "Modelo de mejora continua trimestral"
-    ],
-    includes: [
-      "Diagn\xF3stico de eficiencia operativa",
-      "Plan de optimizaci\xF3n por departamento",
-      "Implantaci\xF3n de automatizaciones e IA donde aporten valor",
-      "Cuadro de mando con m\xE9tricas de productividad",
-      "Sesiones trimestrales de mejora continua",
-      "Soporte t\xE9cnico en espa\xF1ol"
-    ],
-    steps: [
-      {
-        title: "Diagn\xF3stico",
-        desc: "Medimos eficiencia actual por departamento y proceso."
-      },
-      {
-        title: "Implantaci\xF3n",
-        desc: "Aplicamos automatizaci\xF3n e IA en los puntos de mayor retorno."
-      },
-      {
-        title: "Resultados",
-        desc: "Medimos ahorro real y abrimos la siguiente ronda de optimizaci\xF3n."
-      }
-    ],
-    keywords: "optimizaci\xF3n operativa IA, eficiencia operativa pyme, productividad empresa, mejora procesos IA"
+    keywords: "mantenimiento web, cuidado de la web, soporte web Toledo"
   }
 ];
 
@@ -215,7 +117,8 @@ var list_services_default = defineTool({
       slug: s.slug,
       title: s.h1,
       subtitle: s.subtitle,
-      url: `https://www.toroia.vip/servicios/${s.slug}`
+      price: s.price,
+      url: s.url
     }));
     return {
       content: [{ type: "text", text: JSON.stringify(items, null, 2) }],
@@ -232,7 +135,7 @@ var get_service_default = defineTool2({
   title: "Get TORO IA service detail",
   description: "Returns the full detail of a single TORO IA service by its slug: benefits, what is included, steps and SEO metadata.",
   inputSchema: {
-    slug: z2.string().min(1).describe("Service slug, e.g. 'automatizacion-n8n' or 'consultoria-ia-pymes'.")
+    slug: z2.string().min(1).describe("Service slug, e.g. 'web-para-abogados-toledo' or 'asistente-whatsapp-abogados'.")
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: ({ slug }) => {
@@ -258,21 +161,21 @@ var get_service_default = defineTool2({
 // src/lib/mcp/tools/get-methodology.ts
 import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.23.0";
 var METHODOLOGY = {
-  title: "Metodolog\xEDa de trabajo con IA y automatizaci\xF3n",
-  subtitle: "Un proceso de 6 semanas dise\xF1ado para eliminar tareas manuales, integrar IA con criterio y medir ahorro real desde la primera semana.",
+  title: "C\xF3mo trabajamos",
+  subtitle: "Un proceso sencillo y sin tecnicismos: hablamos, lo montamos, lo pruebas t\xFA primero y lo ponemos en marcha.",
   weeks: [
-    { phase: "Semana 1 \xB7 Diagn\xF3stico t\xE9cnico", detail: "Mapeo de procesos, horas consumidas y cuellos de botella." },
-    { phase: "Semana 2 \xB7 Dise\xF1o del plan", detail: "Priorizaci\xF3n por retorno, arquitectura de la soluci\xF3n y stack." },
-    { phase: "Semanas 3-4 \xB7 Construcci\xF3n", detail: "Implementaci\xF3n de flujos n8n, agentes IA e integraciones." },
-    { phase: "Semana 5 \xB7 Puesta en producci\xF3n", detail: "Despliegue, control de errores, monitorizaci\xF3n." },
-    { phase: "Semana 6 \xB7 Medici\xF3n y traspaso", detail: "M\xE9tricas de ahorro reales, documentaci\xF3n y formaci\xF3n." }
+    { phase: "1 \xB7 Charla de 20 minutos", detail: "Me cuentas c\xF3mo funciona tu negocio o despacho, sin compromiso." },
+    { phase: "2 \xB7 Propuesta clara", detail: "Te digo qu\xE9 necesitas y cu\xE1nto cuesta, con IVA y sin permanencia." },
+    { phase: "3 \xB7 Lo montamos", detail: "Preparamos la web o el asistente de WhatsApp con tus propias palabras." },
+    { phase: "4 \xB7 Lo pruebas t\xFA", detail: "Lo revisas antes de que lo vea ning\xFAn cliente." },
+    { phase: "5 \xB7 Puesta en marcha y mantenimiento", detail: "Lo activamos y, si quieres, lo mejoramos cada mes." }
   ],
-  contact_url: "https://www.toroia.vip/#contacto"
+  contact_url: "https://toroia.vip/#contacto"
 };
 var get_methodology_default = defineTool3({
   name: "get_methodology",
   title: "Get TORO IA methodology",
-  description: "Returns TORO IA's 6-week consulting methodology for AI and automation projects.",
+  description: "Returns TORO IA's way of working: from the free 20-minute chat to launch and monthly maintenance.",
   inputSchema: {},
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: () => ({
@@ -340,7 +243,7 @@ var mcp_default = defineMcp({
   name: "toro-ia-mcp",
   title: "TORO IA",
   version: "0.1.0",
-  instructions: "Tools to explore TORO IA's premium AI & automation consulting: browse services, read the 6-week methodology, and submit a qualified audit request. All data exposed here is public; the submit_lead tool creates a lead in TORO IA's CRM.",
+  instructions: "Tools to explore TORO IA's digital consulting for law firms and local businesses: browse services, read how we work, and submit a contact request. All data exposed here is public; the submit_lead tool creates a lead in TORO IA's CRM.",
   tools: [list_services_default, get_service_default, get_methodology_default, submit_lead_default]
 });
 

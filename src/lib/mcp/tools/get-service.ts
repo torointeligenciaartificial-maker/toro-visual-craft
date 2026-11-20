@@ -11,7 +11,7 @@ export default defineTool({
     slug: z
       .string()
       .min(1)
-      .describe("Service slug, e.g. 'automatizacion-n8n' or 'consultoria-ia-pymes'."),
+      .describe("Service slug, e.g. 'web-para-abogados-toledo' or 'asistente-whatsapp-abogados'."),
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: ({ slug }) => {

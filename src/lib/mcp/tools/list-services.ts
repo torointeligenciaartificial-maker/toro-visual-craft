@@ -14,7 +14,8 @@ export default defineTool({
       slug: s.slug,
       title: s.h1,
       subtitle: s.subtitle,
-      url: `https://www.toroia.vip/servicios/${s.slug}`,
+      price: s.price,
+      url: s.url,
     }));
     return {
       content: [{ type: "text", text: JSON.stringify(items, null, 2) }],
