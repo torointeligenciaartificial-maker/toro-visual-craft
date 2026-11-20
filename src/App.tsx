@@ -9,6 +9,7 @@ import LegalNotice from "./pages/LegalNotice";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import MetodologiaPage from "./pages/MetodologiaPage";
+import WebAbogadosToledo from "./pages/WebAbogadosToledo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/metodologia" element={<MetodologiaPage />} />
+          <Route path="/web-para-abogados-toledo" element={<WebAbogadosToledo />} />
           <Route path="/servicios/*" element={<Navigate to="/" replace />} />
           <Route path="/aviso-legal" element={<LegalNotice />} />
           <Route path="/privacidad" element={<PrivacyPolicy />} />
