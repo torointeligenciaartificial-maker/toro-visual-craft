@@ -10,7 +10,8 @@ import Footer from '@/components/Footer';
 const WHATSAPP_URL = 'https://wa.me/34663663353?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20la%20web%20y%20el%20asistente%20de%20WhatsApp%20para%20mi%20negocio.';
 
 const MetodologiaPage: React.FC = () => {
-  const { t } = useLanguage();
+  const { language } = useLanguage();
+  const es = language === 'es';
   const heroReveal = useScrollReveal(0.1);
   const phasesReveal = useScrollReveal(0.1);
   const authorityReveal = useScrollReveal(0.1);
@@ -19,28 +20,34 @@ const MetodologiaPage: React.FC = () => {
   const phases = [
     {
       icon: Search,
-      title: '1. Hablamos 20 minutos',
-      desc: 'Me cuentas cómo trabajas y qué preguntas te repiten más los clientes. Sin compromiso y sin tecnicismos.',
+      title: es ? '1. Hablamos 20 minutos' : '1. We talk for 20 minutes',
+      desc: es
+        ? 'Me cuentas cómo trabajas y qué preguntas te repiten más los clientes. Sin compromiso y sin tecnicismos.'
+        : 'You tell me how you work and which questions clients repeat the most. No commitment and no jargon.',
     },
     {
       icon: Layers,
-      title: '2. Lo montamos por ti',
-      desc: 'Preparamos tu web y, si quieres, un asistente de WhatsApp que contesta lo de siempre. Sobre tu WhatsApp y tu correo, sin cambiar cómo trabajas.',
+      title: es ? '2. Lo montamos por ti' : '2. We set it up for you',
+      desc: es
+        ? 'Preparamos tu web y, si quieres, un asistente de WhatsApp que contesta lo de siempre. Sobre tu WhatsApp y tu correo, sin cambiar cómo trabajas.'
+        : 'We build your website and, if you want, a WhatsApp assistant that answers the usual questions. On top of your own WhatsApp and email, without changing how you work.',
     },
     {
       icon: BarChart3,
-      title: '3. Lo pruebas y te acompañamos',
-      desc: 'Lo pruebas tú antes de que lo vea ningún cliente. Después seguimos contigo: cambios, dudas y mantenimiento.',
+      title: es ? '3. Lo pruebas y te acompañamos' : '3. You test it and we stay with you',
+      desc: es
+        ? 'Lo pruebas tú antes de que lo vea ningún cliente. Después seguimos contigo: cambios, dudas y mantenimiento.'
+        : 'You test it before any client sees it. Afterwards we stay with you: changes, questions and maintenance.',
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Cómo trabajamos | TORO IA</title>
-        <meta name="description" content="Tres pasos sencillos para tener tu web y tu asistente de WhatsApp funcionando, sin complicaciones." />
+        <title>{es ? 'Cómo trabajamos | TORO IA' : 'How we work | TORO IA'}</title>
+        <meta name="description" content={es ? 'Tres pasos sencillos para tener tu web y tu asistente de WhatsApp funcionando, sin complicaciones.' : 'Three simple steps to get your website and WhatsApp assistant up and running, without hassle.'} />
         <link rel="canonical" href="https://toroia.vip/metodologia" />
-        <meta property="og:title" content="Cómo trabajamos | TORO IA" />
+        <meta property="og:title" content={es ? 'Cómo trabajamos | TORO IA' : 'How we work | TORO IA'} />
         <meta property="og:url" content="https://toroia.vip/metodologia" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -61,16 +68,16 @@ const MetodologiaPage: React.FC = () => {
                 <div className="flex items-center justify-center gap-4 mb-6">
                   <div className="w-8 h-0.5 bg-primary" />
                   <span className="text-primary font-medium tracking-widest uppercase text-sm">
-                    Metodología
+                    {es ? 'Metodología' : 'Method'}
                   </span>
                   <div className="w-8 h-0.5 bg-primary" />
                 </div>
 
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Así trabajamos
+                  {es ? 'Así trabajamos' : 'How we work'}
                 </h1>
                 <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-                  Tres pasos, en tu idioma y sin tecnicismos.
+                  {es ? 'Tres pasos, en tu idioma y sin tecnicismos.' : 'Three steps, in plain language and without jargon.'}
                 </p>
               </motion.div>
             </div>
@@ -118,7 +125,9 @@ const MetodologiaPage: React.FC = () => {
               >
                 <div className="divider-gold mb-8" />
                 <p className="text-lg md:text-xl text-foreground leading-relaxed font-display">
-                  Trabajamos con despachos de abogados y negocios locales de la zona que quieren atender mejor a sus clientes sin perder tiempo en lo repetitivo.
+                  {es
+                    ? 'Trabajamos con despachos de abogados y negocios locales de la zona que quieren atender mejor a sus clientes sin perder tiempo en lo repetitivo.'
+                    : 'We work with law firms and local businesses in the area that want to serve their clients better without wasting time on repetitive tasks.'}
                 </p>
                 <div className="divider-gold mt-8" />
               </motion.div>
@@ -135,10 +144,10 @@ const MetodologiaPage: React.FC = () => {
                 className="max-w-2xl mx-auto text-center"
               >
                 <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-                  Cuéntanos tu caso
+                  {es ? 'Cuéntanos tu caso' : 'Tell us about your case'}
                 </h2>
                 <p className="text-muted-foreground text-lg mb-10">
-                  Escríbenos por WhatsApp o llama al 663 66 33 53 y vemos qué te conviene, sin compromiso.
+                  {es ? 'Escríbenos por WhatsApp o llama al 663 66 33 53 y vemos qué te conviene, sin compromiso.' : 'Message us on WhatsApp or call 663 66 33 53 and we will see what suits you, no commitment.'}
                 </p>
 
                 <a
@@ -148,10 +157,10 @@ const MetodologiaPage: React.FC = () => {
                   className="btn-premium btn-appointment-spotlight rounded inline-flex items-center gap-3"
                 >
                   <MessageCircle className="w-5 h-5 relative z-10" aria-hidden="true" />
-                  <span>Escríbenos por WhatsApp</span>
+                  <span>{es ? 'Escríbenos por WhatsApp' : 'Message us on WhatsApp'}</span>
                 </a>
                 <p className="mt-4 text-sm text-muted-foreground">
-                  Te respondo en menos de 24 horas. Sin compromiso.
+                  {es ? 'Te respondo en menos de 24 horas. Sin compromiso.' : 'I reply within 24 hours. No commitment.'}
                 </p>
               </motion.div>
             </div>

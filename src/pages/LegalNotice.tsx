@@ -40,7 +40,7 @@ const LegalNotice = () => {
                 <p><strong className="text-foreground">NIF/CIF:</strong> 08937774C</p>
                 <p><strong className="text-foreground">Dirección:</strong> Castillo de Almansa 428, Escalona (Toledo)</p>
                 <p><strong className="text-foreground">Correo electrónico:</strong> oscarvillena@toroia.vip</p>
-                <p><strong className="text-foreground">Correo corporativo:</strong> info@toroia.vip</p>
+                <p><strong className="text-foreground">Correo corporativo:</strong> oscarvillena@toroia.vip</p>
               </div>
             </section>
 

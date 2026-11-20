@@ -84,7 +84,7 @@ const ContactSection: React.FC = () => {
             <div className="space-y-3 text-sm text-muted-foreground mb-6">
               <p><span className="text-primary">Dirección:</span> C. Castillo de Almansa, 45910 Escalona, Toledo</p>
               <p><span className="text-primary">Teléfono:</span> <a href="tel:+34663663353" className="hover:text-cream transition-colors">663 66 33 53</a></p>
-              <p><span className="text-primary">Email:</span> <a href="mailto:info@toroia.vip" className="hover:text-cream transition-colors">info@toroia.vip</a></p>
+              <p><span className="text-primary">Email:</span> <a href="mailto:oscarvillena@toroia.vip" className="hover:text-cream transition-colors">oscarvillena@toroia.vip</a></p>
               <p><span className="text-primary">Horario:</span> L–V de 9:00 a 18:00</p>
             </div>
 

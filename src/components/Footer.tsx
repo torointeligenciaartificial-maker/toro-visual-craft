@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="mailto:info@toroia.vip" className="hover:text-primary transition-colors">info@toroia.vip</a>
+                <a href="mailto:oscarvillena@toroia.vip" className="hover:text-primary transition-colors">oscarvillena@toroia.vip</a>
               </p>
               <p className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-primary flex-shrink-0" />
