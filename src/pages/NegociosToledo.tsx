@@ -34,6 +34,33 @@ const NegociosToledo: React.FC = () => {
     },
   ];
 
+  const audiences = [
+    {
+      title: es ? 'Gestorías y asesorías' : 'Accountancy and advisory firms',
+      text: es
+        ? 'Avisos a clientes de plazos y documentos pendientes, y respuestas a las preguntas de siempre sin descolgar el teléfono.'
+        : 'Reminders to clients about deadlines and missing documents, and answers to the usual questions without picking up the phone.',
+    },
+    {
+      title: es ? 'Comercios y tiendas' : 'Shops and stores',
+      text: es
+        ? 'Horarios, ubicación y consultas de producto contestados al momento, también cuando tienes la tienda llena.'
+        : 'Opening hours, location and product questions answered instantly, even when your shop is full.',
+    },
+    {
+      title: es ? 'Clínicas y consultas' : 'Clinics and practices',
+      text: es
+        ? 'Cómo pedir cita, qué llevar a la primera visita y cuánto cuesta, sin que tu equipo pierda tiempo al teléfono.'
+        : 'How to book, what to bring to the first visit and what it costs, without your team losing time on the phone.',
+    },
+    {
+      title: es ? 'Talleres, reformas y servicios' : 'Workshops, renovation and services',
+      text: es
+        ? 'Los clientes te escriben, el asistente recoge qué necesitan y tú les respondes con el presupuesto.'
+        : 'Clients message you, the assistant collects what they need and you reply with the quote.',
+    },
+  ];
+
   const faqs = [
     {
       q: es ? '¿Trabajáis con negocios de Toledo y de los pueblos de alrededor?' : 'Do you work with businesses in Toledo and the nearby towns?',
@@ -146,6 +173,51 @@ const NegociosToledo: React.FC = () => {
                   ? 'Web desde 700 € · Asistente desde 300 € + 50 a 90 € al mes · Todos los precios incluyen IVA · Sin permanencia.'
                   : 'Website from €700 · Assistant from €300 + €50 to €90 a month · All prices include VAT · No lock-in.'}
               </p>
+            </div>
+          </section>
+
+          <section className="py-16 lg:py-20">
+            <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
+              <h2 className="font-display text-3xl font-bold mb-10 text-center">
+                {es ? 'Para quién es' : 'Who it is for'}
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {audiences.map((a) => (
+                  <article key={a.title} className="p-8 border border-border bg-card/40">
+                    <h3 className="font-display text-xl font-semibold mb-3">{a.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{a.text}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 lg:py-20">
+            <div className="container mx-auto px-4 lg:px-8 max-w-2xl">
+              <h2 className="font-display text-3xl font-bold mb-3 text-center">
+                {es ? 'Así responde el asistente' : 'How the assistant replies'}
+              </h2>
+              <p className="text-muted-foreground text-center mb-8">
+                {es ? 'Un ejemplo con una tienda de Toledo.' : 'An example with a shop in Toledo.'}
+              </p>
+              <div className="space-y-3">
+                <div className="max-w-[85%] p-4 border border-border bg-card/40 text-sm">
+                  {es ? 'Hola, ¿abrís el sábado por la tarde?' : 'Hi, are you open on Saturday afternoon?'}
+                </div>
+                <div className="max-w-[85%] ml-auto p-4 border border-primary/40 bg-primary/10 text-sm">
+                  {es
+                    ? 'Hola, sí. Los sábados abrimos de 10:00 a 14:00 y de 17:00 a 20:00. ¿Quieres que te reserve algo para pasar a recogerlo?'
+                    : 'Hello, yes. On Saturdays we are open 10:00 to 14:00 and 17:00 to 20:00. Would you like me to set something aside for you?'}
+                </div>
+                <div className="max-w-[85%] p-4 border border-border bg-card/40 text-sm">
+                  {es ? 'Sí, quiero hablar con alguien sobre un pedido grande.' : 'Yes, I want to talk to someone about a large order.'}
+                </div>
+                <div className="max-w-[85%] ml-auto p-4 border border-primary/40 bg-primary/10 text-sm">
+                  {es
+                    ? 'Perfecto, aviso ahora mismo al responsable y te escribe en cuanto pueda.'
+                    : 'Perfect, I am alerting the owner right now and they will message you as soon as they can.'}
+                </div>
+              </div>
             </div>
           </section>
 
