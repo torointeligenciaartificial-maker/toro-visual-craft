@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useScrollReveal } from '@/hooks/useScrollAnimations';
+import oscarPhoto from '@/assets/oscar-villena.jpg';
 
 const AboutSection: React.FC = () => {
   const { t } = useLanguage();
@@ -23,7 +24,27 @@ const AboutSection: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background" />
       
       <div ref={ref} className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-[320px_1fr] gap-10 lg:gap-16 items-center">
+          <motion.figure
+            initial={{ opacity: 0, y: 20 }}
+            animate={isVisible ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6 }}
+            className="mx-auto md:mx-0 w-64 md:w-full"
+          >
+            <img
+              src={oscarPhoto}
+              alt="Oscar Villena, fundador de ToroIA"
+              width={720}
+              height={820}
+              loading="lazy"
+              className="w-full h-auto rounded-2xl object-cover shadow-xl"
+            />
+            <figcaption className="mt-4 text-center md:text-left">
+              <span className="block font-display font-semibold text-foreground">Oscar Villena</span>
+              <span className="block text-sm text-muted-foreground">Fundador de ToroIA · Escalona (Toledo)</span>
+            </figcaption>
+          </motion.figure>
+          <div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
@@ -53,6 +74,7 @@ const AboutSection: React.FC = () => {
           >
             {t('about.description')}
           </motion.p>
+          </div>
         </div>
       </div>
     </section>
