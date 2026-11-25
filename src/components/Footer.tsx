@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Linkedin, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const { t, language } = useLanguage();
@@ -60,8 +60,8 @@ const Footer: React.FC = () => {
                 <span>{es ? 'L–V de 9:00 a 18:00' : 'Mon–Fri, 9:00 to 18:00'}</span>
               </p>
               <p className="flex items-center gap-4">
-                <a href="https://www.linkedin.com/in/oscar-villenaceo/" target="_blank" rel="me noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
-                <a href="https://www.instagram.com/toroia.vip/" target="_blank" rel="me noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a>
+                <a href="https://www.linkedin.com/in/oscar-villenaceo/" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" className="hover:text-primary transition-colors"><Linkedin className="w-5 h-5" /></a>
+                <a href="https://www.instagram.com/toroia.vip/" target="_blank" rel="me noopener noreferrer" aria-label="Instagram" title="Instagram" className="hover:text-primary transition-colors"><Instagram className="w-5 h-5" /></a>
               </p>
             </address>
           </div>
