@@ -59,6 +59,10 @@ const Footer: React.FC = () => {
                 <Clock className="w-4 h-4 text-primary flex-shrink-0" />
                 <span>{es ? 'L–V de 9:00 a 18:00' : 'Mon–Fri, 9:00 to 18:00'}</span>
               </p>
+              <p className="flex items-center gap-4">
+                <a href="https://www.linkedin.com/in/oscar-villenaceo/" target="_blank" rel="me noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
+                <a href="https://www.instagram.com/toroia.vip/" target="_blank" rel="me noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a>
+              </p>
             </address>
           </div>
         </div>
