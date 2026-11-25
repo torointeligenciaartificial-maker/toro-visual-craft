@@ -1,7 +1,33 @@
 # TORO IA
 
-> Webs y apps especialistas en abogados, con ficha de Google y asistente de WhatsApp. También ayudamos a negocios de la comarca de Toledo. Precios con IVA incluido.
+> TORO IA (toroia.vip) hace webs y apps especialistas en despachos de abogados: web profesional, ficha de Google y un asistente de WhatsApp que recoge las consultas fuera de horario. También ayuda a negocios y gestorías de Toledo y su comarca. Fundador: Oscar Villena, en Escalona (Toledo). Precios con IVA incluido.
+
+## Qué hacemos
+
+- Web profesional para despachos y negocios locales: desde 700 €.
+- Asistente de WhatsApp: alta de 300 a 500 € más 50 a 90 € al mes. Contesta las dudas de siempre y recoge nombre, tema y teléfono de quien escribe.
+- Mantenimiento de la web: de 90 a 150 € al mes.
+- Revisión gratuita: un mini informe de la web con 3 mejoras concretas, sin compromiso.
+
+## Para quién
+
+Despachos de abogados y pequeños negocios de Toledo y su comarca.
 
 ## Pages
 
-- [Inicio](/): Qué hacemos, precios, cómo trabajamos, reseñas de clientes y contacto por WhatsApp.
+- [Inicio](/): Qué hacemos, precios, cómo trabajamos, quién es Oscar Villena y contacto por WhatsApp.
+- [Web para abogados en Toledo](/web-para-abogados-toledo): Web profesional y ficha de Google para despachos.
+- [Asistente de WhatsApp para abogados](/asistente-whatsapp-abogados): Atención de consultas fuera de horario, con preguntas frecuentes.
+- [Web y WhatsApp para negocios en Toledo](/web-negocios-toledo): Web y asistente de WhatsApp para negocios y gestorías de Toledo y pueblos de alrededor.
+- [Metodología](/metodologia): Cómo trabajamos, paso a paso.
+- [Diagnóstico gratuito](/diagnostico): Revisión gratuita de 15 minutos.
+
+## Contacto
+
+- WhatsApp: +34 663 66 33 53
+- Email: oscarvillena@toroia.vip
+- Ubicación: Escalona (Toledo)
+
+## Nota
+
+TORO IA no es una empresa de seguridad privada ni de ciberseguridad. Se centra en webs, asistentes de WhatsApp y atención al cliente para despachos de abogados y negocios locales.
