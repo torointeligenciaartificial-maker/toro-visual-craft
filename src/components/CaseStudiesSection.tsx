@@ -14,6 +14,13 @@ const CaseStudiesSection: React.FC = () => {
 
   const reviews = [
     {
+      name: 'Eva Cabello Cabello',
+      badge: language === 'es' ? 'Abogada · Toledo' : 'Lawyer · Toledo',
+      text: language === 'es'
+        ? 'Dinámicos, absolutamente eficientes y muy comprometidos con sus clientes.'
+        : 'Dynamic, absolutely efficient and very committed to their clients.',
+    },
+    {
       name: 'Roberto Perez',
       badge: language === 'es' ? '1 reseña' : '1 review',
       text: language === 'es'
@@ -96,7 +103,7 @@ const CaseStudiesSection: React.FC = () => {
                 <Star key={i} className="w-5 h-5 text-primary fill-primary" />
               ))}
               <span className="ml-2 text-foreground font-semibold">5,0</span>
-              <span className="text-muted-foreground text-sm">({language === 'es' ? '10 reseñas' : '10 reviews'})</span>
+              <span className="text-muted-foreground text-sm">({language === 'es' ? '11 reseñas' : '11 reviews'})</span>
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
