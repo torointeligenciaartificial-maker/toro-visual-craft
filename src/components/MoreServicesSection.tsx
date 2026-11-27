@@ -95,6 +95,25 @@ const MoreServicesSection: React.FC = () => {
             );
           })}
         </div>
+
+        <nav
+          aria-label={es ? 'Páginas por tipo de negocio' : 'Pages by business type'}
+          className="max-w-5xl mx-auto mt-10 text-center text-sm text-muted-foreground"
+        >
+          <span className="mr-2">{es ? 'Soluciones por sector:' : 'Solutions by sector:'}</span>
+          <a href="/web-para-abogados-toledo" className="text-primary hover:underline mx-2">
+            {es ? 'Web para abogados' : 'Website for lawyers'}
+          </a>
+          <a href="/asistente-whatsapp-abogados" className="text-primary hover:underline mx-2">
+            {es ? 'Asistente de WhatsApp para despachos' : 'WhatsApp assistant for law firms'}
+          </a>
+          <a href="/web-negocios-toledo" className="text-primary hover:underline mx-2">
+            {es ? 'Web para negocios en Toledo' : 'Websites for businesses in Toledo'}
+          </a>
+          <a href="/metodologia" className="text-primary hover:underline mx-2">
+            {es ? 'Cómo trabajamos' : 'How we work'}
+          </a>
+        </nav>
       </div>
     </section>
   );
